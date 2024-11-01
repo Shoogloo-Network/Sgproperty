@@ -77,7 +77,8 @@
 
 .property-pricing-section {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding: 16px 0;
     border-bottom: 1px solid #eaeaea;
 }
@@ -99,20 +100,6 @@
     height: 18px;
 }
 
-.callback-request {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-    color: #3498db;
-    cursor: pointer;
-}
-
-.phone-icon {
-    width: 24px;
-    height: 24px;
-}
-
 
 .icon-card-group, .icon-card-container, .property-additional-services {
     display: flex;
@@ -125,3 +112,4 @@
     
     justify-content: center;
 }
+

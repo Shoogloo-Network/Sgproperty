@@ -6,13 +6,15 @@ import { useState } from 'react'
 import ImageGalleryPopup from './Components/ImageGalleryPopup';
 import PropertyInfo from './Components/PropertyInfo';
 import ProjectTabHome from './Components/ProjectTabHome';
-import HomeBanner from './Components/HomeBanner';
+import Home from './Components/Home';
+
 
 function App() {
  const [isPopup , setIsPopup] =useState(false);
 
   return (
    <>
+   <Home/>
    {/* <HomeBanner/> */}
    {isPopup?<ImageGalleryPopup close={()=>{
     setIsPopup(false);

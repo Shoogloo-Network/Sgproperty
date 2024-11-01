@@ -5,7 +5,7 @@ const IconCardWithButton = ({ data }) => {
   return (
     <div className="icon-card-with-button-container">
       {data.map((item, index) => (
-        <div key={index} className="cardBtnMain">
+        <div key={index+1} className="cardBtnMain">
           <div className="cardBtnContent">
             <div className="cardBtnImage">
               <img src={item.img} alt={item.title} />

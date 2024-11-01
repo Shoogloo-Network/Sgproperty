@@ -64,6 +64,12 @@
 
 .cardBtnMain:hover .cardBtnHover {
     display: block;
+    position:absolute;
+    background-color: #fff;
+    z-index: 200;
+    padding: 20px;
+left: 0;
+top: 80%;
 }
 
 .cardBtnList {

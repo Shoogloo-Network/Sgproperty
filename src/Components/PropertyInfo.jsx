@@ -1,7 +1,8 @@
-import React from 'react';
+
 import IconCard from './IconCard';
 import IconCardWithButton from './IconCardWithButton';
 import "../Components/PropertyInfo.css";
+import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
 
 const PropertyInfo = () => {
     const iconData =[
@@ -141,15 +142,17 @@ list:'50+ Banks Max Loan Amount',
             </div>
 
             <div className="property-pricing-section">
+                <div>
+
                 <div className="price-info">
                     <h2 className="price-range">₹86.00 Lac - 1.49 Cr</h2>
                     <img src="src/assets/icon/info.png" alt="Info" className="info-icon" />
                 </div>
                 <div className="additional-info"><IconCard data={iconData1} /></div>
-                <div className="callback-request">
-                    <img src="src/assets/icon/call.png" alt="phone" className="phone-icon" />
-                    <p>Request More Information or a callback</p>
                 </div>
+                
+                
+                <BtnPrimaryWithIcon src="src/assets/icon/call.png" cnt="Request More Information or a callback"/>
             </div>
 
             <div className="property-additional-services">
