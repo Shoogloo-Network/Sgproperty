@@ -76,7 +76,7 @@ const stories = CardData.map((item) => {
     content: (props) => (
       <div 
         style={{
-          backgroundImage: `url(${`../assets/stories/${item.image}`})`, 
+          backgroundImage: `url(${`src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif`})`, 
           height: '100%', 
           width: '100%', 
           backgroundRepeat: 'no-repeat',
@@ -97,6 +97,7 @@ return (
     <>
     <Stories
 			stories={stories}
+      loop={true}
 			defaultInterval={8000}
 			width={'100%'}
       height={'100%'}
