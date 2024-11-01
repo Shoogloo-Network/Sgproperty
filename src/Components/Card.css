@@ -3,8 +3,11 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px;
+    width: 250px;
+   
+margin: 20px ;
+
+   
   }
   
   .card-image {
@@ -15,6 +18,9 @@
   .card-content {
     padding: 15px;
     background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   
   .card-title {

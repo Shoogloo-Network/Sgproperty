@@ -11,12 +11,12 @@ const Story = () => {
           descriptionPrice:"₹86.00 Lac - 1.49 Cr",
           iconCardData : [
             {
-                img:'src/assets/icon/zero-brokerage.svg',
+                img:'src/assets/icon/building.png',
                 title:'Project Size',
                 description:'165 Unit . 1.25 Acres',
             },
             {
-                img:'src/assets/icon/lowest-price.svg',
+                img:'src/assets/icon/web-management.png',
                 title:'Configurations',
                 description:'2-BHK , 3-BHK Flats',
             },
@@ -30,12 +30,12 @@ const Story = () => {
           descriptionPrice:"₹86.00 Lac - 1.49 Cr",
           iconCardData : [
             {
-                img:'src/assets/icon/zero-brokerage.svg',
+                img:'src/assets/icon/building.png',
                 title:'Project ',
                 description:'165 Unit . 1.25 Acres',
             },
             {
-                img:'src/assets/icon/lowest-price.svg',
+                img:'src/assets/icon/web-management.png',
                 title:'Configurations',
                 description:'2-BHK , 3-BHK Flats',
             },
@@ -44,17 +44,17 @@ const Story = () => {
   },{
     backgroundImage:"src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
     image:"src/assets/icon/call.png" ,
-          title:"Sample Card Title 3" ,
-          description:"This is a description for the sample card. It can hold any text you want to display.",
-          descriptionPrice:"₹86.00 Lac - 1.49 Cr",
+    title:"Shree Serenity" ,
+    description:"Balewadi , Pune",
+    descriptionPrice:"₹86.00 Lac - 1.49 Cr",
           iconCardData : [
             {
-                img:'src/assets/icon/zero-brokerage.svg',
+                img:'src/assets/icon/building.png',
                 title:'Project Size',
                 description:'165 Unit . 1.25 Acres',
             },
             {
-                img:'src/assets/icon/lowest-price.svg',
+                img:'src/assets/icon/web-management.png',
                 title:'Configurations',
                 description:'2-BHK , 3-BHK Flats',
             },
@@ -63,17 +63,17 @@ const Story = () => {
   },{
     backgroundImage:"src/assets/stories/jp-codename-starlife-project-project-large-image1-5182.avif",
     image:"src/assets/icon/call.png" ,
-          title:"Sample Card Title 4" ,
-          description:"This is a description for the sample card. It can hold any text you want to display.",
-          descriptionPrice:"₹86.00 Lac - 1.49 Cr",
+    title:"Rise Food Mall" ,
+    description:"Noida Sector 1",
+    descriptionPrice:"₹86.00 Lac - 1.49 Cr",
           iconCardData : [
             {
-                img:'src/assets/icon/zero-brokerage.svg',
+                img:'src/assets/icon/building.png',
                 title:'Project Size',
                 description:'165 Unit . 1.25 Acres',
             },
             {
-                img:'src/assets/icon/lowest-price.svg',
+                img:'src/assets/icon/web-management.png',
                 title:'Configurations',
                 description:'2-BHK , 3-BHK Flats',
             },
@@ -83,17 +83,17 @@ const Story = () => {
   {
     backgroundImage:"src/assets/stories/haware-my-first-home-project-project-large-image1-5447.avif",
     image:"src/assets/icon/call.png" ,
-          title:"Sample Card Title 5" ,
-          description:"This is a description for the sample card. It can hold any text you want to display.",
-          descriptionPrice:"₹86.00 Lac - 1.49 Cr",
+    title:"Shree Serenity" ,
+    description:"Balewadi , Pune",
+    descriptionPrice:"₹86.00 Lac - 1.49 Cr",
           iconCardData : [
             {
-                img:'src/assets/icon/zero-brokerage.svg',
+                img:'src/assets/icon/building.png',
                 title:'Project Size',
                 description:'165 Unit . 1.25 Acres',
             },
             {
-                img:'src/assets/icon/lowest-price.svg',
+                img:'src/assets/icon/web-management.png',
                 title:'Configurations',
                 description:'2-BHK , 3-BHK Flats',
             },
@@ -145,7 +145,7 @@ const stories = CardData.map((item) => {
           width: '100%', 
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          
+          cursor:'pointer',
         }}
       >
         <div style={{width:'40%',marginTop:'25px'}}>

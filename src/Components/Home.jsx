@@ -21,7 +21,7 @@ const Home = () => {
     <h1>Hot Selling Projects in India</h1>
     
    
-        <div className='home-content'>
+        <div className='home-content' style={{cursor:'pointer'}}>
        
       <IconCardBtnWithoutHover data={iconDataForButton}/>
       <Story/>
