@@ -15,8 +15,8 @@ function App() {
   return (
    <>
    <Home/>
-   {/* <HomeBanner/> */}
-   {isPopup?<ImageGalleryPopup close={()=>{
+   
+   {/* {isPopup?<ImageGalleryPopup close={()=>{
     setIsPopup(false);
    }}/>:
    <>
@@ -31,7 +31,7 @@ function App() {
    <ProjectTabHome/>
    </div>
    
-   </>}
+   </>} */}
 
    </>
   )
