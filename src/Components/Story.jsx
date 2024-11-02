@@ -146,6 +146,7 @@ const stories = CardData.map((item) => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           cursor:'pointer',
+         
         }}
       >
         <div style={{width:'40%',marginTop:'25px'}}>
@@ -175,7 +176,7 @@ return (
 			defaultInterval={8000}
 			width={'100%'}
       height={'100%'}
-    
+      storyContainerStyles={{ zIndex: 10 }}  
 		/>
 
     
