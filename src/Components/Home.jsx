@@ -4,6 +4,7 @@ import Story from './Story'
 import IconCardBtnWithoutHover from './IconCardBtnWithoutHover'
 import './Home.css'
 import CardWithList from './CardWithList'
+import Footer from './Footer'
 const Home = () => {
   const iconDataForButton =[
     {
@@ -40,7 +41,7 @@ const Home = () => {
     </div>
     </div>
     
-    
+    <Footer/>
     </>
   )
 }
