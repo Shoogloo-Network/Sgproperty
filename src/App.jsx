@@ -6,7 +6,7 @@ import { useState } from 'react'
 import ImageGalleryPopup from './Components/ImageGalleryPopup';
 import PropertyInfo from './Components/PropertyInfo';
 import ProjectTabHome from './Components/ProjectTabHome';
-import Home from './Components/Home';
+
 
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
 
   return (
    <>
-   <Home/>
+ 
    
-   {/* {isPopup?<ImageGalleryPopup close={()=>{
+   {isPopup?<ImageGalleryPopup close={()=>{
     setIsPopup(false);
    }}/>:
    <>
@@ -31,7 +31,7 @@ function App() {
    <ProjectTabHome/>
    </div>
    
-   </>} */}
+   </>}
 
    </>
   )
