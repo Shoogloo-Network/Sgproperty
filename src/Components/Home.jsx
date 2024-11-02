@@ -5,7 +5,9 @@ import IconCardBtnWithoutHover from './IconCardBtnWithoutHover'
 import RealStateBanner from './RealStateBanner'
 import './Home.css'
 import CardWithList from './CardWithList'
+import NavBar from './NavBar'
 import Footer from './Footer'
+
 const Home = () => {
   const iconDataForButton =[
     {
@@ -22,6 +24,7 @@ const Home = () => {
 
   return (
     <>
+    <NavBar/>
     <RealStateBanner/>
    
     <div className='home-container'>

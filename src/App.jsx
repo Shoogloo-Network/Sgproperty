@@ -6,7 +6,7 @@ import { useState } from 'react'
 import ImageGalleryPopup from './Components/ImageGalleryPopup';
 import PropertyInfo from './Components/PropertyInfo';
 import ProjectTabHome from './Components/ProjectTabHome';
-
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
    <PropertyInfo/>
    <ProjectTabHome/>
    </div>
-   
+   <Footer/>
    </>}
 
    </>
