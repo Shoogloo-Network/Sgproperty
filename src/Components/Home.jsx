@@ -3,6 +3,7 @@
 import Story from './Story'
 import IconCardBtnWithoutHover from './IconCardBtnWithoutHover'
 import './Home.css'
+import CardWithList from './CardWithList'
 const Home = () => {
   const iconDataForButton =[
     {
@@ -25,7 +26,18 @@ const Home = () => {
        
       <IconCardBtnWithoutHover data={iconDataForButton}/>
       <Story/>
+
         </div>
+        <div className="real-estate-sections">
+      <div className="real-estate-section">
+        <h1 className="section-title">For Real Estate Developers</h1>
+        <CardWithList />
+      </div>
+      <div className="real-estate-section" style={{ backgroundColor: '#fff'}}>
+        <h1 className="section-title">For Agents</h1>
+        <CardWithList />
+      </div>
+    </div>
     </div>
     
     

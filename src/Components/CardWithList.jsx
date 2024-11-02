@@ -1,0 +1,36 @@
+
+import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import './CardWithList.css';
+const CardWithList = () => {
+  return (
+    <>
+      <div className="developer-card" style={{backgroundImage:'url(src/assets/thumbnail/propvr-side.svg',backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundColor:'#ddf5ff'}}>
+      <div className="developer-card-header">
+        <img src='src/assets/icon/propvr.svg' alt='ListCard Icon' className="developer-card-icon"/>
+        <div className="developer-card-title">
+          <h1>PropVR</h1>
+        </div>
+      </div>
+      <div className="developer-card-content">
+        <div className="developer-card-item">
+          <img src='src/assets/icon/check-mark.png' alt='icon' className="developer-card-check-icon"/>
+          <p>Get all 3D visualisation under one roof</p>
+        </div>
+        <div className="developer-card-item">
+          <img src='src/assets/icon/check-mark.png' alt='icon' className="developer-card-check-icon"/>
+          <p>Get all 3D visualisation under one roof</p>
+        </div>
+        <div className="developer-card-item">
+          <img src='src/assets/icon/check-mark.png' alt='icon' className="developer-card-check-icon"/>
+          <p>Get all 3D visualisation under one roof</p>
+        </div>
+      </div>
+      <div className="developer-card-footer">
+        <BtnPrimaryWithIcon src='src/assets/icon/right-arrow.png' cnt='Know More'/>
+      </div>
+    </div>
+    </>
+  )
+}
+
+export default CardWithList
