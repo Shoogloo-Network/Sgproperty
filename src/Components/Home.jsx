@@ -2,6 +2,7 @@
 
 import Story from './Story'
 import IconCardBtnWithoutHover from './IconCardBtnWithoutHover'
+import RealStateBanner from './RealStateBanner'
 import './Home.css'
 import CardWithList from './CardWithList'
 import Footer from './Footer'
@@ -17,9 +18,14 @@ const Home = () => {
     },
 ]
 
+
+
   return (
     <>
+    <RealStateBanner/>
+   
     <div className='home-container'>
+
     <h1>Hot Selling Projects in India</h1>
     
    
