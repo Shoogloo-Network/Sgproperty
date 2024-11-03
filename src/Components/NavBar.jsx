@@ -3,96 +3,97 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('about-project');
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
-    const handleScroll = () => {
-        const sections = document.querySelectorAll('section');
-        const scrollPos = window.scrollY + 100; // Adjust to highlight at the right time
-
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute('id');
-
-            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                setActiveSection(sectionId);
-            }
-        });
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const scrollToSection = (sectionId) => {
-        document.querySelector(`#${sectionId}`).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-        setActiveSection(sectionId);
-    };
+    const navItems = [
+        {
+            title: 'About Project',
+            id: 'about-project',
+            dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ']
+        },
+        {
+            title: 'Project Overview',
+            id: 'project-overview',
+            dropdown: null
+        },
+        {
+            title: 'Top Experts',
+            id: 'top-experts',
+            dropdown: null
+        },
+        
+        {
+            title: 'Floor Plans',
+            id: 'floor-plans',
+            dropdown: ['2 BHK', '3 BHK']
+        },
+       
+        {
+            title: 'Data Intelligence',
+            id: 'data-intelligence',
+            dropdown: ['Project Sales Trend']
+        },
+        {
+            title: 'Amenities',
+            id: 'amenities',
+            dropdown: null
+        },
+        {
+            title: 'Specifications',
+            id: 'specifications',
+            dropdown: null
+        },
+        
+        {
+            title: 'About Builder',
+            id: 'about-builder',
+            dropdown: null
+        },
+        {
+            title: 'Similar Projects',
+            id: 'similar-projects',
+            dropdown: null
+        }
+    ];
 
     return (
         <nav className="navbar">
-            <ul>
-                <li>
-                    <a
-                        href="#overview"
-                        onClick={() => scrollToSection('overview')}
-                        className={activeSection === 'overview' ? 'active' : ''}
-                    >
-                        Overview
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#floor-plans"
-                        onClick={() => scrollToSection('floor-plans')}
-                        className={activeSection === 'floor-plans' ? 'active' : ''}
-                    >
-                        Floor Plans
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#gallery"
-                        onClick={() => scrollToSection('gallery')}
-                        className={activeSection === 'gallery' ? 'active' : ''}
-                    >
-                        Gallery
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#amenities"
-                        onClick={() => scrollToSection('amenities')}
-                        className={activeSection === 'amenities' ? 'active' : ''}
-                    >
-                        Amenities
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#price"
-                        onClick={() => scrollToSection('price')}
-                        className={activeSection === 'price' ? 'active' : ''}
-                    >
-                        Price
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#contact"
-                        onClick={() => scrollToSection('contact')}
-                        className={activeSection === 'contact' ? 'active' : ''}
-                    >
-                        Contact
-                    </a>
-                </li>
-            </ul>
+            <div className="navbar-container">
+                <ul className="nav-list">
+                    {navItems.map((item) => (
+                        <li 
+                            key={item.id}
+                            className={`nav-item ${activeSection === item.id ? 'active' : ''}`}
+                            onMouseEnter={() => setActiveDropdown(item.id)}
+                            onMouseLeave={() => setActiveDropdown(null)}
+                        >
+                            <a
+                                href={`#${item.id}`}
+                                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                            >
+                                {item.title}
+                                {item.dropdown && (
+                                    <span className="arrow-down">▼</span>
+                                )}
+                            </a>
+                            {item.dropdown && activeDropdown === item.id && (
+                                <div className="dropdown-menu">
+                                    {item.dropdown.map((subItem) => (
+                                        <a 
+                                            key={subItem}
+                                            href={`#${item.id}-${subItem.toLowerCase().replace(/\s+/g, '-')}`}
+                                            className="dropdown-item"
+                                        >
+                                            {subItem}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 };

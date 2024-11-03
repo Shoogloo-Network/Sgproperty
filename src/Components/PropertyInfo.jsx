@@ -34,11 +34,7 @@ const PropertyInfo = () => {
             description:'986 Sq. Ft. to 1494 Sq. Ft. (Saleable)',
 
         },
-        {
-            img:'src/assets/icon/maps.png',
-            description:'986 Sq. Ft. to 1494 Sq. Ft. (Saleable)',
-
-        },
+       
     ]
 
     const iconDataForButton =[
