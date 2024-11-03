@@ -1,10 +1,13 @@
-
 import IconCard from './IconCard';
 import IconCardWithButton from './IconCardWithButton';
 import "../Components/PropertyInfo.css";
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import { useState } from 'react';
+import FormPopup from './FormPopup';
 
 const PropertyInfo = () => {
+    const [showForm, setShowForm] = useState(false);
+
     const iconData =[
         {
             img:'src/assets/icon/verified.png',
@@ -148,12 +151,18 @@ list:'50+ Banks Max Loan Amount',
                 </div>
                 
                 
-                <BtnPrimaryWithIcon src="src/assets/icon/call.png" cnt="Request More Information or a callback"/>
+                <BtnPrimaryWithIcon 
+                    src="src/assets/icon/call.png" 
+                    cnt="Request More Information or a callback"
+                    onClick={() => setShowForm(true)}
+                />
             </div>
 
             <div className="property-additional-services">
                 <IconCardWithButton data={iconDataForButton} />
             </div>
+
+            {showForm && <FormPopup onClose={() => setShowForm(false)} />}
         </div>
     );
 };
