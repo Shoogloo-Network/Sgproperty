@@ -1,6 +1,6 @@
-
 import Stories from 'react-insta-stories';
 import Card from './Card';
+import { useState } from 'react';
 
 const Story = () => {
   const CardData =[{
@@ -101,91 +101,153 @@ const Story = () => {
           ],
   },]
 
- 
-//     const stories =[{
-//         url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//         duration:2000,
-//         content:(props)=>(
-//           <div style={{backgroundImage:'url("src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif")', height:'100%',width:'100%',backgroundRepeat:'no-repeat'}}><Card  image="/assets/images/desktop-banner.jpeg" 
-//           title="Sample Card Title 1" 
-//           description="This is a description for the sample card. It can hold any text you want to display."/></div>
-          
-//         ),
-        
-//     },
-//     {
-//       url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//       duration:2000,
-//   },
-//   {
-//     url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//     duration:2000,
-// },
-// {
-//   url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//   duration:2000,
-// },
-// {
-//   url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//   duration:2000,
-// },
-// {
-//   url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
-//   duration:2000,
-// },
-//   ];
-const stories = CardData.map((item) => {
-  return {
-    content: (props) => (
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const stories = CardData.map((item) => ({
+    content: ({ action, isPaused }) => (
       <div 
         style={{
-          backgroundColor:"#fff",
+          backgroundColor: "#fff",
           backgroundImage: `url(${item.backgroundImage})`, 
           height: '100%', 
           width: '100%', 
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          cursor:'pointer',
-         
+          cursor: 'pointer',
+          position: 'relative',
         }}
       >
-        <div style={{width:'40%',marginTop:'25px'}}>
-          <div style={{display:'flex', gap:'10px',justifyContent:'center',marginBottom:'5px'}}>
-            <div style={{display:'flex',backgroundColor:'#B03052',color:'#fff', gap:'10px',padding:'5px 15px'}}><img src='src/assets/stories/story.png' alt='Exclusive'/><p>Exclusive</p></div>
-            <div style={{display:'flex',backgroundColor:'#7ED4AD', color:'#fff', gap:'10px',padding:'5px 15px'}}><img src='src/assets/stories/quality.png' alt='Square Assured'/><p>Square Assured</p></div>
-          </div>
-        <Card 
-          image={item.image} 
-          title={item.title} 
-          description={item.description}
-          descriptionPrice={item.descriptionPrice}
-          iconCardData={item.iconCardData}
+        <div 
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            handlePreviousStory(currentIndex > 0 ? currentIndex - 1 : CardData.length - 1);
+            action('previous');
+          }}
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '50%',
+            height: '100%',
+            zIndex: 20,
+            cursor: 'pointer'
+          }}
         />
+        
+        <div 
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            handleNextStory(currentIndex < CardData.length - 1 ? currentIndex + 1 : 0);
+            action('next');
+          }}
+          style={{
+            position: 'absolute',
+            right: 0,
+            top: 0,
+            width: '50%',
+            height: '100%',
+            zIndex: 20,
+            cursor: 'pointer'
+          }}
+        />
+
+        <div style={{
+          width:'40%', 
+          marginTop:'25px', 
+          position: 'relative', 
+          zIndex: 10,
+          pointerEvents: 'none'
+        }}>
+          <div style={{
+            display:'flex', 
+            gap:'10px',
+            justifyContent:'center',
+            marginBottom:'5px',
+            pointerEvents: 'none'
+          }}>
+            <div style={{
+              display:'flex',
+              backgroundColor:'#B03052',
+              color:'#fff',
+              gap:'10px',
+              padding:'5px 15px',
+              pointerEvents: 'none'
+            }}>
+              <img src='src/assets/stories/story.png' alt='Exclusive'/>
+              <p>Exclusive</p>
+            </div>
+            <div style={{
+              display:'flex',
+              backgroundColor:'#7ED4AD',
+              color:'#fff',
+              gap:'10px',
+              padding:'5px 15px',
+              pointerEvents: 'none'
+            }}>
+              <img src='src/assets/stories/quality.png' alt='Square Assured'/>
+              <p>Square Assured</p>
+            </div>
+          </div>
+          <Card 
+            image={item.image} 
+            title={item.title} 
+            description={item.description}
+            descriptionPrice={item.descriptionPrice}
+            iconCardData={item.iconCardData}
+          />
         </div>
       </div>
     ),
+    duration: 8000
+  }));
+
+  const handleAllStoriesEnd = () => {
+    console.log('All stories ended');
+    setCurrentIndex(0);
   };
-});
-  
-return (
-    <>
 
-<Stories
-			stories={stories}
-      loop={true}
-			defaultInterval={8000}
-			width={'100%'}
-      height={'100%'}
-      storyContainerStyles={{ zIndex: 10 }}  
-		/>
+  const handleNextStory = (index) => {
+    console.log('Next story', index);
+    setCurrentIndex(index);
+  };
 
-    
-    
-    
-    
-    
-</>
-  )
-}
+  const handlePreviousStory = (index) => {
+    console.log('Previous story', index);
+    setCurrentIndex(index);
+  };
+
+  return (
+    <div style={{ 
+      width: '100%', 
+      height: '100%',
+      position: 'relative'
+    }}>
+      <Stories
+        stories={stories}
+        loop={true}
+        defaultInterval={8000}
+        width="100%"
+        height="100%"
+        storyStyles={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover'
+        }}
+        storyContainerStyles={{ 
+          zIndex: 1
+        }}
+        keyboardNavigation={true}
+        isPaused={false}
+        preventDefault={true}
+        onAllStoriesEnd={handleAllStoriesEnd}
+        onNext={(s, st) => handleNextStory(st)}
+        onPrevious={(s, st) => handlePreviousStory(st)}
+        currentIndex={currentIndex}
+      />
+    </div>
+  );
+};
 
 export default Story
