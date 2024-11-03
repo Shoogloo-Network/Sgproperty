@@ -41,11 +41,11 @@ const Home = () => {
         <div className="real-estate-sections">
       <div className="real-estate-section">
         <h1 className="section-title">For Real Estate Developers</h1>
-        <CardWithList />
+        <CardWithList url="src/assets/thumbnail/propvr-side.svg" backgroundColor="#ddf5ff" />
       </div>
       <div className="real-estate-section" style={{ backgroundColor: '#fff'}}>
         <h1 className="section-title">For Agents</h1>
-        <CardWithList />
+        <CardWithList url="src/assets/thumbnail/square-connect-side.svg" backgroundColor="#fff6e7"/>
       </div>
     </div>
     </div>

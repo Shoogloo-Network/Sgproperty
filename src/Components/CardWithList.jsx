@@ -1,10 +1,10 @@
 
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
 import './CardWithList.css';
-const CardWithList = () => {
+const CardWithList = ({url , backgroundColor}) => {
   return (
     <>
-      <div className="developer-card" style={{backgroundImage:'url(src/assets/thumbnail/propvr-side.svg',backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundColor:'#ddf5ff'}}>
+      <div className="developer-card" style={{backgroundImage:url,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundColor:backgroundColor}}>
       <div className="developer-card-header">
         <img src='src/assets/icon/propvr.svg' alt='ListCard Icon' className="developer-card-icon"/>
         <div className="developer-card-title">
