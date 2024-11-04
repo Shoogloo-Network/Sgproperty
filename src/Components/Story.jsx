@@ -146,8 +146,8 @@ const Story = () => {
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
-            handleNextStory(currentIndex < CardData.length - 1 ? currentIndex + 1 : 0);
-            action('next');
+            // handleNextStory(currentIndex < CardData.length - 1 ? currentIndex + 1 : 0);
+            // action('next');
             navigate('/detail-page')
           }}
           style={{

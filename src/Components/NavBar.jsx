@@ -8,12 +8,12 @@ const Navbar = () => {
 
     const navItems = [
         {
-            title: 'About Project',
+            title: 'City',
             id: 'about-project',
             dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ']
         },
         {
-            title: 'Project Overview',
+            title: 'Buy',
             id: 'project-overview',
             dropdown: null
         },
@@ -24,29 +24,29 @@ const Navbar = () => {
         },
         
         {
-            title: 'Floor Plans',
+            title: 'Rent',
             id: 'floor-plans',
             dropdown: ['2 BHK', '3 BHK']
         },
        
         {
-            title: 'Data Intelligence',
+            title: 'Projects',
             id: 'data-intelligence',
             dropdown: ['Project Sales Trend']
         },
         {
-            title: 'Amenities',
+            title: 'Agents',
             id: 'amenities',
             dropdown: null
         },
         {
-            title: 'Specifications',
+            title: 'Services',
             id: 'specifications',
             dropdown: null
         },
         
         {
-            title: 'About Builder',
+            title: 'Resources',
             id: 'about-builder',
             dropdown: null
         },
