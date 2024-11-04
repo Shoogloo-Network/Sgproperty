@@ -20,8 +20,17 @@
     margin: 0 auto;
     padding: 0 20px;
     overflow-x:hidden;
+    display: flex;
+ justify-content: space-around;
+    align-items: center;
   
 }
+.gradient-text {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Define your gradient here */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
 .nav-list {
     display: flex;

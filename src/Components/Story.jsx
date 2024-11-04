@@ -130,6 +130,7 @@ const Story = () => {
             // action('previous');
             // showForm && navigate('/detail-page')
              setShowForm(true);
+             console.log('Clicked Card Data:', item); // Added console log
          
           }}
           style={{
@@ -149,6 +150,7 @@ const Story = () => {
             // handleNextStory(currentIndex < CardData.length - 1 ? currentIndex + 1 : 0);
             // action('next');
             navigate('/detail-page')
+            console.log('Clicked Card Data:', item); // Added console log
           }}
           style={{
             position: 'absolute',

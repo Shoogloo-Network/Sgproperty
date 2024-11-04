@@ -60,7 +60,10 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
+            {/* <img src="src/assets/logo/logo.svg" alt="logo" height={50} width={100} /> */}
+            <h1 className='gradient-text'>Shoogloo Real Estate</h1>
                 <ul className="nav-list">
+                    
                     {navItems.map((item) => (
                         <li 
                             key={item.id}
