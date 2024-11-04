@@ -152,7 +152,7 @@ list:'50+ Banks Max Loan Amount',
                 
                 
                 <BtnPrimaryWithIcon 
-                    src="src/assets/icon/call.png" 
+                   iconName='FaPhone'
                     cnt="Request More Information or a callback"
                     onClick={() => setShowForm(true)}
                 />

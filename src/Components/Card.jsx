@@ -18,7 +18,7 @@ const Card = ({  title, description,descriptionPrice,iconCardData,onClick }) => 
           </div>
           
         </div>
-        <BtnPrimaryWithIcon src="src/assets/icon/call.png" cnt="Get a Callback"  />
+        <BtnPrimaryWithIcon iconName='FaPhone' cnt="Get a Callback"  />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
 import './CardWithList.css';
+
 const CardWithList = ({url , backgroundColor}) => {
   return (
     <>
@@ -26,7 +27,7 @@ const CardWithList = ({url , backgroundColor}) => {
         </div>
       </div>
       <div className="developer-card-footer">
-        <BtnPrimaryWithIcon src='src/assets/icon/right-arrow.png' cnt='Know More'/>
+        <BtnPrimaryWithIcon iconName='FaArrowRight' cnt='Know More'/>
       </div>
     </div>
     </>

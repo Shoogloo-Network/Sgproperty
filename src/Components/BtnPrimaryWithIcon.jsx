@@ -1,13 +1,23 @@
-
 import "./BtnPrimaryWithIcon.css";
-const BtnPrimaryWithIcon = ({src , cnt , onClick}) => {
+import * as FaIcons from 'react-icons/fa';   // Import the arrow icon from Font Awesome
+import React from 'react';
+
+const BtnPrimaryWithIcon = ({ iconName, cnt , onClick}) => {
+  console.log('Icon component:', FaIcons[iconName]);
+  
   return (
    <>
    
    <div className="callback-request" onClick={onClick}>
                     <div className='callback-request-div'>
-                    <img src={src} alt="phone" className="phone-icon" />
                     <p>{cnt}</p>
+                    {FaIcons[iconName] ? React.createElement(FaIcons[iconName], {
+                       style: {
+                         color: '#fff',
+                         fontSize: '24px'
+                       }
+                    }) : <span>Icon not found: {iconName}</span>}
+                    
                     </div>
                    
                 </div>
