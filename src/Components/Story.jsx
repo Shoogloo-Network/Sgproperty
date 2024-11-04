@@ -179,22 +179,26 @@ const Story = () => {
           }}>
             <div style={{
               display:'flex',
-              backgroundColor:'#B03052',
-              color:'#fff',
+              backgroundColor:'orange',
+              color:'black',
               gap:'10px',
               padding:'5px 15px',
-              pointerEvents: 'none'
+              pointerEvents: 'none',
+              fontWeight:'bold',
+              borderRadius:'4px'
             }}>
               <img src='src/assets/stories/story.png' alt='Exclusive'/>
               <p>Exclusive</p>
             </div>
             <div style={{
               display:'flex',
-              backgroundColor:'#7ED4AD',
-              color:'#fff',
+              backgroundColor:'#fff',
+              color:'black',
               gap:'10px',
               padding:'5px 15px',
-              pointerEvents: 'none'
+              pointerEvents: 'none',
+              fontWeight:'bold',
+               borderRadius:'4px',
             }}>
               <img src='src/assets/stories/quality.png' alt='Square Assured'/>
               <p>Square Assured</p>
