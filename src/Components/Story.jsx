@@ -1,8 +1,10 @@
 import Stories from 'react-insta-stories';
 import Card from './Card';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import FormPopup from './FormPopup';
 const Story = () => {
+  const navigate = useNavigate();
   const CardData =[{
     backgroundImage:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
     image:"src/assets/icon/call.png" ,
@@ -102,6 +104,7 @@ const Story = () => {
   },]
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showForm, setShowForm] = useState(false);
 
   const stories = CardData.map((item) => ({
     content: ({ action, isPaused }) => (
@@ -115,22 +118,26 @@ const Story = () => {
           backgroundSize: 'cover',
           cursor: 'pointer',
           position: 'relative',
+          
         }}
       >
         <div 
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
-            handlePreviousStory(currentIndex > 0 ? currentIndex - 1 : CardData.length - 1);
-            action('previous');
+            // handlePreviousStory(currentIndex > 0 ? currentIndex - 1 : CardData.length - 1);
+
+            // action('previous');
+            // showForm && navigate('/detail-page')
+             setShowForm(true);
+         
           }}
           style={{
             position: 'absolute',
             left: 0,
             top: 0,
-            width: '50%',
+            width: '30%',
             height: '100%',
-            zIndex: 20,
             cursor: 'pointer'
           }}
         />
@@ -141,14 +148,15 @@ const Story = () => {
             e.preventDefault();
             handleNextStory(currentIndex < CardData.length - 1 ? currentIndex + 1 : 0);
             action('next');
+            navigate('/detail-page')
           }}
           style={{
             position: 'absolute',
             right: 0,
             top: 0,
-            width: '50%',
+            width: '70%',
             height: '100%',
-            zIndex: 20,
+            zIndex: 2,
             cursor: 'pointer'
           }}
         />
@@ -190,13 +198,19 @@ const Story = () => {
               <p>Square Assured</p>
             </div>
           </div>
+          <div style={{
+            zIndex:1009
+          }}>
           <Card 
             image={item.image} 
             title={item.title} 
             description={item.description}
             descriptionPrice={item.descriptionPrice}
             iconCardData={item.iconCardData}
+            
+            
           />
+          </div>
         </div>
       </div>
     ),
@@ -246,6 +260,7 @@ const Story = () => {
         onPrevious={(s, st) => handlePreviousStory(st)}
         currentIndex={currentIndex}
       />
+      {showForm && <FormPopup onClose={() => setShowForm(false)} />}  
     </div>
   );
 };
