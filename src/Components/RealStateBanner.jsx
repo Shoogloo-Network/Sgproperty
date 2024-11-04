@@ -16,7 +16,7 @@ const RealStateBanner = () => {
   return (
     <div className="banner-container">
       <div className="banner-content">
-       
+       <h1>Real Estate Made Real Easy</h1>
         <RealStateHomeSearchBar 
           activeTab={activeTab}
           setActiveTab={setActiveTab}
