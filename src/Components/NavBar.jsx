@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('about-project');
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -56,12 +56,12 @@ const Navbar = () => {
             dropdown: null
         }
     ];
-
+const navigate=useNavigate();
     return (
         <nav className="navbar">
             <div className="navbar-container">
             {/* <img src="src/assets/logo/logo.svg" alt="logo" height={50} width={100} /> */}
-            <h1 className='gradient-text'>Shoogloo Real Estate</h1>
+            <h2 className='gradient-text' onClick={()=>{navigate('/')}}>Shoogloo Real Estate</h2>
                 <ul className="nav-list">
                     
                     {navItems.map((item) => (
