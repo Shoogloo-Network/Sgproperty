@@ -1,7 +1,21 @@
 import React from 'react'
 import Card from './Card'
+import { useState } from 'react';
+import FormPopup from './FormPopup';
 const SearchFilterWithCards = ({data}) => {
-   
+    const [showForm, setShowForm] = useState(false);
+
+    const onCardClick = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        // handlePreviousStory(currentIndex > 0 ? currentIndex - 1 : CardData.length - 1);
+
+        // action('previous');
+        // showForm && navigate('/detail-page')
+         setShowForm(true);
+         console.log('Clicked Card Data:', item); // Added console log
+     
+      }
   return (
     
     console.log(data),
@@ -32,6 +46,7 @@ const SearchFilterWithCards = ({data}) => {
             descriptionPrice={city.descriptionPrice}
             iconCardData={city.iconCardData}
             url={city.backgroundImage}
+            onClick={onCardClick}
           />
         
           
@@ -41,7 +56,7 @@ const SearchFilterWithCards = ({data}) => {
             ))
         ))
     }
-    
+      {showForm && <FormPopup onClose={() => setShowForm(false)} />}  
     </>
   )
 }

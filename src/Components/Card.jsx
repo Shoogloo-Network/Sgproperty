@@ -2,8 +2,15 @@ import React from 'react';
 import './Card.css';
 import IconCard from './IconCard';
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
-
+import { useNavigate } from 'react-router-dom';
 const Card = ({  title, description,descriptionPrice,iconCardData,onClick,url }) => {
+  const navigate = useNavigate();
+  const onImageClick = () => {
+    navigate('/detail-page');
+  };
+  const onCardClick = () => {
+    
+  };
   
   return (
     <div className="card fade-in" style={{cursor:'pointer' , zIndex:1009}}>
@@ -12,7 +19,7 @@ const Card = ({  title, description,descriptionPrice,iconCardData,onClick,url })
 {
   url?( <div style={{display:'flex',flexDirection:'row'}}>
   <div style={{width:'50%',padding:'10px',}}>
-    <img src={url} alt='card' style={{width:'100%',height:'100%',borderRadius:'10px'}}/>
+    <img src={url} alt='card' style={{width:'100%',height:'100%',borderRadius:'10px'}} onClick={onImageClick}/>
   </div>
   <div className="card-content" onClick={onClick} style={{width:'50%'}}>
     <h3 className="card-title">{title}</h3>
