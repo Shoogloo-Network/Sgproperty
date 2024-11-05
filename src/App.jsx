@@ -1,12 +1,12 @@
 
 import './App.css'
-import NavBar from './Components/NavBar'
+
 import ImageGallery from './Components/ImageGallery'
 import { useState } from 'react'
 import ImageGalleryPopup from './Components/ImageGalleryPopup';
 import PropertyInfo from './Components/PropertyInfo';
 import ProjectTabHome from './Components/ProjectTabHome';
-import Footer from './Components/Footer';
+
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     setIsPopup(false);
    }}/>:
    <>
-   <NavBar/>
+   
    <div className='homePageMainDiv'>
    <ImageGallery onClickImage={()=>{
      setIsPopup(true);
@@ -30,7 +30,7 @@ function App() {
    <PropertyInfo/>
    <ProjectTabHome/>
    </div>
-   <Footer/>
+   
    </>}
 
    </>

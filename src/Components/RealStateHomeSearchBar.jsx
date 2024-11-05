@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaSearch, FaMapMarkerAlt, FaChevronDown, FaChevronUp, FaBuilding, FaHome, FaKey, FaBed, FaMap, FaCity } from 'react-icons/fa';
 import './RealStateHomeSearchBar.css';
 
-const RealStateHomeSearchBar = () => {
+const RealStateHomeSearchBar = ({   iconCard , style , budgetRange , propertyTypeData}) => {
   const [activeTab, setActiveTab] = useState('buy');
   const [searchInput, setSearchInput] = useState('');
   const [propertyType, setPropertyType] = useState('residential');
@@ -12,71 +12,14 @@ const RealStateHomeSearchBar = () => {
   const [budget, setBudget] = useState({ min: '', max: '' });
   const dropdownRef = useRef(null);
 
-  const iconCards = [
-    {
-      id: 'new',
-      icon: <FaBuilding />,
-      title: "New",
-      subtitle: "Projects",
-      isNew: true
-    },
-    {
-      id: 'buy',
-      icon: <FaHome />,
-      title: "Buy",
-      subtitle: "Properties"
-    },
-    {
-      id: 'rent',
-      icon: <FaKey />,
-      title: "Rent",
-      subtitle: "Properties"
-    },
-    {
-      id: 'pg',
-      icon: <FaBed />,
-      title: "PG /",
-      subtitle: "Co-Living"
-    },
-    {
-      id: 'plot',
-      icon: <FaMap />,
-      title: "Plot",
-      subtitle: "& Land"
-    },
-    {
-      id: 'commercial',
-      icon: <FaCity />,
-      title: "Commercial",
-      subtitle: "Properties"
-    }
-  ];
-
-  const budgetRanges = {
-    min: ['5 Lac', '10 Lac', '20 Lac', '30 Lac', '40 Lac', '50 Lac', '60 Lac', '70 Lac', '80 Lac', '90 Lac', '1 Cr'],
-    max: ['10 Lac', '20 Lac', '30 Lac', '40 Lac', '50 Lac', '60 Lac', '70 Lac', '80 Lac', '90 Lac', '1 Cr', '2 Cr']
-  };
-
-  const propertyTypes = {
-    residential: [
-      'Apartment/Flat',
-      'Independent House/Villa',
-      'Plot/Land',
-      'Builder Floor',
-      'Penthouse',
-    ],
-    commercial: [
-      'Office Space',
-      'Shop/Showroom',
-      'Commercial Land',
-      'Warehouse/Godown',
-      'Industrial Building',
-    ]
-  };
+  
+const iconCards = iconCard;
+  const budgetRanges = budgetRange;
+  const propertyTypes = propertyTypeData;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (dropdownRef.current && !dropdownRef.current?.contains(event.target)) {
         setShowPropertyDropdown(false);
         setShowBudgetDropdown(false);
       }
@@ -125,9 +68,9 @@ const RealStateHomeSearchBar = () => {
   };
 
   return (
-    <div className="search-wrapper" ref={dropdownRef}>
-      <div className="icon-cards-container">
-        {iconCards.map((card) => (
+    <div style={style.searchWrapper} ref={dropdownRef}>
+      <div className={iconCards ? "icon-cards-container" : ""}>
+        {iconCards&&iconCards?.map((card) => (
           <div
             key={card.id}
             className={`icon-card ${activeTab === card.id ? 'active' : ''}`}
@@ -145,7 +88,7 @@ const RealStateHomeSearchBar = () => {
         ))}
       </div>
 
-      <div className="search-container">
+      <div  style={style.searchContainer}>
         <div className="search-input">
           <FaMapMarkerAlt className="location-icon" />
           <input 
@@ -175,7 +118,7 @@ const RealStateHomeSearchBar = () => {
               <div className="budget-columns">
                 <div className="budget-column">
                   <h4>Min Budget</h4>
-                  {budgetRanges.min.map(price => (
+                  {budgetRanges?.min?.map(price => (
                     <div 
                       key={price}
                       className={`budget-option ${budget.min === price ? 'selected' : ''}`}
@@ -187,7 +130,7 @@ const RealStateHomeSearchBar = () => {
                 </div>
                 <div className="budget-column">
                   <h4>Max Budget</h4>
-                  {budgetRanges.max.map(price => (
+                  {budgetRanges?.max?.map(price => (
                     <div 
                       key={price}
                       className={`budget-option ${budget.max === price ? 'selected' : ''}`}
@@ -237,7 +180,7 @@ const RealStateHomeSearchBar = () => {
                 </label>
               </div>
               <div className="property-options">
-                {propertyTypes[propertyType].map(type => (
+                {propertyTypes[propertyType]?.map(type => (
                   <label key={type} className="checkbox-label">
                     <input
                       type="checkbox"

@@ -18,7 +18,7 @@ const PropertyInfo = () => {
             img:'src/assets/icon/home-button.png',
             description:'Residential',
 
-        }
+        },
     ] ;
 
     const iconData1 =[

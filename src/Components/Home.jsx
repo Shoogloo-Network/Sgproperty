@@ -5,8 +5,8 @@ import IconCardBtnWithoutHover from './IconCardBtnWithoutHover'
 import RealStateBanner from './RealStateBanner'
 import './Home.css'
 import CardWithList from './CardWithList'
-import NavBar from './NavBar'
-import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
+
 
 const Home = () => {
   const iconDataForButton =[
@@ -20,11 +20,11 @@ const Home = () => {
     },
 ]
 
-
+const navigate = useNavigate();
 
   return (
     <>
-    <NavBar/>
+   
     <RealStateBanner/>
    
     <div className='home-container'>
@@ -34,7 +34,9 @@ const Home = () => {
    
         <div className='home-content' style={{cursor:'pointer'}}>
        
-      <IconCardBtnWithoutHover data={iconDataForButton}/>
+      <IconCardBtnWithoutHover data={iconDataForButton} onClick={()=>{
+        navigate('/search');
+      }}/>
       <Story/>
 
         </div>
@@ -50,7 +52,7 @@ const Home = () => {
     </div>
     </div>
     
-    <Footer/>
+    
     </>
   )
 }

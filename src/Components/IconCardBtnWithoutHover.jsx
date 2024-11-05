@@ -1,8 +1,8 @@
 import React from 'react'
 import './IconCardBtnWithoutHover.css';
-const IconCardBtnWithoutHover = ({data}) => {
+const IconCardBtnWithoutHover = ({data,onClick}) => {
   return (
-    <div className="icon-card-with-button-container-without-hover">
+    <div className="icon-card-with-button-container-without-hover" onClick={onClick}>
     {data.map((item, index) => (
       <div key={index+1} className="cardBtnMain-without-hover">
         <div className="cardBtnContent-without-hover">
