@@ -8,7 +8,7 @@ const City = ({cities}) => {
         {
         cities?.map((city ,index) => (
             city.cities?.map((city) => (
-                <div key={city.name} style={{display:'flex',justifyContent:'space-between',width:'fit-content',border:'1px solid black',padding:'10px',margin:'10px',borderRadius:'10px',gap:'10px'}}>
+                <div key={city.name} style={{display:'flex',justifyContent:'space-between',width:'fit-content',border:'1px solid black',padding:'10px',margin:'10px',borderRadius:'10px',gap:'10px',cursor:'pointer'}}>
                     <p>{city.name}</p>
                     <p style={{color:'#5f449b'}}>({city.userNumber})</p>
                 </div>
