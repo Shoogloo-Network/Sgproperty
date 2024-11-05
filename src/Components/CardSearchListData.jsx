@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 const CardSearchListData = memo(({ cities }) => {
     return (
         <>
-           <div style={{display:'flex', width:'80%',justifyContent:'space-between',margin:'auto'}}>
+           <div style={{display:'flex', width:'80%',justifyContent:'space-between',margin:'auto',gap:'20px'}}>
             <div style={{width:'70%'}}>
           <div style={{display:'flex', flexDirection:'column',backgroundColor:'#F5F5F5',borderRadius:'10px' , padding:'10px'}}>
           <div className='city-title' style={{display:'flex',alignItems:'center',gap:'10px'}}>

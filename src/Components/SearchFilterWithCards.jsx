@@ -17,32 +17,7 @@ const SearchFilterWithCards = ({data}) => {
             marginBottom:'5px',
             pointerEvents: 'none'
           }}>
-            <div style={{
-              display:'flex',
-              backgroundColor:'orange',
-              color:'black',
-              gap:'10px',
-              padding:'5px 15px',
-              pointerEvents: 'none',
-              fontWeight:'bold',
-              borderRadius:'4px'
-            }}>
-              <img src='src/assets/stories/story.png' alt='Exclusive'/>
-              <p>Exclusive</p>
-            </div>
-            <div style={{
-              display:'flex',
-              backgroundColor:'#fff',
-              color:'black',
-              gap:'10px',
-              padding:'5px 15px',
-              pointerEvents: 'none',
-              fontWeight:'bold',
-               borderRadius:'4px',
-            }}>
-              <img src='src/assets/stories/quality.png' alt='Square Assured'/>
-              <p>Square Assured</p>
-            </div>
+            
           </div>
           <div style={{
             zIndex:1009
