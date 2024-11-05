@@ -31,6 +31,7 @@ const SearchFilterWithCards = ({data}) => {
             description={city.description}
             descriptionPrice={city.descriptionPrice}
             iconCardData={city.iconCardData}
+            url={city.backgroundImage}
           />
         
           

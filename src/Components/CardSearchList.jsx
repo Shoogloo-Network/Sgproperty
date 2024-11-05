@@ -146,6 +146,7 @@ const CardSearchList = () => {
                     backgroundImage:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
                     image:"src/assets/icon/call.png" ,
                           title:"Abhishek" ,
+                          url:"src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
                           description:"Balewadi , Pune",
                           descriptionPrice:"₹86.00 Lac - 1.49 Cr",
                           iconCardData : [
@@ -165,6 +166,7 @@ const CardSearchList = () => {
                     backgroundImage:"src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
                     image:"src/assets/icon/call.png" ,
                           title:"Rise Food Mall" ,
+                          url:"src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
                           description:"Noida Sector 1",
                           descriptionPrice:"₹86.00 Lac - 1.49 Cr",
                           iconCardData : [
@@ -184,6 +186,7 @@ const CardSearchList = () => {
                     backgroundImage:"src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
                     image:"src/assets/icon/call.png" ,
                     title:"Shree Serenity" ,
+                    url:"src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
                     description:"Balewadi , Pune",
                     descriptionPrice:"₹86.00 Lac - 1.49 Cr",
                           iconCardData : [
