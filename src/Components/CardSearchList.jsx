@@ -129,8 +129,8 @@ const CardSearchList = () => {
             data: [
                 {
                 cities: [
-                    { name: "Pune", userNumber: "123" },
-                    { name: "Mumbai", userNumber: "456" },
+                    { name: "Punjab", userNumber: "123" },
+                    { name: "Haryana", userNumber: "456" },
                     { name: "Delhi", userNumber: "123" },
                     { name: "Noida", userNumber: "456" },
                     { name: "Gurgaon", userNumber: "456" },

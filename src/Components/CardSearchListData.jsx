@@ -11,7 +11,7 @@ const CardSearchListData = memo(({ cities }) => {
           <div style={{display:'flex', flexDirection:'column',backgroundColor:'#F5F5F5',borderRadius:'10px' , padding:'10px'}}>
           <div className='city-title' style={{display:'flex',alignItems:'center',gap:'10px'}}>
         <img src='src/assets/icon/location.png' alt='location' className='city-icon' width={20} height={20}/>
-        <h1>City</h1>
+        <h1 style={{fontSize:'20px',fontWeight:'bold'}}>City</h1>
       </div>
           <City cities={cities} />
           </div>
