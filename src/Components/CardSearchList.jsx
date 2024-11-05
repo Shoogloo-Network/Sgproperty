@@ -10,10 +10,15 @@ const CardSearchList = () => {
             data:  [
                 {
                 cities: [
-                    { name: "City 1", userNumber: "123" },
-                    { name: "City 2", userNumber: "456" },
-                    { name: "City 3", userNumber: "123" },
-                    { name: "City 4", userNumber: "456" }
+                    { name: "Pune", userNumber: "123" },
+                    { name: "Mumbai", userNumber: "456" },
+                    { name: "Delhi", userNumber: "123" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
                 ]
             },
             
@@ -124,10 +129,15 @@ const CardSearchList = () => {
             data: [
                 {
                 cities: [
-                    { name: "City 2", userNumber: "123" },
-                    { name: "City 2", userNumber: "456" },
-                    { name: "City 2", userNumber: "123" },
-                    { name: "City 2", userNumber: "456" }
+                    { name: "Pune", userNumber: "123" },
+                    { name: "Mumbai", userNumber: "456" },
+                    { name: "Delhi", userNumber: "123" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
+                    { name: "Noida", userNumber: "456" },
+                    { name: "Gurgaon", userNumber: "456" },
                 ]
             }
             ,
