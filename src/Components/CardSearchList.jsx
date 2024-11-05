@@ -6,7 +6,7 @@ const CardSearchList = () => {
     const buttonsData = [
         {
             id: 1,
-            lableName: "Button 1",
+            lableName: "Projects",
             data:  [
                 {
                 cities: [
@@ -120,7 +120,7 @@ const CardSearchList = () => {
         },
         {
             id: 2,
-            lableName: "Button 2",
+            lableName: "Resale",
             data: [
                 {
                 cities: [
@@ -270,19 +270,30 @@ const CardSearchList = () => {
 
     return (
         <div>
+            <div style={{display:'flex',gap:'10px',width:'80%',margin:'20px auto',backgroundColor:'#F5F5F5',borderRadius:'10px',padding:'10px'}}>
             {buttonsData.map((button) => (
                 <button
                     key={button.id}
                     className={activeTab === button.id ? 'activeCardSearchList' : ''}
                     onClick={() => handleClick(button.id)}
                     style={{
-                        backgroundColor: activeTab === button.id ? 'blue' : 'white',
-                        color: 'rgb(0, 0, 0)',
+                        padding: '10px 16px',
+                        fontSize: '16px',
+                        fontWeight: 'bold',
+                        border: 'none',
+                        borderRadius: '8px',
+                        margin: '0 8px',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        backgroundColor: activeTab === button.id ? '#1890ff' : '#f5f5f5',
+                        color: activeTab === button.id ? '#ffffff' : '#666666',
+                        boxShadow: activeTab === button.id ? '0 2px 4px rgba(24, 144, 255, 0.2)' : 'none',
                     }}
                 >
                     {button.lableName}
                 </button>
             ))}
+            </div>
             
             {memoizedCardList}
         </div>    
