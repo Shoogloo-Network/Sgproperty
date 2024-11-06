@@ -178,10 +178,10 @@ const ProjectTabHome = () => {
              
             </div>
           </div>
-          <div >
+          <div style={{padding:'2px 10px',}}>
             {activeDiv === 0 && <p>Introducing Provident Botanico, a prestigious real-estate project located in the heart of Whitefield, Bangalore. Strategically situated near Dabaspete Hosur Highway and Whitefield Main Road, this project offers seamless connectivity to major employment hubs, educational institutions, and entertainment spots. Surrounded by lush greenery, Provident Botanico is designed to be an eco-friendly and serene oasis amidst the bustle of city life.</p>}
             </div>
-            <div>
+            <div style={{padding:'2px 10px'}}>
             {activeDiv === 1 && <div><UnitTable data={data}/></div>}
             {activeDiv === 2 && <div className='infoDivList'>
                 <ul>

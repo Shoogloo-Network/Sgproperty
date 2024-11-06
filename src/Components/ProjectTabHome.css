@@ -72,6 +72,7 @@ cursor: pointer;
     margin-bottom: 20px;
     background: #fff;
     padding: 20px;
+    padding-bottom: 0px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
@@ -102,6 +103,7 @@ cursor: pointer;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s ease;
+   
   }
   
   .accordion-title {
@@ -124,10 +126,12 @@ cursor: pointer;
   
   .accordion-item.active .accordion-title i {
     transform: rotate(180deg);
+    
   }
   
   .accordion-content {
    /* padding: 16px; */
+  margin: 16px;
    background-color: #fff;
   }
   
