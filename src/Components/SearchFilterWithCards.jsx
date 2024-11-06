@@ -8,10 +8,6 @@ const SearchFilterWithCards = ({data}) => {
     const onCardClick = (e) => {
         e.stopPropagation();
         e.preventDefault();
-        // handlePreviousStory(currentIndex > 0 ? currentIndex - 1 : CardData.length - 1);
-
-        // action('previous');
-        // showForm && navigate('/detail-page')
          setShowForm(true);
          console.log('Clicked Card Data:', item); // Added console log
      
