@@ -64,6 +64,8 @@ cursor: pointer;
     padding: 20px;
     width: 65%;
     cursor: pointer;
+
+   
   }
   
   .section {
@@ -72,6 +74,7 @@ cursor: pointer;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
   }
   
   .section h2 {
@@ -132,7 +135,7 @@ cursor: pointer;
   /* Specific styles for info-divs */
   .info-divs {
     display: flex;
-    flex-direction: column;
+    
     gap: 10px;
   }
   

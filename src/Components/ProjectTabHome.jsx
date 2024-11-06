@@ -153,21 +153,37 @@ const ProjectTabHome = () => {
               onClick={() => handleDivClick(0)}
             >
               <h3>Project Overview</h3>
-              {activeDiv === 0 && <p>Introducing Provident Botanico, a prestigious real-estate project located in the heart of Whitefield, Bangalore. Strategically situated near Dabaspete Hosur Highway and Whitefield Main Road, this project offers seamless connectivity to major employment hubs, educational institutions, and entertainment spots. Surrounded by lush greenery, Provident Botanico is designed to be an eco-friendly and serene oasis amidst the bustle of city life.</p>}
+            
             </div>
+            
             <div
               className={`info-div ${activeDiv === 1 ? 'active' : ''}`}
               onClick={() => handleDivClick(1)}
             >
               <h3>Price List</h3>
-              {activeDiv === 1 && <div><UnitTable data={data}/></div>}
+              
             </div>
             <div
               className={`info-div ${activeDiv === 2 ? 'active' : ''}`}
               onClick={() => handleDivClick(2)}
             >
               <h3>Why Invest?</h3>
-              {activeDiv === 2 && <div className='infoDivList'>
+            
+            </div>
+            <div
+              className={`info-div ${activeDiv === 3 ? 'active' : ''}`}
+              onClick={() => handleDivClick(3)}
+            >
+              <h3>FAQ</h3>
+             
+            </div>
+          </div>
+          <div >
+            {activeDiv === 0 && <p>Introducing Provident Botanico, a prestigious real-estate project located in the heart of Whitefield, Bangalore. Strategically situated near Dabaspete Hosur Highway and Whitefield Main Road, this project offers seamless connectivity to major employment hubs, educational institutions, and entertainment spots. Surrounded by lush greenery, Provident Botanico is designed to be an eco-friendly and serene oasis amidst the bustle of city life.</p>}
+            </div>
+            <div>
+            {activeDiv === 1 && <div><UnitTable data={data}/></div>}
+            {activeDiv === 2 && <div className='infoDivList'>
                 <ul>
                     <li>Unbeatable location near Dabaspete and Whitefield Main Road.</li>
                     <li>Strategically connected to Hosur Highway and major highways.</li>
@@ -176,13 +192,7 @@ const ProjectTabHome = () => {
                     <li>Convenient access to major IT hubs and commercial centers.</li>
                 </ul>
                 </div>}
-            </div>
-            <div
-              className={`info-div ${activeDiv === 3 ? 'active' : ''}`}
-              onClick={() => handleDivClick(3)}
-            >
-              <h3>FAQ</h3>
-              {activeDiv === 3 && (
+                {activeDiv === 3 && (
                 
                 <div className="accordion">
                 <div
@@ -261,7 +271,6 @@ const ProjectTabHome = () => {
                 
               )}
             </div>
-          </div>
         </section>
         <section id="overview" className="section">
           <h2>Provident Botanico Project Overview</h2>
