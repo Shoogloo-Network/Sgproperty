@@ -22,19 +22,19 @@ const User = () => {
     }
 
     return (
-        <div style={{display:'flex', flexDirection:'row', gap:'20px'}}>
+        <div style={{display:'flex', flexDirection:'row', gap:'20px',width:'80%',margin:'auto'}}>
             <div>
                 <UserSectionList onClick={handleClick}/>
             </div>
-            <div>
+           <div style={{width:'100%'}}>
+           <div style={{width:'100%'}}>
                 {activeSection === 'profile' && <Profile/>}
             </div>
-            <div>
+            <div style={{width:'100%'}}> 
                 {activeSection === 'activity' && <Activity/>}
             </div>
-            <div>
-                {activeSection === 'interactions' && <Interactions/>}
-            </div>
+           </div>
+           
         </div>
     )
 }
