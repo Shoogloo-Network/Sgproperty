@@ -163,3 +163,53 @@
 .navbar-container::-webkit-scrollbar-thumb:hover {
     background: #555;
 } */
+
+.user-icon-container {
+   color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;  /* Match nav-item padding */
+    display: flex;
+    align-items: center;
+}
+
+.user-icon-container i {
+    font-size: 1.2rem;
+    color: inherit;  /* Match nav-link color */
+}
+
+.user-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 1000;
+    /* Match your existing dropdown-menu styles */
+    padding: 8px 0;
+    /* margin-top: 5px; */
+}
+
+/* Remove the existing .user-dropdown-menu .dropdown-item styles 
+   and use the same styles as your other dropdown items */
+.user-dropdown-menu .dropdown-item {
+    /* These should match your existing dropdown-item styles */
+    padding: 8px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.user-dropdown-menu .dropdown-item:hover {
+    /* Match your existing dropdown-item:hover styles */
+    background-color: #f5f5f5;
+    color: #007bff;  /* Or whatever highlight color you're using */
+}
+
+/* Add hover effect to the user icon */
+.user-icon-container:hover i {
+    color: #007bff;  /* Match your active/hover link color */
+}

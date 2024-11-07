@@ -106,6 +106,12 @@ const Story = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showForm, setShowForm] = useState(false);
 
+  const addToLocalStorage = (item) => {
+    const existingData = JSON.parse(localStorage.getItem('clickedCardsHistory') || '[]');
+    const newData = [...existingData, item];
+    localStorage.setItem('clickedCardsHistory', JSON.stringify(newData));
+  };
+
   const stories = CardData.map((item) => ({
     content: ({ action, isPaused }) => (
       <div 
@@ -131,7 +137,7 @@ const Story = () => {
             // showForm && navigate('/detail-page')
              setShowForm(true);
              console.log('Clicked Card Data:', item); // Added console log
-         
+          
           }}
           style={{
             position: 'absolute',
@@ -151,6 +157,7 @@ const Story = () => {
             // action('next');
             navigate('/detail-page')
             console.log('Clicked Card Data:', item); // Added console log
+            addToLocalStorage(item);
           }}
           style={{
             position: 'absolute',

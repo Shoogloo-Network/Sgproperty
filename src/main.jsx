@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './Components/Home.jsx'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
+import User from './Components/User'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/detail-page" element={<App />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/user" element={<User />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

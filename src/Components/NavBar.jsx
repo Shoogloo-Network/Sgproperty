@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
+import UserSectionList from './UserSectionList';
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('about-project');
     const [activeDropdown, setActiveDropdown] = useState(null);
+    const [showUserMenu, setShowUserMenu] = useState(false);
 
     const navItems = [
         {
@@ -56,7 +58,10 @@ const Navbar = () => {
             dropdown: null
         }
     ];
-const navigate=useNavigate();
+
+   
+
+    const navigate=useNavigate();
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -95,6 +100,17 @@ const navigate=useNavigate();
                             )}
                         </li>
                     ))}
+
+                    <li className="user-icon-container"
+                        onMouseEnter={() => setShowUserMenu(true)}
+                        onMouseLeave={() => setShowUserMenu(false)}>
+                        <i className="fas fa-user"></i>
+                        {showUserMenu && (
+                            <div className="user-dropdown-menu">
+                                <UserSectionList/>
+                            </div>
+                        )}
+                    </li>
                 </ul>
             </div>
         </nav>

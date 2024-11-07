@@ -85,7 +85,7 @@ top: 80%;
     font-size: 14px;
     color: #555;
     padding: 4px 0;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #555;
 }
 
 .cardBtnListItem:last-child {
