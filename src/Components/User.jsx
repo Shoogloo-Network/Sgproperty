@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import UserSectionList from './UserSectionList'
 import Activity from './Activity'
 import Profile from './Profile'

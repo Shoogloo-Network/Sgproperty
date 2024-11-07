@@ -1,4 +1,4 @@
-import React from 'react'
+
 import IconCard from './IconCard'
 const UserSectionList = ({onClick}) => {
  

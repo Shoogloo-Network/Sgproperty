@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CustomImageGallery from './CustomImageGallery'
 
 const ImageGalleryPopup = ({close}) => {

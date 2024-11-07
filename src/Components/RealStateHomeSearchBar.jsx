@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { FaSearch, FaMapMarkerAlt, FaChevronDown, FaChevronUp, FaBuilding, FaHome, FaKey, FaBed, FaMap, FaCity } from 'react-icons/fa';
+import  { useState, useRef, useEffect } from 'react';
+import { FaSearch, FaMapMarkerAlt, FaChevronDown, FaChevronUp} from 'react-icons/fa';
 import './RealStateHomeSearchBar.css';
 
 const RealStateHomeSearchBar = ({   iconCard , style , budgetRange , propertyTypeData}) => {

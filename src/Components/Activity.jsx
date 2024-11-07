@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Card, Typography, Grid, Box } from '@mui/material';
 import HistoryIcon from '@mui/icons-material/History';
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Activity = () => {
     setRecentCards(history);
   }, []);
 
-  const handleCardClick = (card) => {
+  const handleCardClick = () => {
     // navigate(`/detail-page/${card.id}`);
     navigate(`/detail-page`);
   };

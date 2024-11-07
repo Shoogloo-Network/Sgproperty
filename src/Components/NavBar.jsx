@@ -1,5 +1,5 @@
 // Navbar.js
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 import UserSectionList from './UserSectionList';
