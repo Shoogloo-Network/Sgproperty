@@ -70,7 +70,7 @@ const UserSectionList = ({onClick}) => {
 
   return (
    <>
-   <IconCard data={iconData} onClick={onClick} style={{display:'flex',flexDirection:'column',gap:'10px'}} />
+   <IconCard data={iconData} onClick={onClick} style={{display:'flex',flexDirection:'column',gap:'10px'} } imgStyle={{width:'25px',height:'25px'}} />
    </>
   )
 }
