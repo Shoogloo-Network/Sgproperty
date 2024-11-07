@@ -63,12 +63,13 @@ const Navbar = () => {
 
     const navigate=useNavigate();
 
-    const handleClick=(item)=>{
+    const handleClick=(item,index,setHoveredIndex)=>{
         const queryParams = new URLSearchParams({
             section: item.id
         }).toString();
         
         navigate(`/user?${queryParams}`);
+        setHoveredIndex(index);
     }
     return (
         <nav className="navbar">

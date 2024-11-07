@@ -19,6 +19,7 @@ const User = () => {
     const handleClick = (item) => {
         setActiveSection(item.id);
         setSearchParams({ section: item.id });
+        
     }
 
     return (
