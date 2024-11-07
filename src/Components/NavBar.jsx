@@ -62,6 +62,14 @@ const Navbar = () => {
    
 
     const navigate=useNavigate();
+
+    const handleClick=(item)=>{
+        const queryParams = new URLSearchParams({
+            section: item.id
+        }).toString();
+        
+        navigate(`/user?${queryParams}`);
+    }
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -107,7 +115,7 @@ const Navbar = () => {
                         <i className="fas fa-user"></i>
                         {showUserMenu && (
                             <div className="user-dropdown-menu">
-                                <UserSectionList/>
+                                <UserSectionList onClick={handleClick}/>
                             </div>
                         )}
                     </li>

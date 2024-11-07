@@ -1,39 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import UserSectionList from './UserSectionList'
 import Activity from './Activity'
 import Profile from './Profile'
+
+import { useSearchParams } from 'react-router-dom'
+
 const User = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const [activeSection, setActiveSection] = useState('profile');
-    const handleClick=(item)=>{
-        console.log(item);
+
+    useEffect(() => {
+        const section = searchParams.get('section');
+        if (section) {
+            setActiveSection(section);
+        }
+    }, [searchParams]);
+
+    const handleClick = (item) => {
         setActiveSection(item.id);
-    }
-  return (
-   
-    <>
-    <div style={{display:'flex',flexDirection:'row',gap:'20px'}}>
-    <div>
-   <UserSectionList onClick={handleClick}/>
-   </div>
-   <div>
-    {
-        activeSection ==='profile' && <Profile/>
-    }
-   </div>
-   <div>
-    {
-        activeSection ==='activity' && <Activity/>
+        setSearchParams({ section: item.id });
     }
 
-   </div>
-   <div>
-    {
-        activeSection ==='interactions' && <Interactions/>
-    }
-  </div>
-  </div>
-    </>
-  )
+    return (
+        <div style={{display:'flex', flexDirection:'row', gap:'20px'}}>
+            <div>
+                <UserSectionList onClick={handleClick}/>
+            </div>
+            <div>
+                {activeSection === 'profile' && <Profile/>}
+            </div>
+            <div>
+                {activeSection === 'activity' && <Activity/>}
+            </div>
+            <div>
+                {activeSection === 'interactions' && <Interactions/>}
+            </div>
+        </div>
+    )
 }
 
 export default User
