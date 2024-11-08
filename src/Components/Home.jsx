@@ -8,6 +8,7 @@ import CardWithList from './CardWithList'
 import { useNavigate } from 'react-router-dom'
 
 
+
 const Home = () => {
   const iconDataForButton =[
     {
@@ -21,9 +22,15 @@ const Home = () => {
 ]
 
 const navigate = useNavigate();
+const userName = JSON.parse(localStorage.getItem('user'));
+const onClick = () => {
+  if(!userName){
+    navigate('/login');
+  }
+}
 
   return (
-    <>
+    <div onClick={onClick}>
    
     <RealStateBanner/>
    
@@ -53,7 +60,7 @@ const navigate = useNavigate();
     </div>
     
     
-    </>
+    </div>
   )
 }
 

@@ -8,6 +8,8 @@ import Home from './Components/Home.jsx'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import User from './Components/User'
+import Login from './Components/Login'
+import Register from './Components/Register'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
@@ -18,6 +20,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/detail-page" element={<App />} />
         <Route path="/search" element={<Search />} />
         <Route path="/user" element={<User />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

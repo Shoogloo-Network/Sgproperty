@@ -4,10 +4,16 @@ import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 import UserSectionList from './UserSectionList';
 const Navbar = () => {
+  
+    const userName = JSON.parse(localStorage.getItem('user'));
     const [activeSection, setActiveSection] = useState('about-project');
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [showUserMenu, setShowUserMenu] = useState(false);
-
+    const handleLogout = () => {
+       
+        localStorage.removeItem('isLogin');
+        navigate('/login');
+    }
     const navItems = [
         {
             title: 'City',
@@ -116,7 +122,7 @@ const Navbar = () => {
                         <i className="fas fa-user"></i>
                         {showUserMenu && (
                             <div className="user-dropdown-menu">
-                                <UserSectionList onClick={handleClick}/>
+                                <UserSectionList onClick={handleClick} logout={handleLogout}/>
                             </div>
                         )}
                     </li>

@@ -1,7 +1,7 @@
 
 import IconCard from './IconCard'
-const UserSectionList = ({onClick}) => {
- 
+const UserSectionList = ({onClick, logout}) => {
+    const userName = JSON.parse(localStorage.getItem('user'));
     const iconData =[
         {
             img:'src/assets/icon/profile.svg',
@@ -30,22 +30,7 @@ const UserSectionList = ({onClick}) => {
             title:'MY LISTINGS',    
             id:'mylistings'
         },
-        {
-            img:'src/assets/icon/my-coupon.svg',
-            title:'MY COUPONS',
-            id:'mycoupons'
-
-        },
-        {
-            img:'src/assets/icon/my-agents.svg',
-            title:'MY AGENTS',
-            id:'myagents'
-        },
-        {
-            img:'src/assets/icon/my-services.svg',
-            title:'MY SERVICES',
-            id:'myservices'
-        },
+        
         {
             img:'src/assets/icon/my-rent-agreement.svg',
             title:'RENTAL AGREEMENTS',
@@ -63,14 +48,14 @@ const UserSectionList = ({onClick}) => {
         },
         {
             img:'src/assets/icon/lock-unlock.svg',
-            title:'LOGOUT',
+            title: userName ? 'LOGOUT':'LOGIN',
             id:'logout'
         },
     ] ;
 
   return (
    <>
-   <IconCard data={iconData} onClick={onClick} style={{display:'flex',flexDirection:'column',gap:'10px'} } imgStyle={{width:'25px',height:'25px'}} />
+   <IconCard data={iconData} onClick={onClick} style={{display:'flex',flexDirection:'column',gap:'10px'} } imgStyle={{width:'25px',height:'25px'}} logout={logout} />
    </>
   )
 }
