@@ -1,8 +1,37 @@
+import { useState, useEffect } from 'react';
+import IconCard from './IconCard';
 
-import IconCard from './IconCard'
 const UserSectionList = ({onClick, logout}) => {
-    const userName = JSON.parse(localStorage.getItem('user'));
-    const iconData =[
+    const [userData, setUserData] = useState(null);
+    const [userProfile, setUserProfile] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        city: '',
+        placeOfBirth: '',
+        propertyRequirement: '',
+        profileImage: '../assets/logo/logo.png' // default image
+    });
+
+    useEffect(() => {
+        // Get user data from localStorage
+        const storedUser = localStorage.getItem('user');
+        const storedProfile = localStorage.getItem('userProfile');
+
+        if (storedUser) {
+            setUserData(JSON.parse(storedUser));
+        }
+        
+        if (storedProfile) {
+            setUserProfile(prev => ({
+                ...prev,
+                ...JSON.parse(storedProfile)
+            }));
+        }
+    }, []); // Empty dependency array means this runs once on mount
+
+    const iconData = [
         {
             img:'src/assets/icon/profile.svg',
            title:'PROFILE',
@@ -48,16 +77,37 @@ const UserSectionList = ({onClick, logout}) => {
         },
         {
             img:'src/assets/icon/lock-unlock.svg',
-            title: userName ? 'LOGOUT':'LOGIN',
+            title: userData ? 'LOGOUT' : 'LOGIN',
             id:'logout'
         },
     ] ;
 
-  return (
-   <>
-   <IconCard data={iconData} onClick={onClick} style={{display:'flex',flexDirection:'column',gap:'10px'} } imgStyle={{width:'25px',height:'25px'}} logout={logout} />
-   </>
-  )
-}
+    return (
+        <>
+            <div style={{display:'flex',flexDirection:'row',gap:'10px',alignItems:'center',margin:'10px'}}>
+                <img 
+                    src={userProfile.profileImage || '../assets/logo/logo.png'} 
+                    alt='profile' 
+                    style={{width:'50px', height:'50px', borderRadius:'50%'}}
+                />
+                <div>
+                    <h4 style={{textAlign:'center', fontSize:'20px', fontWeight:'bold', color:'#000'}}>
+                        {userData?.name || 'Guest'}
+                    </h4>
+                    <p style={{textAlign:'center', fontSize:'14px', color:'#808080'}}>
+                        {userData?.email || 'Please login'}
+                    </p>
+                </div>
+            </div>
+            <IconCard 
+                data={iconData} 
+                onClick={onClick} 
+                style={{display:'flex', flexDirection:'column', gap:'10px'}} 
+                imgStyle={{width:'25px', height:'25px'}} 
+                logout={logout} 
+            />
+        </>
+    );
+};
 
-export default UserSectionList
+export default UserSectionList;

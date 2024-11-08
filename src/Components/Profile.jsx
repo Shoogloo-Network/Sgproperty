@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Profile.css';
 import { Avatar, IconButton } from '@mui/material';
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
@@ -21,6 +21,14 @@ const Profile = () => {
     propertyRequirement: '',
     profileImage: null
   });
+  const userName = JSON.parse(localStorage.getItem('user')) || { name: 'Guest' };
+
+  useEffect(() => {
+    const storedProfile = JSON.parse(localStorage.getItem('userProfile'));
+    if (storedProfile) {
+      setUserProfile(storedProfile);
+    }
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,6 +36,8 @@ const Profile = () => {
       ...prev,
       [name]: value
     }));
+   
+   
   };
 
   const handleImageChange = (e) => {
@@ -39,11 +49,15 @@ const Profile = () => {
       }));
     }
   };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem('userProfile', JSON.stringify(userProfile));
+    alert('Profile updated successfully!');
+  }
   return (
     <div className="profile-container">
       <div className="profile-header">
-        <h1>My Profile</h1>
+        <h1>{userName.name}</h1>
         <p>Manage your personal information</p>
       </div>
       
@@ -76,7 +90,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <form className="profile-form">
+      <form className="profile-form" onSubmit={handleSubmit}>
         <div className="form-grid">
           <div className="form-group">
             <PersonIcon className="input-icon" />

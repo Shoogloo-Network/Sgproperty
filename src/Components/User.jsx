@@ -14,7 +14,7 @@ const User = () => {
         if (section) {
             setActiveSection(section);
         }
-    }, [searchParams]);
+    });
 
     const handleClick = (item) => {
         setActiveSection(item.id);
