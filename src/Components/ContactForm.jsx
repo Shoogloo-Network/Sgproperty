@@ -34,12 +34,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Name</label>
+    <div className="contact">
+      <h2 className="contact__title">Contact Us</h2>
+      <form onSubmit={handleSubmit} className="contact__form">
+        <div className="contact__form-group">
+          <label className="contact__label">Name</label>
           <input
+            className="contact__input"
             type="text"
             name="name"
             value={formData.name}
@@ -48,9 +49,10 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className="form-group">
-          <label>Email ID</label>
+        <div className="contact__form-group">
+          <label className="contact__label">Email ID</label>
           <input
+            className="contact__input"
             type="email"
             name="email"
             value={formData.email}
@@ -59,14 +61,14 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className="form-group">
-          <label>Phone Number</label>
-          <div className="phone-input">
+        <div className="contact__form-group">
+          <label className="contact__label">Phone Number</label>
+          <div className="contact__phone-wrapper">
             <select
+              className="contact__country-select"
               name="countryCode"
               value={formData.countryCode}
               onChange={handleChange}
-              className="country-code-dropdown"
             >
               <option value="+91">+91 (India)</option>
               <option value="+1">+1 (USA)</option>
@@ -77,6 +79,7 @@ const ContactForm = () => {
               {/* Add other country codes as needed */}
             </select>
             <input
+              className="contact__input contact__input--phone"
               type="tel"
               name="phone"
               value={formData.phone}
@@ -86,52 +89,56 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div className="form-group">
-          <label>Interested in</label>
-          <div className="interest-options">
-            <div className="interest-option">
+        <div className="contact__form-group">
+          <label className="contact__label">Interested in</label>
+          <div className="contact__interests">
+            <div className="contact__interest-item">
               <input
+                className="contact__checkbox"
                 type="checkbox"
                 name="interests"
                 value="Buying"
                 checked={formData.interests.includes('Buying')}
                 onChange={handleChange}
               />
-              <span>Buying</span>
+              <span className="contact__checkbox-label">Buying</span>
             </div>
-            <div className="interest-option">
+            <div className="contact__interest-item">
               <input
+                className="contact__checkbox"
                 type="checkbox"
                 name="interests"
                 value="Selling"
                 checked={formData.interests.includes('Selling')}
                 onChange={handleChange}
               />
-              <span>Selling</span>
+              <span className="contact__checkbox-label">Selling</span>
             </div>
-            <div className="interest-option">
+            <div className="contact__interest-item">
               <input
+                className="contact__checkbox"
                 type="checkbox"
                 name="interests"
                 value="Home Loan"
                 checked={formData.interests.includes('Home Loan')}
                 onChange={handleChange}
               />
-              <span>Home Loan</span>
+              <span className="contact__checkbox-label">Home Loan</span>
             </div>
-            <div className="interest-option">
+            <div className="contact__interest-item">
               <input
+                className="contact__checkbox"
                 type="checkbox"
                 name="interests"
                 value="Interiors"
                 checked={formData.interests.includes('Interiors')}
                 onChange={handleChange}
               />
-              <span>Interiors</span>
+              <span className="contact__checkbox-label">Interiors</span>
             </div>
           </div>
         </div>
-        <button type="submit" className="contact-button">
+        <button type="submit" className="contact__submit-btn">
           Contact Now
         </button>
       </form>
