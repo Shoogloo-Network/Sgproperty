@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import IconCard from './IconCard';
+import { FaUserCircle } from 'react-icons/fa';
 
 const UserSectionList = ({onClick, logout}) => {
     const [userData, setUserData] = useState(null);
@@ -11,7 +12,7 @@ const UserSectionList = ({onClick, logout}) => {
         city: '',
         placeOfBirth: '',
         propertyRequirement: '',
-        profileImage: '../assets/logo/logo.png' // default image
+        profileImage: null
     });
 
     useEffect(() => {
@@ -85,11 +86,18 @@ const UserSectionList = ({onClick, logout}) => {
     return (
         <>
             <div style={{display:'flex',flexDirection:'row',gap:'10px',alignItems:'center',margin:'10px'}}>
-                <img 
-                    src={userProfile.profileImage || '../assets/logo/logo.png'} 
-                    alt='profile' 
-                    style={{width:'50px', height:'50px', borderRadius:'50%'}}
-                />
+                {userProfile.profileImage ? (
+                    <img 
+                        src={userProfile.profileImage} 
+                        alt='profile' 
+                        style={{width:'50px', height:'50px', borderRadius:'50%'}}
+                    />
+                ) : (
+                    <FaUserCircle 
+                        size={50} 
+                        color="#808080"
+                    />
+                )}
                 <div>
                     <h4 style={{textAlign:'center', fontSize:'20px', fontWeight:'bold', color:'#000'}}>
                         {userData?.name || 'Guest'}
