@@ -11,15 +11,16 @@ import { useNavigate } from 'react-router-dom';
 
 function App() {
  const [isPopup , setIsPopup] =useState(false);
- const navigate = useNavigate();
- const userName = JSON.parse(localStorage.getItem('user'));
- const onClick = () => {
-  if(!userName){
-    navigate('/login');
-  }
- }
+//  const navigate = useNavigate();
+//  const userName = JSON.parse(localStorage.getItem('user'));
+//  const onClick = () => {
+//   if(!userName){
+//     navigate('/login');
+//   }
+//  }
   return (
-   <div onClick={onClick}>
+    // onClick={onClick}
+   <div >
  
    
    {isPopup?<ImageGalleryPopup close={()=>{
