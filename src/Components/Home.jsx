@@ -23,14 +23,15 @@ const Home = () => {
 
 const navigate = useNavigate();
 const userName = JSON.parse(localStorage.getItem('user'));
-const onClick = () => {
-  if(!userName){
-    navigate('/login');
-  }
-}
+// const onClick = () => {
+//   if(!userName){
+//     navigate('/login');
+//   }
+// }
 
   return (
-    <div onClick={onClick}>
+    // onClick={onClick}
+    <div >
    
     <RealStateBanner/>
    
