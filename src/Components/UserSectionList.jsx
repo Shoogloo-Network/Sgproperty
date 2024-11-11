@@ -12,7 +12,7 @@ const UserSectionList = ({onClick, logout}) => {
         city: '',
         placeOfBirth: '',
         propertyRequirement: '',
-        profileImage: null
+        profileImage: 'src/assets/icon/profile.svg'
     });
 
     useEffect(() => {

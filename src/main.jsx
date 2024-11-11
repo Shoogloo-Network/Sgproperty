@@ -22,9 +22,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/detail-page" element={<App />} />
         <Route path="/search" element={<Search />} />
         <Route path="/user" element={
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <User />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         } />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
