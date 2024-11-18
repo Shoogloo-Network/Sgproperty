@@ -3,6 +3,11 @@ import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
 import './CardWithList.css';
 
 const CardWithList = ({url , backgroundColor}) => {
+  
+
+
+
+
   return (
     <>
       <div className="developer-card" style={{backgroundImage:url,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundColor:backgroundColor}}>

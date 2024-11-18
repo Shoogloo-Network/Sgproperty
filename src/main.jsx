@@ -10,7 +10,7 @@ import Footer from './Components/Footer'
 import User from './Components/User'
 import Login from './Components/Login'
 import Register from './Components/Register'
-import ProtectedRoute from './Components/ProtectedRoute'
+// import ProtectedRoute from './Components/ProtectedRoute'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -96,6 +96,7 @@ const RealStateBanner = () => {
       'Industrial Building',
     ]
   };
+  
   return (
     <div className="banner-container">
       <div className="banner-content">
