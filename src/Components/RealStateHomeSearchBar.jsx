@@ -153,7 +153,9 @@ const iconCards = iconCard;
               setShowBudgetDropdown(false);
             }}
           >
-            Property Type
+           {
+            propertyType
+           } 
             {showPropertyDropdown ? <FaChevronUp /> : <FaChevronDown />}
           </button>
 
