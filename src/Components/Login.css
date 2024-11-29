@@ -70,3 +70,43 @@
 .register-link a:hover {
   text-decoration: underline;
 }
+
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1rem;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .login-btn {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .register-link {
+    font-size: 0.9rem;
+  }
+}

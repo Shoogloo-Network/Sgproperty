@@ -213,3 +213,23 @@
 .user-icon-container:hover i {
     color: #007bff;  /* Match your active/hover link color */
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}

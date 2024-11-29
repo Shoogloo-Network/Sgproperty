@@ -89,3 +89,52 @@
     background-color: #0056b3;
   }
   
+
+
+  /* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .realEstateHeading {
+      font-size: 2em;
+  }
+
+  .homeDesktopTabBox ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .homeDesktopTabBox li {
+      margin: 5px 0;
+  }
+
+  .homeDesktopSearchBox form {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .homeDesktopSearchBox select,
+  .homeDesktopSearchBox input,
+  .homeDesktopSearchBox button {
+      width: 100%;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .realEstateHeading {
+      font-size: 1.5em;
+  }
+
+  .container.contentBox {
+      padding: 10px;
+  }
+
+  .homeDesktopSearchBox form {
+      gap: 5px;
+  }
+
+  .homeDesktopSearchBox select,
+  .homeDesktopSearchBox input,
+  .homeDesktopSearchBox button {
+      padding: 6px;
+  }
+}

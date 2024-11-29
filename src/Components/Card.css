@@ -56,3 +56,24 @@ margin: 20px ;
     color: #555;
   }
   
+
+
+  /* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .card {
+      margin: 10px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+      font-size: 1.2em;
+  }
+
+  .card-description {
+      font-size: 0.9em;
+  }
+
+  .card-content {
+      padding: 10px;
+  }
+}

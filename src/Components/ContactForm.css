@@ -156,3 +156,19 @@
 .contact__checkbox-label{
   position: absolute;
 }
+
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1rem;
+  }
+  
+  .contact__interests {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__checkbox-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

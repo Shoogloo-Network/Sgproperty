@@ -184,4 +184,93 @@ cursor: pointer;
     color: #666;
   }
 
- 
+ /* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .navbarHome {
+      padding: 8px;
+      margin-top: 10px;
+  }
+
+  .navList {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navList a {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+
+  .content {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .section {
+      padding: 15px;
+  }
+
+  .section h2 {
+      font-size: 20px;
+  }
+
+  .section p {
+      font-size: 14px;
+  }
+
+  .accordion-title {
+      padding: 12px;
+  }
+
+  .accordion-content {
+      margin: 12px;
+  }
+
+  .info-divs {
+      flex-direction: column;
+  }
+
+  .info-div {
+      margin-bottom: 10px;
+  }
+
+  .overviewSectionCardDiv {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarHome {
+      padding: 6px;
+      margin-top: 5px;
+  }
+
+  .navList a {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+
+  .section h2 {
+      font-size: 18px;
+  }
+
+  .section p {
+      font-size: 12px;
+  }
+
+  .accordion-title {
+      padding: 10px;
+  }
+
+  .accordion-content {
+      margin: 10px;
+  }
+
+  .info-div h3 {
+      font-size: 16px;
+  }
+
+  .info-div p {
+      font-size: 14px;
+  }
+}

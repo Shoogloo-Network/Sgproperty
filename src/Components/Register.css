@@ -87,3 +87,47 @@
 .login-link a:hover {
   text-decoration: underline;
 }
+
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .register-form {
+    padding: 2rem;
+  }
+
+  .form-group input {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .register-btn {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+
+  .register-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .register-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .login-link {
+    font-size: 0.85rem;
+  }
+}

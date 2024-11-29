@@ -97,3 +97,50 @@
 .cardBtnAction-without-hover:hover {
     background-color: #4a3670;
 }
+
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .icon-card-with-button-container-without-hover {
+        justify-content: center;
+    }
+
+    .cardBtnMain-without-hover {
+        max-width: 100%;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cardBtnTitle-without-hover,
+    .cardBtnDescription-without-hover {
+        font-size: 18px;
+    }
+
+    .cardBtnAction-without-hover {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-card-with-button-container-without-hover {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardBtnMain-without-hover {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cardBtnTitle-without-hover,
+    .cardBtnDescription-without-hover {
+        font-size: 16px;
+    }
+
+    .cardBtnAction-without-hover {
+        font-size: 14px;
+    }
+}

@@ -51,4 +51,51 @@
     display: flex;
     justify-content: flex-start;
   }
+
+
+
+  /* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .developer-card {
+      padding: 15px;
+      margin: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .developer-card-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .developer-card-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .developer-card-title {
+      font-size: 1.2em;
+  }
+
+  .developer-card-content {
+      gap: 8px;
+  }
+
+  .developer-card-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .developer-card-check-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+
+  .developer-card-footer {
+      justify-content: center;
+  }
+}
   

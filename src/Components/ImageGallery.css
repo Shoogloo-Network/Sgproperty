@@ -45,3 +45,30 @@ cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a nicer look */
     
 }
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .imageWrapperDiv {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .singleImageDiv {
+        width: 100%;
+    }
+
+    .multipleImageDiv {
+        width: 100%;
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+@media (max-width: 480px) {
+    .singleImageDiv img,
+    .multipleImageDiv img {
+        border-radius: 4px; /* Adjust rounded corners for smaller screens */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller screens */
+    }
+}

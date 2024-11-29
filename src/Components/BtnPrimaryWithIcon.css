@@ -26,3 +26,24 @@
     border-radius: 8px;
     font-weight: bold;
 }
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .callback-request {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .phone-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .callback-request-div {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

@@ -50,3 +50,41 @@ width: max-content;
   color: #7f8c8d;
   margin: 0;
 }
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .icon-card-container {
+    justify-content: center;
+  }
+
+  .icon-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .icon-card-title,
+  .icon-card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .icon-card-title,
+  .icon-card-description {
+    font-size: 12px;
+  }
+}

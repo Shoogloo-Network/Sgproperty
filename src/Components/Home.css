@@ -44,3 +44,38 @@ margin: 0 auto;
     margin-bottom: 20px;
   }
   
+
+
+
+  /* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .home-content {
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+  }
+
+  .real-estate-sections {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .real-estate-section {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .section-title {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container h1 {
+      font-size: 20px;
+  }
+
+  .section-title {
+      font-size: 1.2em;
+  }
+}
