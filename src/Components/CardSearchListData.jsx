@@ -7,7 +7,7 @@ const CardSearchListData = memo(({ cities }) => {
     return (
         <>
            <div style={{display:'flex', width:'80%',justifyContent:'space-between',margin:'auto',gap:'20px'}}>
-            <div style={{width:'70%'}}>
+            <div style={{width:'60%'}}>
           <div style={{display:'flex', flexDirection:'column',backgroundColor:'#F5F5F5',borderRadius:'10px' , padding:'10px'}}>
           <div className='city-title' style={{display:'flex',alignItems:'center',gap:'10px'}}>
         <img src='src/assets/icon/location.png' alt='location' className='city-icon' width={20} height={20}/>
@@ -17,7 +17,7 @@ const CardSearchListData = memo(({ cities }) => {
           </div>
             <SearchFilterWithCards data={cities}/>
             </div>
-            <div style={{width:'30%'}}>
+            <div style={{width:'40%', position:'sticky',top:'50px'}}>
                 <ContactForm/>
             </div>
            </div>

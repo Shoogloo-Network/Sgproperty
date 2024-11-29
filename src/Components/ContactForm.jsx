@@ -94,7 +94,7 @@ const ContactForm = () => {
           <div className="contact__interests">
             <div className="contact__interest-item">
               <input
-                className="contact__checkbox"
+               className="contact__checkbox-button"
                 type="checkbox"
                 name="interests"
                 value="Buying"
@@ -105,7 +105,7 @@ const ContactForm = () => {
             </div>
             <div className="contact__interest-item">
               <input
-                className="contact__checkbox"
+                className="contact__checkbox-button"
                 type="checkbox"
                 name="interests"
                 value="Selling"
@@ -116,7 +116,7 @@ const ContactForm = () => {
             </div>
             <div className="contact__interest-item">
               <input
-                className="contact__checkbox"
+                className="contact__checkbox-button"
                 type="checkbox"
                 name="interests"
                 value="Home Loan"
@@ -127,7 +127,7 @@ const ContactForm = () => {
             </div>
             <div className="contact__interest-item">
               <input
-                className="contact__checkbox"
+                className="contact__checkbox-button"
                 type="checkbox"
                 name="interests"
                 value="Interiors"
