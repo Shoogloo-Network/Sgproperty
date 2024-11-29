@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import IconCard from './IconCard';
 import { FaUserCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const UserSectionList = ({onClick, logout}) => {
     const [userData, setUserData] = useState(null);
@@ -102,9 +103,9 @@ const UserSectionList = ({onClick, logout}) => {
                     <h4 style={{textAlign:'center', fontSize:'20px', fontWeight:'bold', color:'#000'}}>
                         {userData?.name || 'Guest'}
                     </h4>
-                    <p style={{textAlign:'center', fontSize:'14px', color:'#808080'}}>
-                        {userData?.email || 'Please login'}
-                    </p>
+                    <a href="/login"><p style={{textAlign:'center', fontSize:'14px', color:'#808080'}}>
+                      {userData?.email || 'Please login'} 
+                    </p></a>
                 </div>
             </div>
             <IconCard 
