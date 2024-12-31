@@ -1,6 +1,7 @@
 import  { useEffect, useState } from 'react';
 import './AgentsCard.css'
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import logo from '../assets/icon/whatsappLogo-removebg-preview.png';
 const AgentsCard = () => {
     const [dataRes, setDataRes] = useState([]);
 
@@ -67,7 +68,7 @@ const AgentsCard = () => {
                     </div>
                     <div className="agent-contact">
                         <div className="whatsapp">
-                            <button>WhatsApp</button>
+                            <img src={logo} alt='whatsapp logo ' height={42} width={42}/>
                         </div>
                         <div className="appointment">
                           <BtnPrimaryWithIcon iconName='FaMobileAlt' cnt="Book an Appointment"  onClick={onButtonClick}/>

@@ -17,7 +17,7 @@ const SearchFilterWithCards = ({data}) => {
     console.log(data),
     <>
      {
-        data?.map((city ,index) => (
+        data?.map((city) => (
             city.cardData?.map((city) => (
                 <div key={city.name} className='card-search-list-data-item'>
                   <div style={{

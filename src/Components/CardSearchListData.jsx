@@ -1,8 +1,8 @@
-import React, { memo } from 'react'
+import  { memo } from 'react'
 import './CardSearchListData.css'
 import City from './City'
 import SearchFilterWithCards from './SearchFilterWithCards'
-import ContactForm from './ContactForm'
+import SearchContactForm from './SearchContactForm'
 const CardSearchListData = memo(({ cities }) => {
     return (
         <>
@@ -18,7 +18,7 @@ const CardSearchListData = memo(({ cities }) => {
             <SearchFilterWithCards data={cities}/>
             </div>
             <div style={{width:'40%', position:'sticky',top:'50px'}}>
-                <ContactForm/>
+                <SearchContactForm/>
             </div>
            </div>
         

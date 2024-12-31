@@ -1,0 +1,87 @@
+.agent-detail-main-div{
+display: flex;
+justify-content: center;
+gap: 50px;
+margin: 20px 40px;
+}
+
+
+.agent-contact-detail{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.agent-detail-left{
+    width: 40%;
+}
+
+
+
+.about-item{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    align-items: center;
+}
+
+
+.about-item-span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.agent-white-box{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 #0000000f;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.specialization-item{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #ebebeb;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+.specializations-list{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest-skill-item{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #ebebeb;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.interests-skills-list{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+h1{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+}

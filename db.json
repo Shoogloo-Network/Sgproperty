@@ -3,7 +3,7 @@
       {
         "id": 1,
         "agentId": "111",
-        "profileImage": "../src/assets/icon/userProfile.avif",
+        "profileImage": "../src/assets/icon/userProfile.svg",
         "proAgent": false,
         "preferedPartner":false,
         "trustedPartner":true,
@@ -15,12 +15,11 @@
         "agentName":"Vikas",
         "agentLanguage":"Hindi , English ",
          "listing":23
-
       },
       {
         "id": 2,
         "agentId": "112",
-        "profileImage": "../src/assets/icon/userProfile.avif",
+        "profileImage": "../src/assets/icon/userProfile.svg",
         "proAgent": false,
         "preferedPartner":false,
         "trustedPartner":true,
@@ -37,7 +36,7 @@
       {
         "id": 3,
         "agentId": "113",
-        "profileImage": "../src/assets/icon/userProfile.avif",
+        "profileImage": "../src/assets/icon/userProfile.svg",
         "proAgent": false,
         "preferedPartner":false,
         "trustedPartner":true,
@@ -54,7 +53,7 @@
       {
         "id": 4,
         "agentId": "114",
-        "profileImage": "../src/assets/icon/userProfile.avif",
+        "profileImage": "../src/assets/icon/userProfile.svg",
         "proAgent": false,
         "preferedPartner":false,
         "trustedPartner":true,
@@ -71,7 +70,7 @@
       {
         "id": 5,
         "agentId": "115",
-        "profileImage": "../src/assets/icon/userProfile.avif",
+        "profileImage": "../src/assets/icon/userProfile.svg",
         "proAgent": false,
         "preferedPartner":false,
         "trustedPartner":true,
@@ -84,5 +83,103 @@
          "agentLanguage":"Hindi , English ",
          "listing":59
       }
+    ],
+    "card-data":[
+      {
+        "backgroundImage": "../src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
+        "image": "../src/assets/icon/call.png",
+        "title": "Shree Serenity",
+        "description": "Balewadi , Pune",
+        "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+        "iconCardData": [
+          {
+            "img": "../src/assets/icon/building.png",
+            "title": "Project Size",
+            "description": "165 Unit . 1.25 Acres"
+          },
+          {
+            "img": "../src/assets/icon/web-management.png",
+            "title": "Configurations",
+            "description": "2-BHK , 3-BHK Flats"
+          }
+        ]
+      },
+      {
+        "backgroundImage": "../src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
+        "image": "../src/assets/icon/call.png",
+        "title": "Rise Food Mall",
+        "description": "Noida Sector 1",
+        "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+        "iconCardData": [
+          {
+            "img": "../src/assets/icon/building.png",
+            "title": "Project",
+            "description": "165 Unit . 1.25 Acres"
+          },
+          {
+            "img": "../src/assets/icon/web-management.png",
+            "title": "Configurations",
+            "description": "2-BHK , 3-BHK Flats"
+          }
+        ]
+      },
+      {
+        "backgroundImage": "../src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
+        "image": "../src/assets/icon/call.png",
+        "title": "Shree Serenity",
+        "description": "Balewadi , Pune",
+        "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+        "iconCardData": [
+          {
+            "img": "../src/assets/icon/building.png",
+            "title": "Project Size",
+            "description": "165 Unit . 1.25 Acres"
+          },
+          {
+            "img": "../src/assets/icon/web-management.png",
+            "title": "Configurations",
+            "description": "2-BHK , 3-BHK Flats"
+          }
+        ]
+      },
+      {
+        "backgroundImage": "../src/assets/stories/jp-codename-starlife-project-project-large-image1-5182.avif",
+        "image": "../src/assets/icon/call.png",
+        "title": "Rise Food Mall",
+        "description": "Noida Sector 1",
+        "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+        "iconCardData": [
+          {
+            "img": "../src/assets/icon/building.png",
+            "title": "Project Size",
+            "description": "165 Unit . 1.25 Acres"
+          },
+          {
+            "img": "../src/assets/icon/web-management.png",
+            "title": "Configurations",
+            "description": "2-BHK , 3-BHK Flats"
+          }
+        ]
+      },
+      {
+        "backgroundImage": "../src/assets/stories/haware-my-first-home-project-project-large-image1-5447.avif",
+        "image": "../src/assets/icon/call.png",
+        "title": "Shree Serenity",
+        "description": "Balewadi , Pune",
+        "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+        "iconCardData": [
+          {
+            "img": "../src/assets/icon/building.png",
+            "title": "Project Size",
+            "description": "165 Unit . 1.25 Acres"
+          },
+          {
+            "img": "../src/assets/icon/web-management.png",
+            "title": "Configurations",
+            "description": "2-BHK , 3-BHK Flats"
+          }
+        ]
+      }
     ]
+    
   }
