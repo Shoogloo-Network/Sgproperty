@@ -1,7 +1,7 @@
 // Navbar.js
 import { useState } from 'react';
 import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import UserSectionList from './UserSectionList';
 const Navbar = () => {
   
@@ -18,50 +18,59 @@ const Navbar = () => {
         {
             title: 'City',
             id: 'about-project',
-            dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ']
+            dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ'],
+            url:'/'
         },
         {
             title: 'Buy',
             id: 'project-overview',
-            dropdown: null
+            dropdown: null,
+             url:'/'
         },
         {
             title: 'Top Experts',
             id: 'top-experts',
-            dropdown: null
+            dropdown: null,
+             url:'/'
         },
         
         {
             title: 'Rent',
             id: 'floor-plans',
-            dropdown: ['2 BHK', '3 BHK']
+            dropdown: ['2 BHK', '3 BHK'],
+             url:'/'
         },
        
         {
             title: 'Projects',
             id: 'data-intelligence',
-            dropdown: ['Project Sales Trend']
+            dropdown: ['Project Sales Trend'],
+             url:'/'
         },
         {
             title: 'Agents',
             id: 'amenities',
-            dropdown: null
+            dropdown: null,
+             url:'/agents'
         },
         {
             title: 'Services',
             id: 'specifications',
-            dropdown: null
+            dropdown: null,
+             url:'/'
         },
         
         {
             title: 'Resources',
             id: 'about-builder',
-            dropdown: null
+            dropdown: null,
+             url:'/'
         },
         {
             title: 'Similar Projects',
             id: 'similar-projects',
-            dropdown: null
+            dropdown: null,
+             url:'/'
         }
     ];
 
@@ -91,25 +100,25 @@ const Navbar = () => {
                             onMouseEnter={() => setActiveDropdown(item.id)}
                             onMouseLeave={() => setActiveDropdown(null)}
                         >
-                            <a
-                                href={`#${item.id}`}
+                            <Link
+                            to={item.url}
                                 className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
                             >
                                 {item.title}
                                 {item.dropdown && (
                                     <span className="arrow-down">▼</span>
                                 )}
-                            </a>
+                            </Link>
                             {item.dropdown && activeDropdown === item.id && (
                                 <div className="dropdown-menu">
                                     {item.dropdown.map((subItem) => (
-                                        <a 
+                                        <Link 
                                             key={subItem}
-                                            href={`#${item.id}-${subItem.toLowerCase().replace(/\s+/g, '-')}`}
+                                            to={`#${item.id}-${subItem.toLowerCase().replace(/\s+/g, '-')}`}
                                             className="dropdown-item"
                                         >
                                             {subItem}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             )}

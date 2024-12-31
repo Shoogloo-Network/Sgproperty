@@ -6,7 +6,7 @@ import { useState } from 'react'
 import ImageGalleryPopup from './Components/ImageGalleryPopup';
 import PropertyInfo from './Components/PropertyInfo';
 import ProjectTabHome from './Components/ProjectTabHome';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 function App() {

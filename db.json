@@ -1,0 +1,88 @@
+{
+    "agents": [
+      {
+        "id": 1,
+        "agentId": "111",
+        "profileImage": "../src/assets/icon/userProfile.avif",
+        "proAgent": false,
+        "preferedPartner":false,
+        "trustedPartner":true,
+        "agentCompanyName":"Shoogloo",
+        "agentLocation":"Gurugram",
+        "agentContactNumber":"+91-1234567890",
+        "agentExperience":"3 yrs",
+        "agentRating":4.5,
+        "agentName":"Vikas",
+        "agentLanguage":"Hindi , English ",
+         "listing":23
+
+      },
+      {
+        "id": 2,
+        "agentId": "112",
+        "profileImage": "../src/assets/icon/userProfile.avif",
+        "proAgent": false,
+        "preferedPartner":false,
+        "trustedPartner":true,
+        "agentCompanyName":"Shoogloo",
+        "agentLocation":"Gurugram",
+        "agentContactNumber":"+91-1234567890",
+        "agentExperience":"3 yrs",
+        "agentRating":4.5,
+        "agentName":"Saurabh Sir",
+         "agentLanguage":"Hindi , English ",
+          "listing":41
+
+      },
+      {
+        "id": 3,
+        "agentId": "113",
+        "profileImage": "../src/assets/icon/userProfile.avif",
+        "proAgent": false,
+        "preferedPartner":false,
+        "trustedPartner":true,
+        "agentCompanyName":"Shoogloo",
+        "agentLocation":"Gurugram",
+        "agentContactNumber":"+91-1234567890",
+        "agentExperience":"3 yrs",
+         "agentRating":4.5,
+        "agentName":"Vivek Sir",
+         "agentLanguage":"Hindi , English ",
+          "listing":51
+
+      },
+      {
+        "id": 4,
+        "agentId": "114",
+        "profileImage": "../src/assets/icon/userProfile.avif",
+        "proAgent": false,
+        "preferedPartner":false,
+        "trustedPartner":true,
+        "agentCompanyName":"Shoogloo",
+        "agentLocation":"Gurugram",
+        "agentContactNumber":"+91-1234567890",
+        "agentExperience":"3 yrs",
+         "agentRating":4.5,
+        "agentName":"Das Sir",
+         "agentLanguage":"Hindi , English ",
+          "listing":54
+
+      },
+      {
+        "id": 5,
+        "agentId": "115",
+        "profileImage": "../src/assets/icon/userProfile.avif",
+        "proAgent": false,
+        "preferedPartner":false,
+        "trustedPartner":true,
+        "agentCompanyName":"Shoogloo",
+        "agentLocation":"Gurugram",
+        "agentContactNumber":"+91-1234567890",
+        "agentExperience":"3 yrs",
+         "agentRating":4.5,
+        "agentName":"Abhishek",
+         "agentLanguage":"Hindi , English ",
+         "listing":59
+      }
+    ]
+  }

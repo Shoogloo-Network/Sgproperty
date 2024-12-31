@@ -22,7 +22,7 @@ const Home = () => {
 ]
 
 const navigate = useNavigate();
-const userName = JSON.parse(localStorage.getItem('user'));
+// const userName = JSON.parse(localStorage.getItem('user'));
 // const onClick = () => {
 //   if(!userName){
 //     navigate('/login');
