@@ -2,9 +2,11 @@ import  { useEffect, useState } from 'react';
 import './AgentsCard.css'
 import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
 import logo from '../assets/icon/whatsappLogo-removebg-preview.png';
+import { Link } from 'react-router-dom';
+import FormPopup from './FormPopup';
 const AgentsCard = () => {
     const [dataRes, setDataRes] = useState([]);
-
+ const [showForm,setShowForm] = useState(false);
     useEffect(() => {
         data();
     }, []);
@@ -25,15 +27,16 @@ const AgentsCard = () => {
     const onButtonClick = ()=>{
         console.log("Button clicked");
     }
+
     return (
         <div className="agents-card">
         {dataRes.map((item) => (
             <div key={item.id} className="agent">
-                <div className="agent-profile">
+                
+                <Link to={`/agents/agent-details`}> <div className="agent-profile">
                     <img src={item.profileImage} alt={item.title} height={130} width={130} />
-                    <p>View Profile</p>
-                </div>
-
+                <p>View Profile</p>
+                </div></Link>
                 <div className="agent-details">
                     <div className="agent-partners">
                         <div className="trusted-partner listing-flex">
@@ -70,11 +73,12 @@ const AgentsCard = () => {
                         <div className="whatsapp">
                             <img src={logo} alt='whatsapp logo ' height={42} width={42}/>
                         </div>
-                        <div className="appointment">
+                        <div className="appointment" onClick={()=>{setShowForm(!showForm)}}>
                           <BtnPrimaryWithIcon iconName='FaMobileAlt' cnt="Book an Appointment"  onClick={onButtonClick}/>
                         </div>
                     </div>
                 </div>
+                {showForm && <FormPopup  onClose={() => setShowForm(false)}/>} 
             </div>
         ))}
         </div>

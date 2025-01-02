@@ -1,5 +1,5 @@
 // src/HomeBanner.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './HomeBanner.css';
 
 const HomeBanner = () => {
