@@ -1,4 +1,5 @@
 import './HomeInterior.css'
+import HomeInteriorCategory from './HomeInteriorCategory'
 
 const HomeInterior = () => {
   return (
@@ -96,7 +97,9 @@ From Concept to Creation: Your Furnitures Journey
       ></iframe>
     </div>
       </section>
-
+<section>
+  <HomeInteriorCategory/>
+</section>
     </div>
   )
 }
