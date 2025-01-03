@@ -9,12 +9,12 @@
 .homeinterior-item{
     margin-left: 16px;
     padding: 0 16px;
-    color: #fff;
+  color: black;
     border-radius: 5px;
     line-height: 38px;
     cursor: pointer;
     font-size: 14px;
-    background: #eb5976;
+    background: #f7f7f7;
 }
 
 
@@ -29,18 +29,37 @@
 
 
 .homeinterior-item-card{
-    width: 300px;
+    width: 350px;
+    cursor: pointer;
 }
 
 
 .homeinterior-item-card>img{
     width: 100%;
+    border-radius: 8px;
+    height: 100%;
 }
+.homeinterior-item-card>img:hover{
+    transform: scale(1.1);
+    width: 100%;
+    transition: 0.4;
 
+}
 .homeinterior-item-card>h4{
 position: relative;
-bottom:50px;
+bottom:72px;
 color: #fff;
 padding: 10px;
-
+background: rgba(0, 0, 0, 0.3);
 }
+
+
+.homeinterior-item-active{
+    background: #eb5976;
+    color: #fff;
+}
+
+
+
+
+

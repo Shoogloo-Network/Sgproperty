@@ -15,13 +15,16 @@ const CardSearchListData = memo(({ cities }) => {
       </div>
           <City cities={cities} />
           </div>
-            <SearchFilterWithCards data={cities}/>
+            
             </div>
             <div style={{width:'40%', position:'sticky',top:'50px'}}>
                 <SearchContactForm/>
             </div>
+            
            </div>
-        
+           <div style={{width:'80%',margin:'20px auto'}}>
+           <SearchFilterWithCards data={cities}/>
+           </div>
         </>
     )
 })

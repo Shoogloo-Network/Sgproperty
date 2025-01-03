@@ -64,7 +64,7 @@ const Navbar = () => {
             title: 'Resources',
             id: 'about-builder',
             dropdown: null,
-             url:'/'
+             url:'/home-interior'
         },
         {
             title: 'Similar Projects',
