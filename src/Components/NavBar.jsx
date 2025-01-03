@@ -63,7 +63,8 @@ const Navbar = () => {
         {
             title: 'Resources',
             id: 'about-builder',
-            dropdown: null,
+          
+            dropdown: ['Modular Kitchen', 'Wardrobe'],
              url:'/home-interior'
         },
         {
@@ -114,7 +115,7 @@ const Navbar = () => {
                                     {item.dropdown.map((subItem) => (
                                         <Link 
                                             key={subItem}
-                                            to={`#${item.id}-${subItem.toLowerCase().replace(/\s+/g, '-')}`}
+                                            to={`/home-interior#${item.id}-${subItem.toLowerCase().replace(/\s+/g, '-')}`}
                                             className="dropdown-item"
                                         >
                                             {subItem}
