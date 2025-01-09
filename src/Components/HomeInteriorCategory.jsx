@@ -42,6 +42,7 @@ const HomeInteriorCategory = () => {
     { id: '7', title: 'Kitchen False Ceiling' },
   ];
 
+ 
   const data = {
     'Living Room': [
       {

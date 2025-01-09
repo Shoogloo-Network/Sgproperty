@@ -1,7 +1,11 @@
+// import { useState } from 'react'
+
 import './HomeInterior.css'
 import HomeInteriorCategory from './HomeInteriorCategory'
 
 const HomeInterior = () => {
+ 
+  
   return (
     <div className='homeInterior'>
       <section className="HomeInteriorMainDiv">
@@ -100,6 +104,9 @@ From Concept to Creation: Your Furnitures Journey
 <section>
   <HomeInteriorCategory/>
 </section>
+
+
+
     </div>
   )
 }

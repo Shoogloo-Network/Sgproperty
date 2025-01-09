@@ -63,3 +63,20 @@ background: rgba(0, 0, 0, 0.3);
 
 
 
+.my-element {
+
+    background-color: blue;
+  
+    animation: colorChange 2s ease-in-out 1s; /* Animation with 1 second delay */
+  
+  }
+  
+  
+  
+  @keyframes colorChange {
+  
+    0% { background-color: blue; }
+  
+    100% { background-color: red; }
+  
+  } 
