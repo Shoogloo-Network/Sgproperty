@@ -4,6 +4,7 @@ import Activity from './Activity'
 import Profile from './Profile'
 
 import { useSearchParams } from 'react-router-dom'
+import PostProperty from './PostProperty';
 
 const User = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -33,6 +34,9 @@ const User = () => {
             </div>
             <div style={{width:'100%'}}> 
                 {activeSection === 'activity' && <Activity/>}
+            </div>
+            <div style={{width:'100%'}}> 
+                {activeSection === 'postproperty' && <PostProperty/>}
             </div>
            </div>
            

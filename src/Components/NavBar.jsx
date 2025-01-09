@@ -57,7 +57,7 @@ const Navbar = () => {
             title: 'Services',
             id: 'specifications',
             dropdown: null,
-             url:'/'
+             url:'/owner-plans'
         },
         
         {
