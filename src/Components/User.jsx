@@ -5,6 +5,8 @@ import Profile from './Profile'
 
 import { useSearchParams } from 'react-router-dom'
 import PostProperty from './PostProperty';
+import UploadAndDisplay from '../agentForms/components/UploadAndDisplay';
+import AgentPostPropertyForm1 from '../agentForms/forms/AgentPostPropertyForm1';
 
 const User = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -36,7 +38,8 @@ const User = () => {
                 {activeSection === 'activity' && <Activity/>}
             </div>
             <div style={{width:'100%'}}> 
-                {activeSection === 'postproperty' && <PostProperty/>}
+                {/* {activeSection === 'postproperty' && <PostProperty/>} */}
+                {activeSection === 'postproperty' && <AgentPostPropertyForm1/>}
             </div>
            </div>
            
