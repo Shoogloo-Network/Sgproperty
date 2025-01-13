@@ -14,6 +14,7 @@ import AgentDetails from './Components/AgentDetails.jsx'
 import HomeInterior from './Components/HomeInterior.jsx'
 import OwnerPlan from './Components/OwnerPlan.jsx'
 import './index.css'
+import Pq from './Components/Pq.jsx'
 // import ProtectedRoute from './Components/ProtectedRoute'
 
 createRoot(document.getElementById('root')).render(
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/agents/agent-details" element={<AgentDetails/>} />
         <Route path="/home-interior" element={<HomeInterior/>} />
         <Route path="/owner-plans" element={<OwnerPlan/>} />
+        <Route path="/pq" element={<Pq/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

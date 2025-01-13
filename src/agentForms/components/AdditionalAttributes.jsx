@@ -1,6 +1,44 @@
 import { useState } from 'react';
+import FurnishingDetailsPopUp from './FurnishingDetailsPopUp';
 
 const AdditionalAttributes = () => {
+  const furnishingItems = [
+    {
+      id: 1,
+      name: "Water Purifier",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 2,
+      name: "Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 3,
+      name: "Fridge",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 4,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 5,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 6,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 7,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+  ];
     const [formData, setFormData] = useState({
         additionalRooms: ["Pooja Room", "Servant Room", "Study Room", "Extra Room"],
         possessionStatus: "Ready To Move",
@@ -9,6 +47,12 @@ const AdditionalAttributes = () => {
         numberOfBathroom: "3",
         coveredParking: "3",
       });
+
+      const [popUpActive ,  setPopUpActive] = useState(false);
+
+      const handleFurnishedClick = ()=>{
+         setPopUpActive(true);
+      }
       const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
     
@@ -88,7 +132,7 @@ const AdditionalAttributes = () => {
     {/* Furnishing Status */}
     <div className="form-group" data-attribute={2}>
       <label>Furnishing Status</label>
-      <div className="flexBox number">
+      <div className="flexBox number" onClick={handleFurnishedClick}>
         {["Furnished", "Semi-Furnished", "Unfurnished"].map((status) => (
           <div className="customRadioBox" key={status}>
             <input
@@ -115,6 +159,9 @@ const AdditionalAttributes = () => {
     </div>
 
     {/* Other sections omitted for brevity */}
+    {
+      popUpActive && <FurnishingDetailsPopUp close={setPopUpActive} items={furnishingItems}/>
+    }
   </div>
   )
 }
