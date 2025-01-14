@@ -51,15 +51,15 @@ const Pq = () => {
         data.map((item)=>{
             return (
                 <div key={item.id}>
-                    <h1>{Object.keys(item).length}</h1>
-<h1>{item.name}</h1>
+                   {Object.keys(item).length > 0 && <h1>{item.name} +</h1>}
+{/* <h1>{item.name}</h1> */}
 <h2>{item?.children?.map((item)=>{
      
-    return(<div key={item.id}>  <h1>{Object.keys(item).length}</h1><h1>{item.name}</h1>
+    return(<div key={item.id}> {(Object.keys(item).length > 0) && <h1>{item.name} * </h1>}
     {
 
         item.children && item.children.map((childItem) => {return (<div key={childItem.id}>
-            <h1>{childItem.name}</h1>
+            <h1>{childItem.name} -</h1>
             {/* <h2>{childItem.size()}</h2> */}
         </div>)})
     }

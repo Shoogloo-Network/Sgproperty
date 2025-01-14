@@ -1,14 +1,14 @@
 .popupBox {
-    position: fixed;
-    top: 50px;
-    bottom: 0px;
+    
     width: 60%;
     margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    
+    height: 480px;
+    overflow-y: scroll;
     background: #fff;
+    margin-top: 30px;
   }
   
   .popupHeading {
@@ -21,7 +21,7 @@
     padding: 0;
   }
   .popupBody {
-    overflow-y: scroll;
+  
   }
   .furnishingList{
     display: flex;
@@ -40,7 +40,6 @@
     border: solid 1px #f3f3f5;
     min-height: 75px;
     width: 22%;
-    
     align-items: center;
     cursor: pointer;
     position: relative;
@@ -77,4 +76,42 @@
     width: 50px;
     text-align: center;
   }
-  
+
+  .icon-close{
+    cursor: pointer;
+    float: right;
+  }
+
+.popupSaveReset{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+  .reset-all{
+    background: #eaeaea;
+    color: #333;
+    border: #eaeaea solid 1px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .save-all{
+    background: #0E9F6E;
+    color: #fff;
+    border: #0E9F6E solid 1px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .popupBoxMainDiv{
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+  }

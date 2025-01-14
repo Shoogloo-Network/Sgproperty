@@ -44,8 +44,8 @@ const Navbar = () => {
         {
             title: 'Projects',
             id: 'data-intelligence',
-            dropdown: ['Project Sales Trend'],
-             url:'/'
+            dropdown: null,
+             url:'/search'
         },
         {
             title: 'Agents',

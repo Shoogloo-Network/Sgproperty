@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import FurnishingDetailsPopUp from './FurnishingDetailsPopUp';
-
+import './AdditionalAttributes.css'
 const AdditionalAttributes = () => {
   const furnishingItems = [
     {
@@ -38,9 +38,53 @@ const AdditionalAttributes = () => {
       name: "Exhaust Fan",
       icon: "../../src/assets/icon/ic_WaterPurifier.png",
     },
+    {
+      id: 8,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 9,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 10,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 11,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },{
+      id: 12,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 13,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 14,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 15,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
+    {
+      id: 16,
+      name: "Exhaust Fan",
+      icon: "../../src/assets/icon/ic_WaterPurifier.png",
+    },
   ];
     const [formData, setFormData] = useState({
-        additionalRooms: ["Pooja Room", "Servant Room", "Study Room", "Extra Room"],
+        additionalRooms: ["Pooja Room", "Servant Room", "Study Room"],
         possessionStatus: "Ready To Move",
         furnishingStatus: "Semi-Furnished",
         ageOfPropertyYears: "5-7",
@@ -159,6 +203,92 @@ const AdditionalAttributes = () => {
     </div>
 
     {/* Other sections omitted for brevity */}
+    {/* ageOfPropertyYears */}
+    <div className="form-group" data-attribute={1}>
+      <label>Age Of Property Years</label>
+      <div className="flexBox number">
+        {["0-1", "2-4","5-7","7-9","10+"].map((status) => (
+          <div className="customRadioBox" key={status}>
+            <input
+              type="radio"
+              className="radio"
+              name="ageOfPropertyYears"
+              value={status}
+              id={`age_of_property_years_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+              checked={formData.ageOfPropertyYears === status}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor={`age_of_property_years_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+            >
+              {status}
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* numberOfBathroom */}
+    <div className="form-group" data-attribute={1}>
+      <label>Number Of Bathrooms</label>
+      <div className="flexBox number">
+        {["1", "2","3","4","5","6","7","8"].map((status) => (
+          <div className="customRadioBox" key={status}>
+            <input
+              type="radio"
+              className="radio"
+              name="numberOfBathroom"
+              value={status}
+              id={`number_of_bathroom_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+              checked={formData.numberOfBathroom === status}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor={`number_of_bathroom_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+            >
+              {status}
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* coveredParking */}
+    <div className="form-group" data-attribute={1}>
+      <label>Covered Parking</label>
+      <div className="flexBox number">
+        {["N/A", "2","3","4"].map((status) => (
+          <div className="customRadioBox" key={status}>
+            <input
+              type="radio"
+              className="radio"
+              name="coveredParking"
+              value={status}
+              id={`covered_parking_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+              checked={formData.coveredParking === status}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor={`covered_parking_${status
+                .toLowerCase()
+                .replace(" ", "_")}`}
+            >
+              {status}
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
     {
       popUpActive && <FurnishingDetailsPopUp close={setPopUpActive} items={furnishingItems}/>
     }

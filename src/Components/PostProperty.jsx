@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './PostProperty.css';
 
-const PropertyForm = () => {
+const PropertyForm = ({active}) => {
   // Initialize state using useState hook
   const [formData, setFormData] = useState({
     listingType: '1', // Default value for Sale
@@ -244,7 +244,7 @@ const PropertyForm = () => {
               </div>
             </div>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={()=>{active(true)}}>Submit</button>
         </form>
       </div>
     </div>

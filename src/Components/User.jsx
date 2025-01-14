@@ -11,7 +11,7 @@ import AgentPostPropertyForm1 from '../agentForms/forms/AgentPostPropertyForm1';
 const User = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [activeSection, setActiveSection] = useState('profile');
-
+    const [activeForm1 , setActiveForm1]=useState(false);
     useEffect(() => {
         const section = searchParams.get('section');
         if (section) {
@@ -38,8 +38,8 @@ const User = () => {
                 {activeSection === 'activity' && <Activity/>}
             </div>
             <div style={{width:'100%'}}> 
-                {/* {activeSection === 'postproperty' && <PostProperty/>} */}
-                {activeSection === 'postproperty' && <AgentPostPropertyForm1/>}
+               {!activeForm1 && (activeSection === 'postproperty' && <PostProperty active = {setActiveForm1}/>)}
+                {activeForm1 &&(activeSection === 'postproperty' && <AgentPostPropertyForm1/>)}
             </div>
            </div>
            
