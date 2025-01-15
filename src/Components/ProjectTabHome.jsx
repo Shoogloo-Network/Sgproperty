@@ -155,24 +155,31 @@ const ProjectTabHome = () => {
               <h3>Project Overview</h3>
             
             </div>
-            
             <div
               className={`info-div ${activeDiv === 1 ? 'active' : ''}`}
               onClick={() => handleDivClick(1)}
+            >
+              <h3>RERA Registered</h3>
+            
+            </div>
+            
+            <div
+              className={`info-div ${activeDiv === 2 ? 'active' : ''}`}
+              onClick={() => handleDivClick(2)}
             >
               <h3>Price List</h3>
               
             </div>
             <div
-              className={`info-div ${activeDiv === 2 ? 'active' : ''}`}
-              onClick={() => handleDivClick(2)}
+              className={`info-div ${activeDiv === 3 ? 'active' : ''}`}
+              onClick={() => handleDivClick(3)}
             >
               <h3>Why Invest?</h3>
             
             </div>
             <div
-              className={`info-div ${activeDiv === 3 ? 'active' : ''}`}
-              onClick={() => handleDivClick(3)}
+              className={`info-div ${activeDiv === 4 ? 'active' : ''}`}
+              onClick={() => handleDivClick(4)}
             >
               <h3>FAQ</h3>
              
@@ -181,9 +188,12 @@ const ProjectTabHome = () => {
           <div style={{padding:'2px 10px',}}>
             {activeDiv === 0 && <p>Introducing Provident Botanico, a prestigious real-estate project located in the heart of Whitefield, Bangalore. Strategically situated near Dabaspete Hosur Highway and Whitefield Main Road, this project offers seamless connectivity to major employment hubs, educational institutions, and entertainment spots. Surrounded by lush greenery, Provident Botanico is designed to be an eco-friendly and serene oasis amidst the bustle of city life.</p>}
             </div>
+            <div style={{padding:'2px 10px',}}>
+            {activeDiv === 1 && <p>SgProperty RERA Reg. A51800000454 .</p>}
+            </div>
             <div style={{padding:'2px 10px'}}>
-            {activeDiv === 1 && <div><UnitTable data={data}/></div>}
-            {activeDiv === 2 && <div className='infoDivList'>
+            {activeDiv === 2 && <div><UnitTable data={data}/></div>}
+            {activeDiv === 3 && <div className='infoDivList'>
                 <ul>
                     <li>Unbeatable location near Dabaspete and Whitefield Main Road.</li>
                     <li>Strategically connected to Hosur Highway and major highways.</li>
@@ -192,7 +202,7 @@ const ProjectTabHome = () => {
                     <li>Convenient access to major IT hubs and commercial centers.</li>
                 </ul>
                 </div>}
-                {activeDiv === 3 && (
+                {activeDiv === 4 && (
                 
                 <div className="accordion">
                 <div
@@ -275,7 +285,7 @@ const ProjectTabHome = () => {
         <section id="overview" className="section">
           <h2>Provident Botanico Project Overview</h2>
           <div className='overviewSectionCardDiv'> 
-          <IconCard data={iconCardData} style={{display:'flex', flexWrap:'wrap',flexDirection:'column'}}/>
+          <IconCard data={iconCardData} style={{display:'flex',justifyContent:'space-between',}}/>
          
           </div>
         </section>
