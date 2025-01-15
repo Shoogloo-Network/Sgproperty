@@ -244,7 +244,7 @@ const PropertyForm = ({active}) => {
               </div>
             </div>
           </div>
-          <button type="submit" onClick={()=>{active(true)}}>Submit</button>
+          <button type="submit" onClick={()=>{active(true)}}>Save & Next</button>
         </form>
       </div>
     </div>

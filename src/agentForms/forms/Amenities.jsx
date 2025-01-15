@@ -46,8 +46,9 @@ const Amenities = () => {
   };
 
   return (
-    <>
+    <div className='main-div-amenities'>
      <h3>Select Amenities</h3>
+     <hr/>
      <div className='amenities-main'>
      
      {Object.keys(amenitiesList).map((amenity) => (
@@ -63,16 +64,17 @@ const Amenities = () => {
      ))}
    </div>
    <div>
-    <div>
+    <div className='additional-attributes-amenities-heading'>
       <h3>Defined Your Property : </h3>
       <p>Please Select the Key Words That Your Property Offers</p>
+      <hr/>
     </div>
-    <hr/>
-    <div>
+   
+    <div >
      <AdditionalAttributesAmenities/>
     </div>
    </div>
-    </>
+    </div>
    
   );
 };

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import FurnishingDetailsPopUp from './FurnishingDetailsPopUp';
 import './AdditionalAttributes.css'
-const AdditionalAttributes = () => {
+const AdditionalAttributes = ({active}) => {
   const furnishingItems = [
     {
       id: 1,
@@ -288,6 +288,12 @@ const AdditionalAttributes = () => {
           </div>
         ))}
       </div>
+    </div>
+
+    <div>
+      <button onClick={()=>{
+active(true)
+      }} className="submit-button">Save & Next</button>
     </div>
     {
       popUpActive && <FurnishingDetailsPopUp close={setPopUpActive} items={furnishingItems}/>

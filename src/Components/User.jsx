@@ -13,6 +13,7 @@ const User = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [activeSection, setActiveSection] = useState('profile');
     const [activeForm1 , setActiveForm1]=useState(false);
+    const [activeForm2 , setActiveForm2]= useState(false);
     useEffect(() => {
         const section = searchParams.get('section');
         if (section) {
@@ -40,8 +41,8 @@ const User = () => {
             </div>
             <div style={{width:'100%'}}> 
                {!activeForm1 && (activeSection === 'postproperty' && <PostProperty active = {setActiveForm1}/>)}
-                {/* {activeForm1 &&(activeSection === 'postproperty' && <AgentPostPropertyForm1/>)} */}
-                {activeForm1 &&(activeSection === 'postproperty' && <Amenities/>)}
+                {(activeForm1 && !activeForm2 )&&(activeSection === 'postproperty' && <AgentPostPropertyForm1 active = {setActiveForm2}/>)}
+                {activeForm2 &&(activeSection === 'postproperty' && <Amenities/>)}
             </div>
            </div>
            

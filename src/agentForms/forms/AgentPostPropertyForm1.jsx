@@ -3,7 +3,7 @@ import AdditionalAttributes from '../components/AdditionalAttributes';
 import UploadAndDisplay from '../components/UploadAndDisplay';
 import './AgentPostPropertyForm1.css';
 
-const AgentPostPropertyForm1 = () => {
+const AgentPostPropertyForm1 = ({active}) => {
  
   return (
     <>
@@ -17,7 +17,7 @@ const AgentPostPropertyForm1 = () => {
     </div>
     <div>
    
-  <AdditionalAttributes/>
+  <AdditionalAttributes active={active}/>
 
     </div>
     </>
