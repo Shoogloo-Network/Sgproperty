@@ -1,5 +1,5 @@
-import React from 'react';
-import '../Components/IconCardWithButton.css';
+
+import './IconCardWithButton.css';
 
 const IconCardWithButton = ({ data }) => {
   return (

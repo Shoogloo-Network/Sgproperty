@@ -1,9 +1,9 @@
-import IconCard from './IconCard';
-import IconCardWithButton from './IconCardWithButton';
-import "../Components/PropertyInfo.css";
-import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import IconCard from '../../cards/IconCard';
+import IconCardWithButton from '../../cards/IconCardWithButton';
+import "./PropertyInfo.css";
+import BtnPrimaryWithIcon from '../../buttons/BtnPrimaryWithIcon';
 import { useEffect, useState } from 'react';
-import FormPopup from './FormPopup';
+import FormPopup from '../../userform/FormPopup';
 const iconData =[
     {
         img:'src/assets/icon/verified.png',

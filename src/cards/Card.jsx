@@ -1,7 +1,7 @@
 
 import './Card.css';
 import IconCard from './IconCard';
-import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import BtnPrimaryWithIcon from '../buttons/BtnPrimaryWithIcon';
 import { useNavigate } from 'react-router-dom';
 const Card = ({  title, description,descriptionPrice,iconCardData,onClick,url }) => {
   const navigate = useNavigate();

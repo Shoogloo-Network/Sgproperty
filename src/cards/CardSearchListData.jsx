@@ -1,8 +1,8 @@
 import  { memo } from 'react'
 import './CardSearchListData.css'
-import City from './City'
+import City from '../searchProject/components/City'
 import SearchFilterWithCards from './SearchFilterWithCards'
-import SearchContactForm from './SearchContactForm'
+import SearchContactForm from '../userform/SearchContactForm'
 const CardSearchListData = memo(({ cities }) => {
     return (
         <>

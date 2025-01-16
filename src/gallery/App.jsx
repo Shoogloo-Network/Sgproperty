@@ -1,11 +1,11 @@
 
 import './App.css'
 
-import ImageGallery from './Components/ImageGallery'
+import ImageGallery from './components/ImageGallery'
 import { useState } from 'react'
-import ImageGalleryPopup from './Components/ImageGalleryPopup';
-import PropertyInfo from './Components/PropertyInfo';
-import ProjectTabHome from './Components/ProjectTabHome';
+import ImageGalleryPopup from './components/ImageGalleryPopup';
+import PropertyInfo from './components/PropertyInfo';
+import ProjectTabHome from './components/ProjectTabHome';
 // import { useNavigate } from 'react-router-dom';
 
 

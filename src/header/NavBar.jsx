@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
-import UserSectionList from './UserSectionList';
+import UserSectionList from '../gallery/components/UserSectionList';
 const Navbar = () => {
   
     const userName = JSON.parse(localStorage.getItem('user'));

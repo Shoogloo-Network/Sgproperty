@@ -1,4 +1,4 @@
-import '../Components/FormPopup.css';
+import './FormPopup.css';
 
 const FormPopup = ({ onClose }) => {
     const handleSubmit = (e) => {

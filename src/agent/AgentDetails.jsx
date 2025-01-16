@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AgentDetails.css";
-import Card from "./Card";
-import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import Card from "../cards/Card";
+import BtnPrimaryWithIcon from '../buttons/BtnPrimaryWithIcon';
 const AgentDetails = () => {
   const [dataRes, setDataRes] = useState([]);
   const [CardData, setCardData] = useState([]);

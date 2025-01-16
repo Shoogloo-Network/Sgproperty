@@ -1,8 +1,8 @@
-import Story from "./Story";
-import IconCardBtnWithoutHover from "./IconCardBtnWithoutHover";
-import RealStateBanner from "./RealStateBanner";
+import Story from "./components/Story";
+import IconCardBtnWithoutHover from "../cards/IconCardBtnWithoutHover";
+import RealStateBanner from "./components/RealStateBanner";
 import "./Home.css";
-import CardWithList from "./CardWithList";
+import CardWithList from "../cards/CardWithList";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {

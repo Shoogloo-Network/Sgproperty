@@ -1,4 +1,4 @@
-import BtnPrimaryWithIcon from "./BtnPrimaryWithIcon";
+import BtnPrimaryWithIcon from "../buttons/BtnPrimaryWithIcon";
 import "./CardWithList.css";
 
 const CardWithList = ({ url, backgroundColor }) => {

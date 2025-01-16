@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, Events, scrollSpy } from 'react-scroll';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import UnitTable from './UnitTable';
-import IconCard from './IconCard';
+import IconCard from '../../cards/IconCard';
 const ProjectTabHome = () => {
   const [activeSection, setActiveSection] = useState('');
   const [activeDiv, setActiveDiv] = useState(null);

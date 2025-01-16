@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import { useState } from 'react';
-import FormPopup from './FormPopup';
+import FormPopup from '../userform/FormPopup';
 const SearchFilterWithCards = ({data}) => {
     const [showForm, setShowForm] = useState(false);
 

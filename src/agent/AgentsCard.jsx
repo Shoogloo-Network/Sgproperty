@@ -1,9 +1,9 @@
 import  { useEffect, useState } from 'react';
 import './AgentsCard.css'
-import BtnPrimaryWithIcon from './BtnPrimaryWithIcon';
+import BtnPrimaryWithIcon from '../buttons/BtnPrimaryWithIcon';
 import logo from '../assets/icon/whatsappLogo-removebg-preview.png';
 import { Link } from 'react-router-dom';
-import FormPopup from './FormPopup';
+import FormPopup from '../userform/FormPopup';
 const AgentsCard = () => {
     const [dataRes, setDataRes] = useState([]);
  const [showForm,setShowForm] = useState(false);

@@ -1,8 +1,8 @@
 import Stories from "react-insta-stories";
-import Card from "./Card";
+import Card from "../../cards/Card";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import FormPopup from "./FormPopup";
+import FormPopup from "../../userform/FormPopup";
 
 const Story = () => {
   const navigate = useNavigate();

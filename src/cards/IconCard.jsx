@@ -1,4 +1,4 @@
-import '../Components/IconCard.css';
+import './IconCard.css';
 import { useState } from 'react';
 const IconCard = ({ data , onClick ,style,imgStyle,logout}) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

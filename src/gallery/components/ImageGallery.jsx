@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import '../Components/ImageGallery.css';
+import './ImageGallery.css';
 
 const ImageGallery = ({ onClickImage }) => {
   const [imageData, setImageData] = useState(null);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import IconCard from './IconCard';
+import IconCard from '../../cards/IconCard';
 import { FaUserCircle } from 'react-icons/fa';
 
 

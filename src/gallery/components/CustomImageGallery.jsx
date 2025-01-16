@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import ContactForm from './ContactForm';
-import IconCard from './IconCard';
+import ContactForm from '../../userform/SearchContactForm';
+import IconCard from '../../cards/IconCard';
 import '../Components/CustomImageGallery.css';
 
 const CustomImageGallery = ({ close }) => {

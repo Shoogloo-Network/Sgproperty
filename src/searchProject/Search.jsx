@@ -1,6 +1,6 @@
 
-import RealStateHomeSearchBar from './RealStateHomeSearchBar'
-import CardSearchList from './CardSearchList'
+import RealStateHomeSearchBar from '../home/components/RealStateHomeSearchBar'
+import CardSearchList from '../cards/CardSearchList'
 const Search = () => {
     const iconCards = null;
     const style = {

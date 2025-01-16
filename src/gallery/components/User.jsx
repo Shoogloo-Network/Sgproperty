@@ -1,11 +1,11 @@
 import  { useState, useEffect } from 'react';
 import UserSectionList from './UserSectionList'
-import Activity from './Activity'
-import Profile from './Profile'
+import Activity from '../../Components/Activity'
+import Profile from '../../Components/Profile'
 import { useSearchParams } from 'react-router-dom'
-import PostProperty from './PostProperty';
-import AgentPostPropertyForm1 from '../agentForms/forms/AgentPostPropertyForm1';
-import Amenities from '../agentForms/forms/Amenities';
+import PostProperty from '../../Components/PostProperty';
+import AgentPostPropertyForm1 from '../../agentForms/forms/AgentPostPropertyForm1';
+import Amenities from '../../agentForms/forms/Amenities';
 
 const User = () => {
     const [searchParams, setSearchParams] = useSearchParams();
