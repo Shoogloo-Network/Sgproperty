@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './IconCardBtnWithoutHover.css';
 const IconCardBtnWithoutHover = ({data,onClick}) => {
   return (

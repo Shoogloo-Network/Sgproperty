@@ -1,4 +1,4 @@
-        import React, { useState } from 'react'
+        import { useState } from 'react'
         import { useNavigate } from 'react-router-dom';
         import { Link } from 'react-router-dom';
         import './Login.css';
@@ -42,7 +42,7 @@
                     </div>
                     <button className="login-btn" type='submit'>Login</button>
                     <div className="register-link">
-                        <p>Don't have an account? <Link to="/register">Register</Link></p>
+                        <p>Don not have an account? <Link to="/register">Register</Link></p>
                     </div>
                 </form>
             </div>

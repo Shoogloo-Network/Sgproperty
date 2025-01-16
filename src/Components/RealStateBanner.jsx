@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
+
 import RealStateHomeSearchBar from './RealStateHomeSearchBar';
-import IconCard from './IconCard';
 import './RealStateBanner.css';
 import { FaBuilding, FaHome, FaKey, FaBed, FaMap, FaCity } from 'react-icons/fa';
 
 const RealStateBanner = () => {
-  const [activeTab, setActiveTab] = useState('buy');
-
-  const handleIconCardClick = (type) => {
-    setActiveTab(type);
-  };
-
+ 
   const style = {
     searchWrapper:{
-      width: '100%',
+    width: '100%',
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '40px 20px',
@@ -26,9 +20,6 @@ const RealStateBanner = () => {
       display: 'flex',
       alignItems:' center',
       gap: '15px',
-   
-     
-     
       marginTop: '20px',
       background: 'white',
       padding: '20px',
@@ -102,7 +93,6 @@ const RealStateBanner = () => {
       <div className="banner-content">
        <h1>Real Estate Made Real Easy</h1>
         <RealStateHomeSearchBar 
-       
           iconCard={iconCards}
           style={style}
           budgetRange={budgetRanges}

@@ -10,7 +10,6 @@ const AgentsCard = () => {
     useEffect(() => {
         data();
     }, []);
-
     const data = async () => {
         try {
             const response = await fetch('http://localhost:8000/agents');
@@ -23,11 +22,9 @@ const AgentsCard = () => {
             console.error('There was a problem with the fetch operation:', error);
         }
     };
-
     const onButtonClick = ()=>{
         console.log("Button clicked");
     }
-
     return (
         <div className="agents-card">
         {dataRes.map((item) => (

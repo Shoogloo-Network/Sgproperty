@@ -590,5 +590,559 @@
           "Date of Birth": "1973-06-15",
           "Job": "Petroleum engineer"
       }
-  ]
+  ],
+  
+    "buttonsData": [
+      {
+        "id": 1,
+        "lableName": "Projects",
+        "data": [
+          {
+            "cities": [
+              { "name": "Pune", "userNumber": "123" },
+              { "name": "Mumbai", "userNumber": "456" },
+              { "name": "Delhi", "userNumber": "123" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" }
+            ]
+          },
+          {
+            "cardData": [
+              {
+                "backgroundImage": "src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Shree Serenity",
+                "description": "Balewadi , Pune",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Rise Food Mall",
+                "description": "Noida Sector 1",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project ",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Shree Serenity",
+                "description": "Balewadi , Pune",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/jp-codename-starlife-project-project-large-image1-5182.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Rise Food Mall",
+                "description": "Noida Sector 1",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/haware-my-first-home-project-project-large-image1-5447.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Shree Serenity",
+                "description": "Balewadi , Pune",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "lableName": "Resale",
+        "data": [
+          {
+            "cities": [
+              { "name": "Punjab", "userNumber": "123" },
+              { "name": "Haryana", "userNumber": "456" },
+              { "name": "Delhi", "userNumber": "123" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" },
+              { "name": "Noida", "userNumber": "456" },
+              { "name": "Gurgaon", "userNumber": "456" }
+            ]
+          },
+          {
+            "cardData": [
+              {
+                "backgroundImage": "src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Abhishek",
+                "url": "src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
+                "description": "Balewadi , Pune",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Rise Food Mall",
+                "url": "src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
+                "description": "Noida Sector 1",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project ",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              },
+              {
+                "backgroundImage": "src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
+                "image": "src/assets/icon/call.png",
+                "title": "Shree Serenity",
+                "url": "src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
+                "description": "Balewadi , Pune",
+                "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+                "iconCardData": [
+                  {
+                    "img": "src/assets/icon/building.png",
+                    "title": "Project Size",
+                    "description": "165 Unit . 1.25 Acres"
+                  },
+                  {
+                    "img": "src/assets/icon/web-management.png",
+                    "title": "Configurations",
+                    "description": "2-BHK , 3-BHK Flats"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "agentsHeader": [
+        { "id": 1, "name": "Agent 1", "icon": "fa-solid fa-user" },
+        { "id": 2, "name": "Agent 2", "icon": "fa-solid fa-user" },
+        { "id": 3, "name": "Agent 3", "icon": "fa-solid fa-user" },
+        { "id": 4, "name": "Agent 4", "icon": "fa-solid fa-user" },
+        { "id": 5, "name": "Agent 5", "icon": "fa-solid fa-user" }
+      ],
+      "locations": [
+        { "id": 1, "name": "Chatterpur, Delhi" },
+        { "id": 2, "name": "Saket, Delhi" },
+        { "id": 3, "name": "Gurugram, Haryana" },
+        { "id": 4, "name": "Palm, Delhi" },
+        { "id": 5, "name": "Noida, Uttar Pradesh" },
+        { "id": 6, "name": "Haridwar, Uttarakhand" }
+      ],
+      "propertyTypes": [
+        { "id": 1, "name": "New Projects" },
+        { "id": 2, "name": "Rental/Resale" }
+      ],
+      "cardData": [
+    {
+      "id": 1,
+      "backgroundImage": "src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
+      "image": "src/assets/icon/call.png",
+      "title": "Shree Serenity",
+      "description": "Balewadi, Pune",
+      "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+      "iconCardData": [
+        {
+          "img": "src/assets/icon/building.png",
+          "title": "Project Size",
+          "description": "165 Unit . 1.25 Acres"
+        },
+        {
+          "img": "src/assets/icon/web-management.png",
+          "title": "Configurations",
+          "description": "2-BHK , 3-BHK Flats"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "backgroundImage": "src/assets/stories/krisala-41-westworld-project-project-large-image1-4756.avif",
+      "image": "src/assets/icon/call.png",
+      "title": "Rise Food Mall",
+      "description": "Noida Sector 1",
+      "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+      "iconCardData": [
+        {
+          "img": "src/assets/icon/building.png",
+          "title": "Project",
+          "description": "165 Unit . 1.25 Acres"
+        },
+        {
+          "img": "src/assets/icon/web-management.png",
+          "title": "Configurations",
+          "description": "2-BHK , 3-BHK Flats"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "backgroundImage": "src/assets/stories/rise-food-mall-project-project-large-image1-6738.avif",
+      "image": "src/assets/icon/call.png",
+      "title": "Shree Serenity",
+      "description": "Balewadi, Pune",
+      "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+      "iconCardData": [
+        {
+          "img": "src/assets/icon/building.png",
+          "title": "Project Size",
+          "description": "165 Unit . 1.25 Acres"
+        },
+        {
+          "img": "src/assets/icon/web-management.png",
+          "title": "Configurations",
+          "description": "2-BHK , 3-BHK Flats"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "backgroundImage": "src/assets/stories/jp-codename-starlife-project-project-large-image1-5182.avif",
+      "image": "src/assets/icon/call.png",
+      "title": "Rise Food Mall",
+      "description": "Noida Sector 1",
+      "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+      "iconCardData": [
+        {
+          "img": "src/assets/icon/building.png",
+          "title": "Project Size",
+          "description": "165 Unit . 1.25 Acres"
+        },
+        {
+          "img": "src/assets/icon/web-management.png",
+          "title": "Configurations",
+          "description": "2-BHK , 3-BHK Flats"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "backgroundImage": "src/assets/stories/haware-my-first-home-project-project-large-image1-5447.avif",
+      "image": "src/assets/icon/call.png",
+      "title": "Shree Serenity",
+      "description": "Balewadi, Pune",
+      "descriptionPrice": "₹86.00 Lac - 1.49 Cr",
+      "iconCardData": [
+        {
+          "img": "src/assets/icon/building.png",
+          "title": "Project Size",
+          "description": "165 Unit . 1.25 Acres"
+        },
+        {
+          "img": "src/assets/icon/web-management.png",
+          "title": "Configurations",
+          "description": "2-BHK , 3-BHK Flats"
+        }
+      ]
+    }
+  ],
+  "units": [
+    { "unitType": "2 BHK 986 Sq. Ft. Apartment", "area": "986 Sq. Ft. (Saleable)", "price": "₹ 86.00 Lac" },
+    { "unitType": "2 BHK 1088 Sq. Ft. Apartment", "area": "1088 Sq. Ft. (Saleable)", "price": "₹ 1.02 Cr" },
+    { "unitType": "3 BHK 1334 Sq. Ft. Apartment", "area": "1334 Sq. Ft. (Saleable)", "price": "₹ 1.25 Cr" },
+    { "unitType": "3 BHK 1494 Sq. Ft. Apartment", "area": "1494 Sq. Ft. (Saleable)", "price": "₹ 1.49 Cr" }
+  ],
+  "iconCards": [
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" },
+    { "img": "src/assets/icon/buildings.png", "title": "Project Status", "description": "New Launch" }
+  ],
+ "iconDataForButton": [
+    {
+      "img": "src/assets/icon/home-loan.png",
+      "title": "Home Loan EMI Starts at $ 58.07k",
+      "description": "For Provident Botanico",
+      "listDescription": [
+        {
+          "list": "50+ Banks Max Loan Amount"
+        },
+        {
+          "list": "Lowest ROI"
+        },
+        {
+          "list": "Fast Disbursement"
+        }
+      ],
+      "buttonName": "Get CIBIL-Linked Estimate"
+    },
+    {
+      "img": "src/assets/icon/home-interior.png",
+      "title": "Interiors Package Starting from ₹2.1L",
+      "description": "For Provident Botanico",
+      "listDescription": [
+        {
+          "list": "Made to Order"
+        },
+        {
+          "list": "Timely Delivery"
+        },
+        {
+          "list": "Lowest Prices"
+        }
+      ],
+      "buttonName": "Book a Consultation Now"
+    },
+    {
+      "img": "src/assets/icon/valuation.png",
+      "title": "Professional Valuation Report in $999",
+      "description": "For Provident Botanico",
+      "listDescription": [
+        {
+          "list": "10M Property Seekers"
+        },
+        {
+          "list": "Fast Disbursement"
+        },
+        {
+          "list": "Fast Disbursement"
+        }
+      ],
+      "buttonName": "Request a Professional Valuation"
+    },
+    {
+      "img": "src/assets/icon/sell-or-rent-property.png",
+      "title": "Are you Looking to Advertise a Property",
+      "description": "For Provident Botanico",
+      "listDescription": [
+        {
+          "list": "50+ Banks Max Loan Amount"
+        },
+        {
+          "list": "Transaction Every 15 Minutes"
+        },
+        {
+          "list": "50+ Banks Max Loan Amount"
+        }
+      ],
+      "buttonName": "Reach Out to Us Now"
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": 1,
+      "mainImage": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+      "multipleImages": [
+        "src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg",
+        "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg",
+        "src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg"
+      ]
+    }
+  ],
+  "gallery": {
+    "projects": [
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Cover Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Master Plan Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Clubhouse External Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Sports Facilities Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Amenities Features"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Floor Plans"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Push Creative"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Videos"
+      }
+    ],
+    "units": [
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Cover Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Master Plan Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Clubhouse External Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Sports Facilities Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Amenities Features"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Floor Plans"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Push Creative"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Videos"
+      }
+    ],
+    "locality": [
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Cover Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Master Plan Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Clubhouse External Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Sports Facilities Image"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Amenities Features"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-clubhouse-external-image1-2344.avif",
+        "description": "Floor Plans"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-project-large-image1-1056.avif",
+        "description": "Push Creative"
+      },
+      {
+        "original": "src/assets/propertyImage/provident-botanico-project-master-plan-image1-3047.jpg",
+        "thumbnail": "src/assets/thumbnail/provident-botanico-project-master-plan-image1-3047.avif",
+        "description": "Videos"
+      }
+    ]
+  }
+  
+  
+  
   }

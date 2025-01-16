@@ -1,4 +1,4 @@
-// src/HomeBanner.js
+
 import { useState } from 'react';
 import './HomeBanner.css';
 
@@ -18,7 +18,7 @@ const HomeBanner = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Handle search logic here
+   
     console.log(`Searching for ${searchQuery} in ${selectedOption}`);
   };
 

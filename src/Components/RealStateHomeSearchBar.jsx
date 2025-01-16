@@ -11,9 +11,7 @@ const RealStateHomeSearchBar = ({   iconCard , style , budgetRange , propertyTyp
   const [selectedUnitTypes, setSelectedUnitTypes] = useState([]);
   const [budget, setBudget] = useState({ min: '', max: '' });
   const dropdownRef = useRef(null);
-
-  
-const iconCards = iconCard;
+  const iconCards = iconCard;
   const budgetRanges = budgetRange;
   const propertyTypes = propertyTypeData;
 

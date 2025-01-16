@@ -1,23 +1,34 @@
-
+import  { useState, useEffect } from 'react';
 import '../Components/ImageGallery.css';
 
 const ImageGallery = ({ onClickImage }) => {
-    
+  const [imageData, setImageData] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:8000/galleryImages')
+      .then((response) => response.json())
+      .then((data) => setImageData(data[0])) // Assuming there's one set of images
+      .catch((error) => console.error('Error fetching images:', error));
+  }, []);
+
+  if (!imageData) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <div className="imageWrapperDiv" onClick={onClickImage}>
         <div className="singleImageDiv">
-            <img src='src/assets/propertyImage/provident-botanico-project-project-large-image1-1056.jpg' alt='Property image'/>
+          <img src={imageData.mainImage} alt="Property image" />
         </div>
         <div className="multipleImageDiv">
-        <img src='src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg' alt='Main Property image'/>
-        <img src='src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg' alt=' ClubHouse Property image'/>
-        <img src='src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg' alt=' botanico Property image'/>
-        <img src='src/assets/propertyImage/provident-botanico-project-amenities-features1-3750.jpg' alt=' amenties Property image'/>
+          {imageData.multipleImages.map((image, index) => (
+            <img key={index} src={image} alt={`Property image ${index + 1}`} />
+          ))}
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ImageGallery
+export default ImageGallery;

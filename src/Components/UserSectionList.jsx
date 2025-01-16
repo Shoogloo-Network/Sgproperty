@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import IconCard from './IconCard';
 import { FaUserCircle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+
 
 const UserSectionList = ({onClick, logout}) => {
     const [userData, setUserData] = useState(null);

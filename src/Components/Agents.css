@@ -83,3 +83,20 @@
     display: flex;
     gap: 10px;
 }
+
+
+.agents-card-main-div{
+    display: flex;
+    margin: 20px 40px;
+    gap: 30px;
+}
+
+
+.agents-card-div{
+    width: 70%;
+}
+
+
+.top-agents-card-div{
+    width: 30% ;
+}
