@@ -2,33 +2,18 @@ import { useEffect, useState } from "react";
 import "./AgentDetails.css";
 import Card from "../cards/Card";
 import BtnPrimaryWithIcon from '../buttons/BtnPrimaryWithIcon';
+import { fetchData } from "../api/data";
 const AgentDetails = () => {
   const [dataRes, setDataRes] = useState([]);
   const [CardData, setCardData] = useState([]);
 
   useEffect(() => {
-    data();
+    fetchData("agents",setDataRes);
+    fetchData("card-data",setCardData);
+   
   }, []);
 
-  const data = async () => {
-    try {
-      const response = await fetch("http://localhost:8000/agents");
-      const cardData = await fetch("http://localhost:8000/card-data");
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      if (!cardData.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const dataRes = await response.json();
-      const cardDataRes = await cardData.json();
-      setDataRes(dataRes);
-      setCardData(cardDataRes);
-      
-    } catch (error) {
-      console.error("There was a problem with the fetch operation:", error);
-    }
-  };
+ 
 
   const onCardClick = (e) => {
     e.stopPropagation();

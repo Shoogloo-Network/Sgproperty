@@ -4,6 +4,7 @@ import { Link, Events, scrollSpy } from 'react-scroll';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import UnitTable from './UnitTable';
 import IconCard from '../../cards/IconCard';
+import { fetchData } from '../../api/data';
 const ProjectTabHome = () => {
   const [activeSection, setActiveSection] = useState('');
   const [activeDiv, setActiveDiv] = useState(null);
@@ -12,15 +13,10 @@ const ProjectTabHome = () => {
   const [iconCardData, setIconCardData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/units')
-      .then((response) => response.json())
-      .then((data) => setUnitData(data));
-    
-    fetch('http://localhost:8000/iconCards')
-      .then((response) => response.json())
-      .then((data) => setIconCardData(data));
-
-    Events.scrollEvent.register('begin', function () {
+    fetchData("units",setUnitData);
+   fetchData('iconCards', setIconCardData);
+   
+   Events.scrollEvent.register('begin', function () {
       console.log('begin', arguments);
     });
 

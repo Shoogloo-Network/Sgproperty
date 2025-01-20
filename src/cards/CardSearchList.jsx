@@ -1,29 +1,18 @@
 import { useState, useMemo, useEffect } from "react";
 import "./CardSearchList.css";
 import CardSearchListData from "./CardSearchListData";
-
+import { fetchData } from "../api/data";
 const CardSearchList = () => {
     const [activeTab, setActiveTab] = useState(1);
     const [displayData, setDisplayData] = useState([]);
     const [buttonsData, setButtonsData] = useState([]);
 
     useEffect(() => {
-        data();
+        fetchData("buttonsData",setButtonsData);
+       
     }, []); // Empty dependency array ensures it runs only once.
 
-    const data = async () => {
-        try {
-            const response = await fetch("http://localhost:8000/buttonsData");
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
-
-            const dataRes = await response.json();
-            setButtonsData(dataRes);
-        } catch (error) {
-            console.error("There was a problem with the fetch operation:", error);
-        }
-    };
+    
 
     useEffect(() => {
         if (buttonsData && buttonsData.length > 0) {

@@ -1,15 +1,13 @@
 import  { useState, useEffect } from 'react';
+import { fetchData } from '../../api/data';
 import './ImageGallery.css';
 
 const ImageGallery = ({ onClickImage }) => {
   const [imageData, setImageData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/galleryImages')
-      .then((response) => response.json())
-      .then((data) => setImageData(data[0])) // Assuming there's one set of images
-      .catch((error) => console.error('Error fetching images:', error));
-  }, []);
+    fetchData("galleryImages",setImageData);
+   }, []);
 
   if (!imageData) {
     return <div>Loading...</div>;
@@ -19,10 +17,10 @@ const ImageGallery = ({ onClickImage }) => {
     <>
       <div className="imageWrapperDiv" onClick={onClickImage}>
         <div className="singleImageDiv">
-          <img src={imageData.mainImage} alt="Property image" />
+          <img src={imageData[0].mainImage} alt="Property image" />
         </div>
         <div className="multipleImageDiv">
-          {imageData.multipleImages.map((image, index) => (
+          {imageData[0].multipleImages.map((image, index) => (
             <img key={index} src={image} alt={`Property image ${index + 1}`} />
           ))}
         </div>

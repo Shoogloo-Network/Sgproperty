@@ -4,24 +4,15 @@ import BtnPrimaryWithIcon from '../buttons/BtnPrimaryWithIcon';
 import logo from '../assets/icon/whatsappLogo-removebg-preview.png';
 import { Link } from 'react-router-dom';
 import FormPopup from '../userform/FormPopup';
+import { fetchData } from '../api/data';
 const AgentsCard = () => {
     const [dataRes, setDataRes] = useState([]);
  const [showForm,setShowForm] = useState(false);
     useEffect(() => {
-        data();
+        fetchData("agents", setDataRes);
+       
     }, []);
-    const data = async () => {
-        try {
-            const response = await fetch('http://localhost:8000/agents');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const dataRes = await response.json();
-            setDataRes(dataRes);
-        } catch (error) {
-            console.error('There was a problem with the fetch operation:', error);
-        }
-    };
+ 
     const onButtonClick = ()=>{
         console.log("Button clicked");
     }

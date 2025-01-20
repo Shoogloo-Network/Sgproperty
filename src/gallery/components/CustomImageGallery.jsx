@@ -4,6 +4,7 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import ContactForm from '../../userform/SearchContactForm';
 import IconCard from '../../cards/IconCard';
 import '../Components/CustomImageGallery.css';
+import { fetchData } from '../../api/data';
 
 const CustomImageGallery = ({ close }) => {
   const [selectedName, setSelectedName] = useState('projects');
@@ -12,16 +13,7 @@ const CustomImageGallery = ({ close }) => {
 
   // Fetch image data from the JSON Server API
   useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const response = await fetch('http://localhost:8000/gallery');
-        const data = await response.json();
-        setImages(data); // Set the fetched data into state
-      } catch (error) {
-        console.error('Error fetching image data:', error);
-      }
-    };
-    fetchImages();
+    fetchData("gallery",setImages);
   }, []);
 
   const iconCardData = [

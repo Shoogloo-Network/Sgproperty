@@ -1,27 +1,15 @@
 import  { useEffect, useState } from 'react';
 import './TopAgents.css'
+import { fetchData } from '../api/data';
 const TopAgents = () => {
      const [dataRes, setDataRes] = useState([]);
     
         useEffect(() => {
-            data();
+          fetchData("agents", setDataRes);
+           
         }, []);
     
-        const data = async () => {
-            try {
-                const response = await fetch('http://localhost:8000/agents');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const dataRes = await response.json();
-                dataRes.sort((a,b)=>{
-                    return b.listing - a.listing
-                })
-                setDataRes(dataRes);
-            } catch (error) {
-                console.error('There was a problem with the fetch operation:', error);
-            }
-        };
+      
   return (
     <div className="container">
     <h1 className="title">Top Agents</h1>

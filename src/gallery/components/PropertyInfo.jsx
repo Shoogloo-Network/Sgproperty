@@ -4,6 +4,7 @@ import "./PropertyInfo.css";
 import BtnPrimaryWithIcon from '../../buttons/BtnPrimaryWithIcon';
 import { useEffect, useState } from 'react';
 import FormPopup from '../../userform/FormPopup';
+import { fetchData } from '../../api/data';
 const iconData =[
     {
         img:'src/assets/icon/verified.png',
@@ -39,18 +40,10 @@ const PropertyInfo = () => {
     const [showForm, setShowForm] = useState(false);
     const [iconDataForButton , setIconDataForButton] =useState([]);
    
-    useEffect(()=>{
+useEffect(()=>{
  fetchData("iconDataForButton",setIconDataForButton);
     },[])
-const fetchData = async (endpoint,setter)=>{
-try{
-    const response = await fetch(`http://localhost:8000/${endpoint}`);
-const data = await response.json();
-setter(data);
-}catch(error){
-    console.error(error);
-}
-}
+
    return (
         <div className="property-info-container">
             <div className="property-info-header">

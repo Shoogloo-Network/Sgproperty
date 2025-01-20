@@ -3,7 +3,7 @@ import Card from "../../cards/Card";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormPopup from "../../userform/FormPopup";
-
+import { fetchData } from "../../api/data";
 const Story = () => {
   const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,18 +15,7 @@ const Story = () => {
     fetchData("cardData", setCardData);
   }, []);
 
-  const fetchData = async (endpoint, setter) => {
-    try {
-      const response = await fetch(`http://localhost:8000/${endpoint}`);
-      if (!response.ok) throw new Error("Failed to fetch data");
-      const data = await response.json();
-      console.log("Fetched data:", data); // Inspect the structure of fetched data
-      setter(data);
-    } catch (error) {
-      console.error(`Error fetching ${endpoint}:`, error);
-    }
-  };
-
+ 
   const addToLocalStorage = (item) => {
     const existingData = JSON.parse(localStorage.getItem("clickedCardsHistory") || "[]");
     const newData = [...existingData, item];
