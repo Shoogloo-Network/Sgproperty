@@ -1,3 +1,4 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Search from './searchProject/Search.jsx'
@@ -15,6 +16,11 @@ import HomeInterior from './Components/HomeInterior.jsx'
 import OwnerPlan from './Components/OwnerPlan.jsx'
 import './index.css'
 import Pq from './Components/pq/Pq.jsx'
+
+{
+  console.log(import.meta.env.VITE_DETAILE_PAGE)
+}
+
 // import ProtectedRoute from './Components/ProtectedRoute'
 
 createRoot(document.getElementById('root')).render(
@@ -22,20 +28,20 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <NavBar/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detail-page" element={<App />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/user" element={
+        <Route path={import.meta.env.VITE_BASE_URL } element={<Home />} />
+        <Route path={import.meta.env.VITE_DETAILE_PAGE} element={<App />} />
+        <Route path={import.meta.env.VITE_SEARCH} element={<Search />} />
+        <Route path={import.meta.env.VITE_USER} element={
           // <ProtectedRoute>
             <User />
           // </ProtectedRoute>
         } />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/agents" element={<Agents/>} />
-        <Route path="/agents/agent-details" element={<AgentDetails/>} />
-        <Route path="/home-interior" element={<HomeInterior/>} />
-        <Route path="/owner-plans" element={<OwnerPlan/>} />
+        <Route path={import.meta.env.VITE_USER_LOGIN} element={<Login />} />
+        <Route path={import.meta.env.VITE_USER_SIGNIN} element={<Register />} />
+        <Route path={import.meta.env.VITE_AGENTS} element={<Agents/>} />
+        <Route path={import.meta.env.VITE_AGENT_DETAILS} element={<AgentDetails/>} />
+        <Route path={import.meta.env.VITE_HOME_INTERIOR} element={<HomeInterior/>} />
+        <Route path={import.meta.env.VITE_OWNER_PLANS} element={<OwnerPlan/>} />
         <Route path="/pq" element={<Pq/>} />
       </Routes>
       <Footer/>

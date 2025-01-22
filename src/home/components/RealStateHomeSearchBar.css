@@ -381,10 +381,7 @@ input[type="checkbox"] {
     gap: 10px;
   }
 
-  .dropdown-container,
-  .search-input {
-    width: 100%;
-  }
+  
 
   .dropdown-btn,
   .search-input input {

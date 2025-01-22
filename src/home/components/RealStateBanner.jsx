@@ -14,11 +14,12 @@ const RealStateBanner = () => {
     position: 'relative',
     zIndex: 100,
     background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))',
-    maxHeight: '300px',
+   
     },
     searchContainer:{
       display: 'flex',
       alignItems:' center',
+      flexWrap:'wrap',
       gap: '15px',
       marginTop: '20px',
       background: 'white',

@@ -37,3 +37,45 @@
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(24, 144, 255, 0.2);
 }
+
+/* Responsive styles for button-container */
+
+/* Large screens (Desktops/Tablets) */
+@media (min-width: 1024px) {
+  .button-container {
+    width: 60%; /* Adjust width on larger screens */
+    padding: 12px;
+  }
+
+  .button {
+    font-size: 18px; /* Larger font size on larger screens */
+    padding: 12px 20px; /* Increase padding for larger buttons */
+  }
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .button-container {
+    width: 70%; /* Adjust width for medium devices */
+  }
+
+  .button {
+    font-size: 16px; /* Keep default font size for medium devices */
+    padding: 10px 16px; /* Maintain padding */
+  }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 600px) {
+  .button-container {
+    width: 90%; /* Full width on small screens */
+    flex-direction: column; /* Stack buttons vertically */
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 14px; /* Smaller font size for mobile devices */
+    padding: 8px 14px; /* Adjust padding for smaller devices */
+    margin: 5px 0; /* Adjust margin to prevent buttons from overlapping */
+  }
+}

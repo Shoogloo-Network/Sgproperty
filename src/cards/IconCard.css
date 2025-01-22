@@ -59,10 +59,8 @@ width: max-content;
     justify-content: center;
   }
 
-  .icon-card {
-    max-width: 100%;
-    width: 100%;
-    padding: 12px;
+  .icon-card{
+    padding: 3px;
   }
 
   .icon-card-title,
@@ -77,11 +75,7 @@ width: max-content;
     align-items: center;
   }
 
-  .icon-card {
-    max-width: 100%;
-    width: 100%;
-    padding: 10px;
-  }
+  
 
   .icon-card-title,
   .icon-card-description {

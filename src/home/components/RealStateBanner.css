@@ -27,15 +27,12 @@
   flex-wrap: wrap;
 }
 
-
-
-
-
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .banner-container {
     padding: 30px 15px;
-    max-height: 400px;
+    max-height: fit-content;
+    background-size: cover; /* Ensuring image maintains the cover style */
   }
 
   .banner-content h1 {
@@ -52,7 +49,8 @@
 @media (max-width: 480px) {
   .banner-container {
     padding: 20px 10px;
-    max-height: 300px;
+    max-height: fit-content;
+    background-size: cover; /* Ensuring image maintains the cover style */
   }
 
   .banner-content h1 {
