@@ -14,7 +14,7 @@ import AgentDetails from './agent/AgentDetails.jsx'
 import HomeInterior from './Components/HomeInterior.jsx'
 import OwnerPlan from './Components/OwnerPlan.jsx'
 import './index.css'
-import Pq from './Components/Pq.jsx'
+import Pq from './Components/pq/Pq.jsx'
 // import ProtectedRoute from './Components/ProtectedRoute'
 
 createRoot(document.getElementById('root')).render(
@@ -40,5 +40,5 @@ createRoot(document.getElementById('root')).render(
       </Routes>
       <Footer/>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )

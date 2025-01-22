@@ -180,6 +180,7 @@ const Story = () => {
         onNext={(s, st) => handleNextStory(st)}
         onPrevious={(s, st) => handlePreviousStory(st)}
         currentIndex={currentIndex}
+      
       />
       {showForm && <FormPopup onClose={() => setShowForm(false)} />}
     </div>
