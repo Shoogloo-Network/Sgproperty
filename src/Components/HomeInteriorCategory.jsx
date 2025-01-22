@@ -44,6 +44,7 @@ const HomeInteriorCategory = () => {
 
  
   const data = {
+
     'Living Room': [
       {
         imgSrc: '../src/assets/propertyImage/provident-botanico-project-clubhouse-external-image1-2344.jpg',
