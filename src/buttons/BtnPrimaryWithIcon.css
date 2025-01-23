@@ -41,7 +41,7 @@
     }
 
     .callback-request-div {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 5px;
         padding: 10px;
         font-size: 14px;

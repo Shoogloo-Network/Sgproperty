@@ -72,9 +72,7 @@
 }
 
 @media (max-width: 576px) {
-  .footer-top {
-    grid-template-columns: 1fr;
-  }
+  
   
   .footer-col {
     text-align: center;
