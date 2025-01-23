@@ -14,7 +14,11 @@ const Story = () => {
   useEffect(() => {
     fetchData("cardData", setCardData);
   }, []);
-
+  useEffect(() => {
+    if (cardData?.length > 0) {
+      setCurrentIndex(0); // Reset to the first story
+    }
+  }, [cardData]);
  
   const addToLocalStorage = (item) => {
     const existingData = JSON.parse(localStorage.getItem("clickedCardsHistory") || "[]");
@@ -142,7 +146,7 @@ const Story = () => {
         </div>
       )
     ),
-    duration: 8000,
+    duration: 2000,
   }));
 
   const handleAllStoriesEnd = () => {
@@ -169,19 +173,19 @@ const Story = () => {
       }}
     >
       <Stories
-        stories={stories.length > 0 ? stories : [{ content: () => <div>No stories available</div> }]}
-        loop={true}
-        defaultInterval={2000}
-        width="100%"
-        height="100%"
-        keyboardNavigation={true}
-        preventDefault={true}
-        onAllStoriesEnd={handleAllStoriesEnd}
-        onNext={(s, st) => handleNextStory(st)}
-        onPrevious={(s, st) => handlePreviousStory(st)}
-        currentIndex={currentIndex}
-      
-      />
+  key={cardData?.length > 0 ? "loaded" : "loading"} // Forces Stories to reinitialize
+  stories={stories.length > 0 ? stories : [{ content: () => <div>No stories available</div> }]}
+  loop={true}
+  defaultInterval={2000}
+  width="100%"
+  height="100%"
+  keyboardNavigation={true}
+  preventDefault={true}
+  onAllStoriesEnd={handleAllStoriesEnd}
+  onNext={(s, st) => handleNextStory(st)}
+  onPrevious={(s, st) => handlePreviousStory(st)}
+  currentIndex={currentIndex}
+/>
       {showForm && <FormPopup onClose={() => setShowForm(false)} />}
     </div>
   );
