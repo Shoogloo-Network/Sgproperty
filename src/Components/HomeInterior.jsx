@@ -105,7 +105,7 @@ const HomeInterior = () => {
         <h2>From Concept to Creation: Your Furnitures Journey</h2>
         <div className="video-container">
           <iframe
-            width="1000"
+            width="100%"
             height="400"
             src="https://www.youtube.com/embed/pv9z_JGaBl2jcn_L"
             title="YouTube video player"
