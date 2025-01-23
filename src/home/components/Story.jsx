@@ -150,7 +150,7 @@ const Story = () => {
           <p>Error: Missing background image</p>
         </div>
       ),
-    duration: 2000,
+    duration: 5000,
   }));
 
   const handleAllStoriesEnd = () => {
