@@ -15,31 +15,31 @@ const Navbar = () => {
         navigate('/login');
     }
     const navItems = [
-        {
-            title: 'City',
-            id: 'about-project',
-            dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ'],
-            url:'/'
-        },
-        {
-            title: 'Buy',
-            id: 'project-overview',
-            dropdown: null,
-             url:'/'
-        },
-        {
-            title: 'Top Experts',
-            id: 'top-experts',
-            dropdown: null,
-             url:'/'
-        },
+        // {
+        //     title: 'City',
+        //     id: 'about-project',
+        //     dropdown: ['Project Overview', 'Price List', 'Why Invest?', 'FAQ'],
+        //     url:'/'
+        // },
+        // {
+        //     title: 'Buy',
+        //     id: 'project-overview',
+        //     dropdown: null,
+        //      url:'/'
+        // },
+        // {
+        //     title: 'Top Experts',
+        //     id: 'top-experts',
+        //     dropdown: null,
+        //      url:'/'
+        // },
         
-        {
-            title: 'Rent',
-            id: 'floor-plans',
-            dropdown: ['2 BHK', '3 BHK'],
-             url:'/'
-        },
+        // {
+        //     title: 'Rent',
+        //     id: 'floor-plans',
+        //     dropdown: ['2 BHK', '3 BHK'],
+        //      url:'/'
+        // },
        
         {
             title: 'Projects',
@@ -67,12 +67,12 @@ const Navbar = () => {
             dropdown: ['Modular Kitchen', 'Wardrobe'],
              url:'/home-interior'
         },
-        {
-            title: 'Similar Projects',
-            id: 'similar-projects',
-            dropdown: null,
-             url:'/'
-        }
+        // {
+        //     title: 'Similar Projects',
+        //     id: 'similar-projects',
+        //     dropdown: null,
+        //      url:'/'
+        // }
     ];
 
    
@@ -91,7 +91,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
             {/* <img src="src/assets/logo/logo.svg" alt="logo" height={50} width={100} /> */}
-            <h2 className='gradient-text' onClick={()=>{navigate('/')}}>Shoogloo Real Estate</h2>
+            <h2 className='gradient-text' onClick={()=>{navigate('/')}}>SgProperty</h2>
                 <ul className="nav-list">
                     
                     {navItems.map((item) => (

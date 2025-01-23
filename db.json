@@ -1,5 +1,5 @@
 {
-    "agents": [
+  "agents": [
       {
         "id": 1,
         "agentId": "111",
@@ -84,7 +84,7 @@
          "listing":59
       }
     ],
-    "card-data":[
+  "card-data":[
       {
         "backgroundImage": "../src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",
         "image": "../src/assets/icon/call.png",
@@ -181,7 +181,7 @@
         ]
       }
     ],
-    "home-interior-data":[
+  "home-interior-data":[
       {
       
       },
@@ -189,7 +189,7 @@
 
       }
     ],
-    "user":[
+  "user":[
       {
           "Name": "Terri Phillips",
           "Address": "695 Snyder Walk\nLake Ralph, IL 82066",
@@ -591,8 +591,7 @@
           "Job": "Petroleum engineer"
       }
   ],
-  
-    "buttonsData": [
+  "buttonsData": [
       {
         "id": 1,
         "lableName": "Projects",
@@ -794,15 +793,15 @@
           }
         ]
       }
-    ],
-    "agentsHeader": [
+     ],
+  "agentsHeader": [
         { "id": 1, "name": "Agent 1", "icon": "fa-solid fa-user" },
         { "id": 2, "name": "Agent 2", "icon": "fa-solid fa-user" },
         { "id": 3, "name": "Agent 3", "icon": "fa-solid fa-user" },
         { "id": 4, "name": "Agent 4", "icon": "fa-solid fa-user" },
         { "id": 5, "name": "Agent 5", "icon": "fa-solid fa-user" }
       ],
-      "locations": [
+  "locations": [
         { "id": 1, "name": "Chatterpur, Delhi" },
         { "id": 2, "name": "Saket, Delhi" },
         { "id": 3, "name": "Gurugram, Haryana" },
@@ -810,11 +809,11 @@
         { "id": 5, "name": "Noida, Uttar Pradesh" },
         { "id": 6, "name": "Haridwar, Uttarakhand" }
       ],
-      "propertyTypes": [
+  "propertyTypes": [
         { "id": 1, "name": "New Projects" },
         { "id": 2, "name": "Rental/Resale" }
       ],
-      "cardData": [
+  "cardData": [
     {
       "id": 1,
       "backgroundImage": "src/assets/stories/shriram-serenity-project-project-large-image1-7568.avif",

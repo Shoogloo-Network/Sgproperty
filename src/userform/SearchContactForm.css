@@ -106,11 +106,13 @@
      width: 100%;
     }
     .contact-search__form {
-      padding: 20px;
+      /* padding: 20px; */
       width: 100%;
     }
   
-    
+    .contact-search__country-select{
+      min-width: 60px;
+    }
   }
   
   .contact-search__checkbox-button {
@@ -152,18 +154,5 @@
     position: absolute;
   }
   
-  @media (max-width: 480px) {
-    .contact-search {
-      padding: 1rem;
-    }
   
-    .contact-search__interests {
-      grid-template-columns: 1fr;
-    }
-  
-    .contact-search__checkbox-button {
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
   

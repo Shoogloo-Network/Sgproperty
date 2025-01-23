@@ -11,7 +11,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
-    z-index: 998;
+    z-index: 1002;
    
 }
 
@@ -19,7 +19,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
     display: flex;
  justify-content: space-around;
     align-items: center;
@@ -84,16 +84,12 @@
 
 .dropdown-menu {
     position: fixed;
-    top: 54px;
- 
-   
+    top: 47px;
     transform: translate(-50%, 0);
     margin: 0 5%;
     display: flex;
     flex-direction: column;
-    
- 
-    z-index: 999;
+    z-index: 1002;
     background: #fff;
     min-width: 200px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -130,6 +126,7 @@
 @media (max-width: 768px) {
     .navbar-container {
         padding: 0 10px;
+      
     }
 
     .nav-link {
@@ -144,6 +141,10 @@
         width: 100%;
         border-radius: 0;
     }
+    .gradient-text{
+        display: none;
+    }
+    
 }
 
 /* Custom scrollbar for horizontal scroll */

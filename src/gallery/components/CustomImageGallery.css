@@ -140,8 +140,8 @@ padding: 0;
       align-items: center;
   }
 
-  /* .gallery-buttons button {
-      width: 100%;
-      margin: 5px 0;
-  } */
+  .gallery-buttons{
+    display: flex;
+    overflow: auto;
+  }
 }
