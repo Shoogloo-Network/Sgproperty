@@ -19,16 +19,18 @@ const Story = () => {
       setCurrentIndex(0); // Reset to the first story
     }
   }, [cardData]);
- 
+
   const addToLocalStorage = (item) => {
-    const existingData = JSON.parse(localStorage.getItem("clickedCardsHistory") || "[]");
+    const existingData = JSON.parse(
+      localStorage.getItem("clickedCardsHistory") || "[]"
+    );
     const newData = [...existingData, item];
     localStorage.setItem("clickedCardsHistory", JSON.stringify(newData));
   };
 
   // Generate stories from card data
   const stories = cardData?.map((item, index) => ({
-    content: ({ action, isPaused }) => (
+    content: ({ action, isPaused }) =>
       item.backgroundImage ? (
         <div
           key={index}
@@ -127,7 +129,10 @@ const Story = () => {
                   borderRadius: "4px",
                 }}
               >
-                <img src="src/assets/stories/quality.png" alt="Square Assured" />
+                <img
+                  src="src/assets/stories/quality.png"
+                  alt="Square Assured"
+                />
                 <p>Square Assured</p>
               </div>
             </div>
@@ -144,8 +149,7 @@ const Story = () => {
         <div style={{ height: "100%", width: "100%", backgroundColor: "red" }}>
           <p>Error: Missing background image</p>
         </div>
-      )
-    ),
+      ),
     duration: 2000,
   }));
 
@@ -173,19 +177,23 @@ const Story = () => {
       }}
     >
       <Stories
-  key={cardData?.length > 0 ? "loaded" : "loading"} // Forces Stories to reinitialize
-  stories={stories.length > 0 ? stories : [{ content: () => <div>No stories available</div> }]}
-  loop={true}
-  defaultInterval={2000}
-  width="100%"
-  height="100%"
-  keyboardNavigation={true}
-  preventDefault={true}
-  onAllStoriesEnd={handleAllStoriesEnd}
-  onNext={(s, st) => handleNextStory(st)}
-  onPrevious={(s, st) => handlePreviousStory(st)}
-  currentIndex={currentIndex}
-/>
+        key={cardData?.length > 0 ? "loaded" : "loading"} // Forces Stories to reinitialize
+        stories={
+          stories.length > 0
+            ? stories
+            : [{ content: () => <div>No stories available</div> }]
+        }
+        loop={true}
+        defaultInterval={2000}
+        width="100%"
+        height="100%"
+        keyboardNavigation={true}
+        preventDefault={true}
+        onAllStoriesEnd={handleAllStoriesEnd}
+        onNext={(s, st) => handleNextStory(st)}
+        onPrevious={(s, st) => handlePreviousStory(st)}
+        currentIndex={currentIndex}
+      />
       {showForm && <FormPopup onClose={() => setShowForm(false)} />}
     </div>
   );
