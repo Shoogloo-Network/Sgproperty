@@ -56,7 +56,8 @@ width: max-content;
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .icon-card-container {
-    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: center; */
   }
 
   .icon-card{
@@ -73,6 +74,7 @@ width: max-content;
   .icon-card-container {
     flex-direction: column;
     align-items: center;
+   
   }
 
   

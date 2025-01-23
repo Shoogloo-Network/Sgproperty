@@ -51,16 +51,21 @@ cursor: pointer;
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
     .imageWrapperDiv {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 16px;
     }
 
     .singleImageDiv {
         width: 100%;
+        
+    }
+
+    .singleImageDiv img{
+        height: 100%;
     }
 
     .multipleImageDiv {
-        width: 100%;
+        /* width: 100%; */
         grid-template-columns: 1fr; /* Single column */
     }
 }

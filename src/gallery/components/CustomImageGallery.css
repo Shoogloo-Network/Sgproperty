@@ -113,14 +113,20 @@ padding: 0;
   .custom-image-gallery {
       padding: 15px;
   }
+.info-section-card{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+}
   .header {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: flex-start;
   }
 
   .header-options {
-      flex-direction: column;
+      /* flex-direction: column; */
       gap: 8px;
   }
 
@@ -131,10 +137,11 @@ padding: 0;
 
   .info-section {
       width: 100%;
+      align-items: center;
   }
 
-  .gallery-buttons button {
+  /* .gallery-buttons button {
       width: 100%;
       margin: 5px 0;
-  }
+  } */
 }

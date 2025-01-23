@@ -192,7 +192,7 @@ cursor: pointer;
   }
 
   .navList {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
   }
 
@@ -226,9 +226,7 @@ cursor: pointer;
       margin: 12px;
   }
 
-  .info-divs {
-      flex-direction: column;
-  }
+  
 
   .info-div {
       margin-bottom: 10px;

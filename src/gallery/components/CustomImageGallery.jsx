@@ -91,8 +91,12 @@ const CustomImageGallery = ({ close }) => {
         {/* Form and IconCard Section */}
         <div className="info-section">
           <ContactForm />
+          <div className='info-section-card'>
           <h4>Why Invest through Square Yards?</h4>
-          <IconCard data={iconCardData} />
+        
+         <IconCard data={iconCardData} />
+       
+          </div>
         </div>
       </div>
     </div>

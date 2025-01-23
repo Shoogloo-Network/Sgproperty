@@ -100,14 +100,17 @@
     background-color: #0056b3;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .contact-search {
-      padding: 1rem;
+     max-width: 100%;
+     width: 100%;
+    }
+    .contact-search__form {
+      padding: 20px;
+      width: 100%;
     }
   
-    .contact-search__interests {
-      grid-template-columns: 1fr;
-    }
+    
   }
   
   .contact-search__checkbox-button {
