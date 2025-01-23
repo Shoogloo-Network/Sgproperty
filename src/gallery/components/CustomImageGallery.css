@@ -109,7 +109,7 @@ padding: 0;
 
 
   /* Responsive styles for mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .custom-image-gallery {
       padding: 15px;
   }

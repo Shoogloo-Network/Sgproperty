@@ -48,7 +48,7 @@
   /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .unit-table-container {
-      padding: 15px;
+      padding: 2px;
   }
 
   .unit-table-container h1 {
@@ -61,21 +61,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .unit-table-container {
-      padding: 10px;
-  }
-
-  .unit-table-container h1 {
-      font-size: 18px;
-  }
-
-  .unit-table th, .unit-table td {
-      padding: 8px;
-      font-size: 12px;
-  }
-
-  .unit-table {
-      font-size: 12px;
-  }
-}

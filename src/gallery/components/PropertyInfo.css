@@ -151,38 +151,3 @@
         align-items: flex-start;
     }
 }
-
-@media (max-width: 480px) {
-    .property-info-container {
-        padding: 0.5rem;
-    }
-
-    .property-info-header {
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-    }
-
-    .property-title-section {
-        padding-bottom: 8px;
-    }
-
-    .property-name {
-        font-size: 18px;
-    }
-
-    .property-location {
-        font-size: 12px;
-    }
-
-    .property-pricing-section {
-        padding: 8px 0;
-    }
-
-    .price-range {
-        font-size: 16px;
-    }
-
-    .icon-card-group, .property-additional-services {
-        gap: 8px;
-    }
-}

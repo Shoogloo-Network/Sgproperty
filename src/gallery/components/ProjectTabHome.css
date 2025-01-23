@@ -207,7 +207,7 @@ cursor: pointer;
   }
 
   .section {
-      padding: 15px;
+      padding: 0px;
   }
 
   .section h2 {
@@ -230,6 +230,13 @@ cursor: pointer;
 
   .info-div {
       margin-bottom: 10px;
+      padding: 2px;
+      gap: 5px;
+      
+  }
+
+  .info-div h3{
+    font-size: 14px !important;
   }
 
   .overviewSectionCardDiv {
@@ -237,38 +244,3 @@ cursor: pointer;
   }
 }
 
-@media (max-width: 480px) {
-  .navbarHome {
-      padding: 6px;
-      margin-top: 5px;
-  }
-
-  .navList a {
-      padding: 6px 10px;
-      font-size: 12px;
-  }
-
-  .section h2 {
-      font-size: 18px;
-  }
-
-  .section p {
-      font-size: 12px;
-  }
-
-  .accordion-title {
-      padding: 10px;
-  }
-
-  .accordion-content {
-      margin: 10px;
-  }
-
-  .info-div h3 {
-      font-size: 16px;
-  }
-
-  .info-div p {
-      font-size: 14px;
-  }
-}

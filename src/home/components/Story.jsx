@@ -13,13 +13,14 @@ const Story = () => {
   // Fetch card data from the API
   useEffect(() => {
     fetchData("cardData", setCardData);
+   
   }, []);
   useEffect(() => {
     if (cardData?.length > 0) {
       setCurrentIndex(0); // Reset to the first story
     }
   }, [cardData]);
-
+  console.log(cardData);
   const addToLocalStorage = (item) => {
     const existingData = JSON.parse(
       localStorage.getItem("clickedCardsHistory") || "[]"

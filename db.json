@@ -831,7 +831,7 @@
         {
           "img": "src/assets/icon/web-management.png",
           "title": "Configurations",
-          "description": "2-BHK , 3-BHK Flats"
+          "description": "2-BHK , 3-BHK Flats, 4-BHK Flats, 4.5-BHK Flats"
         }
       ]
     },
@@ -851,7 +851,7 @@
         {
           "img": "src/assets/icon/web-management.png",
           "title": "Configurations",
-          "description": "2-BHK , 3-BHK Flats"
+          "description": "2-BHK , 3-BHK Flats, 4-BHK Flats, 4.5-BHK Flats"
         }
       ]
     },
@@ -871,7 +871,7 @@
         {
           "img": "src/assets/icon/web-management.png",
           "title": "Configurations",
-          "description": "2-BHK , 3-BHK Flats"
+           "description": "2-BHK , 3-BHK Flats, 4-BHK Flats, 4.5-BHK Flats"
         }
       ]
     },
