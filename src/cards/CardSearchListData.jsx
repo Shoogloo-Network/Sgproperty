@@ -1,34 +1,39 @@
-import  { memo } from 'react'
-import './CardSearchListData.css'
-import City from '../searchproject/components/City'
-import SearchFilterWithCards from './SearchFilterWithCards'
-import SearchContactForm from '../userform/SearchContactForm'
+import { memo } from "react";
+import "./CardSearchListData.css";
+import City from "../searchproject/components/City";
+import SearchFilterWithCards from "./SearchFilterWithCards";
+import SearchContactForm from "../userform/SearchContactForm";
+
 const CardSearchListData = memo(({ cities }) => {
-    return (
-        <>
-           <div style={{display:'flex', width:'80%',justifyContent:'space-between',margin:'auto',gap:'20px'}}>
-            <div style={{width:'60%'}}>
-          <div style={{display:'flex', flexDirection:'column',backgroundColor:'#F5F5F5',borderRadius:'10px' , padding:'10px'}}>
-          <div className='city-title' style={{display:'flex',alignItems:'center',gap:'10px'}}>
-        <img src='src/assets/icon/location.png' alt='location' className='city-icon' width={20} height={20}/>
-        <h1 style={{fontSize:'20px',fontWeight:'bold'}}>City</h1>
-      </div>
-          <City cities={cities} />
+  return (
+    <>
+      <div className="card-search-container">
+        <div className="city-section">
+          <div className="city-card">
+            <div className="city-title">
+              <img
+                src="src/assets/icon/location.png"
+                alt="location"
+                className="city-icon"
+                width={20}
+                height={20}
+              />
+              <h1 className="city-heading">City</h1>
+            </div>
+            <City cities={cities} />
           </div>
-            
-            </div>
-            <div style={{width:'40%', position:'sticky',top:'50px'}}>
-                <SearchContactForm/>
-            </div>
-            
-           </div>
-           <div style={{width:'80%',margin:'20px auto'}}>
-           <SearchFilterWithCards data={cities}/>
-           </div>
-        </>
-    )
-})
+        </div>
+        <div className="contact-form-section">
+          <SearchContactForm />
+        </div>
+      </div>
+      <div className="filter-card-section">
+        <SearchFilterWithCards data={cities} />
+      </div>
+    </>
+  );
+});
 
-CardSearchListData.displayName = 'CardSearchListData';
+CardSearchListData.displayName = "CardSearchListData";
 
-export default CardSearchListData
+export default CardSearchListData;

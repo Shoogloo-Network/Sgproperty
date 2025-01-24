@@ -58,19 +58,19 @@ body {
 
 /* Typography */
 h1, .h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
   font-weight: 700;
  
 }
 
 h2, .h2 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: 600;
  
 }
 
 h3, .h3 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   font-weight: 600;
   
 }

@@ -4,6 +4,8 @@ import Parent from './context/Parent';
 import Counter2 from './Counter2';
 import InteractiveGrid from './InteractiveGrid';
 import './pq.css'
+import App from '../../speechtotext/App';
+
 const DragAndDrop = () => {
   const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3','Item 4','Item 5','Item 6','Item 7', 'Item 8']);
 
@@ -39,6 +41,7 @@ const DragAndDrop = () => {
       <Counter2/>
       <Parent/>
       <InteractiveGrid/>
+      <App/>
     </div>
   );
 };

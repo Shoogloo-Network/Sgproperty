@@ -42,7 +42,7 @@ const PropertyForm = ({active}) => {
     <div className="rightBox postYourPropertyBox">
       
       <div className="addListingsBox" id="addListingsBox1">
-        <h1>Provide details about your Property</h1>
+        <h1>Provide Property Details</h1>
         <form onSubmit={handleSubmit}>
           <div className="listBody">
             {/* Property Listing for Sale or Rent */}

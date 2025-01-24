@@ -1,24 +1,13 @@
 
 import RealStateHomeSearchBar from '../home/components/RealStateHomeSearchBar'
 import CardSearchList from '../cards/CardSearchList'
+import styles from './Search.module.css'
 const Search = () => {
     const iconCards = null;
     const style = {
-        searchWrapper:{},
-        searchContainer:{
-            position:'sticky',
-            top: '100px',
-            display: 'flex',
-      alignItems:' center',
-      gap: '15px',
-   
-     
-     
-     
-      background: 'white',
-      padding: '10px',
-      borderRadius: '8px',
-      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+      searchWrapper:{},
+      searchContainer:{
+        ...styles.searchContainer
         },
     };
     const budgetRange = null;

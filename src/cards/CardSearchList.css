@@ -66,10 +66,10 @@
 }
 
 /* Small screens (Mobile) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .button-container {
     width: 90%; /* Full width on small screens */
-    flex-direction: column; /* Stack buttons vertically */
+   
     padding: 10px;
   }
 

@@ -1,23 +1,29 @@
+import React, { useState } from 'react';
+import './City.css';
 
-import './City.css'
-const City = ({cities}) => {
+const City = ({ cities }) => {
+  const [activeCity, setActiveCity] = useState(null);
+
+  const handleCardClick = (cityName) => {
+    setActiveCity(cityName);
+  };
+
   return (
-    <>
-    <div className='city-container'style={{display:'flex',flexDirection:'row',flexWrap:'wrap'}} >
-      
-        {
-        cities?.map((city) => (
-            city.cities?.map((city) => (
-                <div key={city.name} style={{display:'flex',justifyContent:'space-between',width:'fit-content',border:'1px solid black',padding:'10px',margin:'10px',borderRadius:'10px',gap:'10px',cursor:'pointer'}}>
-                    <p>{city.name}</p>
-                    <p style={{color:'#5f449b'}}>({city.userNumber})</p>
-                </div>
-            ))
+    <div className="city-container">
+      {cities?.map((city) =>
+        city.cities?.map((city) => (
+          <div
+            key={city.name}
+            className={`city-card ${activeCity === city.name ? 'active' : ''}`}
+            onClick={() => handleCardClick(city.name)}
+          >
+            <p className="city-card-name">{city.name}</p>
+            <p className="city-card-user-number">({city.userNumber})</p>
+          </div>
         ))
-    }
+      )}
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default City
+export default City;
