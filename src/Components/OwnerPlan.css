@@ -73,12 +73,31 @@ background-color: #584bce;
   /* Responsive design */
   @media (max-width: 768px) {
     .price-listing-grid {
-      grid-template-columns: 1fr;
+    font-size: small;
+    /* display: block; */
+    padding: 5px;
+    margin: 0;
+    grid-template-columns: 1fr repeat(2, 1fr);
+    width: 100%;
     }
-  
+  .feature-title , .hide-in-mobile{
+    display: none;
+  }
+  .choose-plan-button{
+    font-size: 10px !important;
+ 
+    padding: 8px !important ;
+  }
     .grid-header,
     .grid-cell {
       text-align: left;
+      padding: 0;
+    }
+    .grid-header >h1{
+      font-size: 16px;
+    }
+    .grid-header-plan >h2{
+      font-size: 12px;
     }
   }
   /* Buttons Row */

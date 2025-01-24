@@ -87,7 +87,7 @@ const OwnerPlan = () => {
         <div className="price-listing-grid">
           {/* Column Headers */}
           {/* Important Because it keep the other three headers in place  */}
-          <div ></div> 
+          <div className='hide-in-mobile'></div> 
           {plans.map((plan) => (
             <div key={plan.title} >
                <div className="grid-header">
