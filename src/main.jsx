@@ -16,7 +16,8 @@ import HomeInterior from './Components/HomeInterior.jsx'
 import OwnerPlan from './Components/OwnerPlan.jsx'
 import './index.css'
 import Pq from './Components/pq/Pq.jsx'
-
+import ErrorBoundary from './ErrorBoundary.jsx'
+import ChatComponent from './chatbot/ChatComponent.jsx';
 {
   console.log(import.meta.env.VITE_DETAILE_PAGE)
 }
@@ -25,6 +26,7 @@ import Pq from './Components/pq/Pq.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+     <ErrorBoundary>
     <BrowserRouter>
     <NavBar/>
       <Routes>
@@ -34,7 +36,7 @@ createRoot(document.getElementById('root')).render(
         <Route path={import.meta.env.VITE_USER} element={
           // <ProtectedRoute>
             <User />
-          // </ProtectedRoute>
+          /* </ProtectedRoute> */
         } />
         <Route path={import.meta.env.VITE_USER_LOGIN} element={<Login />} />
         <Route path={import.meta.env.VITE_USER_SIGNIN} element={<Register />} />
@@ -44,7 +46,11 @@ createRoot(document.getElementById('root')).render(
         <Route path={import.meta.env.VITE_OWNER_PLANS} element={<OwnerPlan/>} />
         <Route path="/pq" element={<Pq/>} />
       </Routes>
+      <div>
+        <ChatComponent/>
+      </div>
       <Footer/>
     </BrowserRouter>
+    </ErrorBoundary>
   </StrictMode>
 )
