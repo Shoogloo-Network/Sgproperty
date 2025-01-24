@@ -69,3 +69,10 @@
     gap: 5px;
     align-items: center;
   }
+
+
+  @media(max-width:768px){
+    .agent-card{
+      width: auto;
+    }
+  }

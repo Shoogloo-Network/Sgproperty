@@ -100,3 +100,25 @@
 .top-agents-card-div{
     width: 30% ;
 }
+
+@media (max-width: 600px) {
+    .agents-card-div{
+        width: 100%;
+    }
+    .agents-card-main-div{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        gap: 30px;
+    }
+
+    .tab-container{
+        gap: 2px;
+        top: 38px;
+    }
+    .top-agents-card-div{
+        width: 100%;
+    }
+}
+
+

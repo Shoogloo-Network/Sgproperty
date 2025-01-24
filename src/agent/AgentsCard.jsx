@@ -21,9 +21,23 @@ const AgentsCard = () => {
         {dataRes.map((item) => (
             <div key={item.id} className="agent">
                 
-                <Link to={`/agents/agent-details`}> <div className="agent-profile">
+                <Link to={`/agents/agent-details`} className='agentsCardDesktop'> <div className="agent-profile">
                     <img src={item.profileImage} alt={item.title} height={130} width={130} />
                 <p>View Profile</p>
+                </div></Link>
+                <Link to={`/agents/agent-details`} className='agentsCardMobile'> <div className="agent-profile">
+                   <div className='agent-profile-image-div'>
+                   <img src={item.profileImage} alt={item.title} height={130} width={130} />
+                   <p>View Profile</p>
+                   </div>
+                <div className="agent-contact">
+                        {/* <div className="whatsapp">
+                            <img src={logo} alt='whatsapp logo ' height={42} width={42}/>
+                        </div> */}
+                        <div className="appointment" onClick={()=>{setShowForm(!showForm)}}>
+                          <BtnPrimaryWithIcon iconName='FaMobileAlt' cnt="Connect Now"  onClick={onButtonClick}/>
+                        </div>
+                    </div>
                 </div></Link>
                 <div className="agent-details">
                     <div className="agent-partners">
@@ -57,12 +71,12 @@ const AgentsCard = () => {
                         </div>
                        
                     </div>
-                    <div className="agent-contact">
-                        <div className="whatsapp">
+                    <div className="agent-contact agentsCardDesktop">
+                        <div className="whatsapp ">
                             <img src={logo} alt='whatsapp logo ' height={42} width={42}/>
                         </div>
                         <div className="appointment" onClick={()=>{setShowForm(!showForm)}}>
-                          <BtnPrimaryWithIcon iconName='FaMobileAlt' cnt="Book an Appointment"  onClick={onButtonClick}/>
+                          <BtnPrimaryWithIcon iconName='FaMobileAlt' cnt="Connect Now"  onClick={onButtonClick}/>
                         </div>
                     </div>
                 </div>

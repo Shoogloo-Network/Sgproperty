@@ -43,7 +43,12 @@
     .callback-request-div {
         /* flex-direction: column; */
         gap: 5px;
-        padding: 10px;
-        font-size: 14px;
+        padding: 5px;
+        
+    }
+
+    .callback-request-div >p {
+        font-size: 12px;
+        text-decoration: none !important;
     }
 }
