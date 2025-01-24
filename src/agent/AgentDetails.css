@@ -85,3 +85,15 @@ h1{
     font-weight: 600;
     margin: 10px 0;
 }
+
+
+@media(max-width:768px){
+    .agent-detail-left{
+        width: 100%;
+    }
+
+    .agent-detail-main-div{
+        flex-direction: column;
+        margin: 5px;
+    }
+}
