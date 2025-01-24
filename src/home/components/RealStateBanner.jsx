@@ -9,6 +9,7 @@ const RealStateBanner = () => {
     searchWrapper:{
     width: '100%',
     maxWidth: '1200px',
+    flexWrap:'wrap',
     margin: '0 auto',
     padding: '40px 20px',
     position: 'relative',

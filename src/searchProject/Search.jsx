@@ -1,13 +1,21 @@
 
 import RealStateHomeSearchBar from '../home/components/RealStateHomeSearchBar'
 import CardSearchList from '../cards/CardSearchList'
-import styles from './Search.module.css'
+import './Search.css'
 const Search = () => {
     const iconCards = null;
     const style = {
       searchWrapper:{},
       searchContainer:{
-        ...styles.searchContainer
+      position:'sticky',
+      top: '100px',
+      display: 'flex',
+      alignItems:' center',
+      gap: '15px',
+      background: 'white',
+      padding: '10px',
+      borderRadius: '8px',
+      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
         },
     };
     const budgetRange = null;
@@ -30,7 +38,9 @@ const Search = () => {
   return (
     <div>
 
+      <div className='searchbarmobile'>
       <RealStateHomeSearchBar iconCard={iconCards} style={style} budgetRange={budgetRange} propertyTypeData={propertyTypeData}/>
+      </div>
       <CardSearchList/>
     </div>
   )
