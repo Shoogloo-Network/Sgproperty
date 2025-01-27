@@ -19,7 +19,7 @@ import Pq from './Components/pq/Pq.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 import ChatComponent from './chatbot/ChatComponent.jsx';
 {
-  console.log(import.meta.env.VITE_DETAILE_PAGE)
+  console.log(import.meta.env.VITE_DETAILE_PAGE);
 }
 
 // import ProtectedRoute from './Components/ProtectedRoute'
