@@ -23,7 +23,8 @@ const RealStateBanner = () => {
       gap: '15px',
       marginTop: '20px',
       background: 'white',
-      padding: '2px',
+      padding: '10px 5px',
+     
       borderRadius: '8px',
       boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
     },
