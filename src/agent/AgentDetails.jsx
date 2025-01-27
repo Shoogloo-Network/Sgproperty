@@ -29,7 +29,7 @@ return (
     <>
       <div className="agent-detail-main-div">
         <div className="agent-detail-left ">
-          <div key={dataRes[0]?.id} className="agent-detail agent-white-box">
+          <div key={dataRes[0]?.id} className="agent-detail agent-white-box agent-detail-mobile">
             <div className="agent-profile">
               <img
                 src={dataRes[0]?.profileImage}

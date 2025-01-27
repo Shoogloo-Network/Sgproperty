@@ -90,10 +90,59 @@ h1{
 @media(max-width:768px){
     .agent-detail-left{
         width: 100%;
+        
     }
 
     .agent-detail-main-div{
         flex-direction: column;
         margin: 5px;
+        gap: 0;
+    }
+
+    .agent-detail-mobile{
+       display: flex;
+    }
+
+    .agent-white-box{
+        margin: 4px 0;
+        padding: 2px;
+    }
+    .interest-skill-item>p{
+        font-size: 10px;
+    }
+
+    .agent-interests-skills > h1{
+        font-size: 12px;
+    }
+
+    .agent-name >h1{
+        font-size: 12px;
+    }
+    .company-name>h1{
+        font-size: 12px;
+    }
+
+    .location >h1{
+        font-size: 12px;
+    }
+    .whatsapp > button{
+        display: none;
+    }
+    .agent-contact-detail{
+        gap: 0;
+    }
+
+    .agent-about > h1{
+font-size: 12px;
+    }
+
+    .about-item-span{
+        font-size: 10px;
+    }
+    .specialization-item {
+        height: 20px;
+    }
+    .interest-skill-item{
+        height: 20px;
     }
 }

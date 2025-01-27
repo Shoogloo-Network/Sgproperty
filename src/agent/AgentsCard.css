@@ -145,5 +145,12 @@
     .agent-profile > img {
         height: 80px;
     }
+
+    .specialization-item>p{
+        font-size: 10px;
+    }
+    .agent-specializations>h1{
+        font-size: 12px;
+    }
     
 }
