@@ -91,17 +91,26 @@ h1{
 
  .agent-about-head{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
     align-items: center;
     cursor: pointer;
  }
-
+.agent-details-name-mobile{
+    display: none;
+}
 @media(max-width:768px){
     .agent-detail-left{
         width: 100%;
         
     }
 
+    .agent-details-name{
+        display: none;
+    }
+.agent-details-name-mobile{
+    display: block;
+}
     .agent-detail-main-div{
         flex-direction: column;
         margin: 5px;
@@ -122,20 +131,20 @@ h1{
     }
 
     .agent-interests-skills > h1{
-        font-size: 12px;
+        font-size: 14px;
     }
   .agent-interests-skills {
     display: none;
   }
     .agent-name >h1{
-        font-size: 12px;
+        font-size: 14px;
     }
     .company-name>h1{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .location >h1{
-        font-size: 12px;
+        font-size: 14px;
     }
     .whatsapp > button{
         display: none;
@@ -145,7 +154,7 @@ h1{
     }
 
     .agent-about > h1{
-       font-size: 12px;
+       font-size: 14px;
       
     }
 
@@ -157,5 +166,9 @@ h1{
     }
     .interest-skill-item{
         height: 20px;
+    }
+
+    .agent-about-head>h1{
+        font-size: 14px;
     }
 }

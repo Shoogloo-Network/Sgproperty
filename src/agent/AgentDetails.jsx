@@ -37,11 +37,12 @@ return (
                 height={130}
                 width={130}
               />
+              <p className="agent-details-name-mobile">Vikas</p>
             </div>
   
             <div className="agent-details">
               <div className="agent-name">
-                <h1>{dataRes[0]?.agentName}</h1>
+                <h1 className="agent-details-name">{dataRes[0]?.agentName}</h1>
               </div>
               <div className="agent-partners">
                 <div className="trusted-partner listing-flex">
@@ -122,7 +123,7 @@ return (
           <div className="agent-about agent-white-box" >
           <div className="agent-about-head" onClick={()=>{SetIsAbout(!isAbout)}}>
           <h1 >About</h1>
-          {isAbout?<p>V</p>:'>'}
+          {isAbout?<i className="fa-solid  fa-arrow-down"></i> :<i className="fa-solid  fa-arrow-right"></i>}
           </div>
             <hr />
            {
