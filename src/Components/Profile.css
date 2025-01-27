@@ -143,8 +143,8 @@
   margin: 0;
   }
   .form-group{
-    margin: 0;
-    flex-direction: row !important;
+    margin: 5px !important;
+   gap: 0;
     padding: 0 !important;
   }
   
