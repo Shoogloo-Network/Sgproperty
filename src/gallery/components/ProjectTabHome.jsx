@@ -158,7 +158,7 @@ const ProjectTabHome = () => {
         <section id="overview" className="section">
           <h2>Provident Botanico Project Overview</h2>
           <div className="overviewSectionCardDiv">
-            <IconCard data={iconCardData} style={{ display: 'flex', justifyContent: 'space-between' }} />
+            <IconCard data={iconCardData} style={{ display: 'flex', justifyContent: 'space-between',flexDirection:'row', }} />
           </div>
         </section>
 

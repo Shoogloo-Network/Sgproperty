@@ -91,7 +91,7 @@ const RealStateHomeSearchBar = ({   iconCard , style , budgetRange , propertyTyp
           <FaMapMarkerAlt className="location-icon" />
           <input 
             type="text" 
-            placeholder="Search for locality, project or landmark"
+            placeholder="Search for locality, project"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
           />
