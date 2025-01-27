@@ -120,7 +120,10 @@ return (
         </div>
         <div className="agent-detail-right">
           <div className="agent-about agent-white-box" >
-            <h1 onClick={()=>{SetIsAbout(!isAbout)}}>About</h1>
+          <div className="agent-about-head" onClick={()=>{SetIsAbout(!isAbout)}}>
+          <h1 >About</h1>
+          {isAbout?<p>V</p>:'>'}
+          </div>
             <hr />
            {
             isAbout &&  <div className="about-details">

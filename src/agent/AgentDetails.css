@@ -89,6 +89,12 @@ h1{
     margin: 10px 0;
 }
 
+ .agent-about-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+ }
 
 @media(max-width:768px){
     .agent-detail-left{
@@ -140,6 +146,7 @@ h1{
 
     .agent-about > h1{
        font-size: 12px;
+      
     }
 
     .about-item-span{
