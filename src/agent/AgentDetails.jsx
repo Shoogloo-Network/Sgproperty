@@ -119,7 +119,7 @@ return (
           </div>
         </div>
         <div className="agent-detail-right">
-          <div className="agent-about agent-white-box">
+          <div className="agent-about agent-white-box" >
             <h1>About</h1>
             <hr />
             <div className="about-details">
