@@ -7516,7 +7516,7 @@ recentLeadBx span {
     }
 
     .addListingsBox {
-        padding: 20px 15px!important
+        padding: 10px!important
     }
 
     .addListingsBox .listBody .form-group .locationBox {
