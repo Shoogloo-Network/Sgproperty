@@ -6,7 +6,7 @@ import { fetchData } from "../api/data";
 const AgentDetails = () => {
   const [dataRes, setDataRes] = useState([]);
   const [CardData, setCardData] = useState([]);
-
+const [isAbout,SetIsAbout] = useState(false);
   useEffect(() => {
     fetchData("agents",setDataRes);
     fetchData("card-data",setCardData);
@@ -120,34 +120,36 @@ return (
         </div>
         <div className="agent-detail-right">
           <div className="agent-about agent-white-box" >
-            <h1>About</h1>
+            <h1 onClick={()=>{SetIsAbout(!isAbout)}}>About</h1>
             <hr />
-            <div className="about-details">
-              <div className="about-item">
-                <i className="fa-solid fa-calendar"></i>
-                <p>
-                  <span className="about-item-span">Experience:</span> 12 Years
-                </p>
-              </div>
-              <div className="about-item">
-                <i className="fa-solid fa-people-group"></i>
-                <p>
-                  <span className="about-item-span">Team Member Count:</span> 6-10 Members
-                </p>
-              </div>
-              <div className="about-item">
-                <i className="fa-solid fa-location-dot"></i>
-                <p>
-                  <span className="about-item-span">Office Location:</span> Dwarka Mor, Delhi
-                </p>
-              </div>
-              <div className="about-item">
-                <i className="fa-solid fa-language"></i>
-                <p>
-                  <span className="about-item-span">Languages:</span> Bengali, English, Hindi
-                </p>
-              </div>
+           {
+            isAbout &&  <div className="about-details">
+            <div className="about-item">
+              <i className="fa-solid fa-calendar"></i>
+              <p>
+                <span className="about-item-span">Experience:</span> 12 Years
+              </p>
             </div>
+            <div className="about-item">
+              <i className="fa-solid fa-people-group"></i>
+              <p>
+                <span className="about-item-span">Team Member Count:</span> 6-10 Members
+              </p>
+            </div>
+            <div className="about-item">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>
+                <span className="about-item-span">Office Location:</span> Dwarka Mor, Delhi
+              </p>
+            </div>
+            <div className="about-item">
+              <i className="fa-solid fa-language"></i>
+              <p>
+                <span className="about-item-span">Languages:</span> Bengali, English, Hindi
+              </p>
+            </div>
+          </div>
+           }
           </div>
           <div className="agent-cards">
             {CardData.map((cardItem, index) => {
