@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import IconCard from '../../cards/IconCard';
 import { FaUserCircle } from 'react-icons/fa';
+import './UserSectionList.css';
 
-
-const UserSectionList = ({onClick, logout}) => {
+const UserSectionList = ({ onClick, logout }) => {
     const [userData, setUserData] = useState(null);
     const [userProfile, setUserProfile] = useState({
         name: '',
@@ -24,96 +24,56 @@ const UserSectionList = ({onClick, logout}) => {
         if (storedUser) {
             setUserData(JSON.parse(storedUser));
         }
-        
+
         if (storedProfile) {
-            setUserProfile(prev => ({
+            setUserProfile((prev) => ({
                 ...prev,
-                ...JSON.parse(storedProfile)
+                ...JSON.parse(storedProfile),
             }));
         }
     }, []); // Empty dependency array means this runs once on mount
 
     const iconData = [
+        { img: 'src/assets/icon/profile.svg', title: 'PROFILE', id: 'profile' },
+        { img: 'src/assets/icon/my-activity.svg', title: 'MY ACTIVITY', id: 'activity' },
+        { img: 'src/assets/icon/my-interaction.svg', title: 'MY INTERACTIONS', id: 'interactions' },
+        { img: 'src/assets/icon/post-your-property.svg', title: 'POST PROPERTY', id: 'postproperty' },
+        { img: 'src/assets/icon/my-properties.svg', title: 'MY LISTINGS', id: 'mylistings' },
+        { img: 'src/assets/icon/my-rent-agreement.svg', title: 'RENTAL AGREEMENTS', id: 'rentalagreements' },
+        { img: 'src/assets/icon/my-rent-payments.svg', title: 'RENT PAYMENTS', id: 'rentpayments' },
+        { img: 'src/assets/icon/refer-and-earn.svg', title: 'REFER AND EARN', id: 'referandearn' },
         {
-            img:'src/assets/icon/profile.svg',
-           title:'PROFILE',
-           id:'profile'
-
-        },
-        {
-            img:'src/assets/icon/my-activity.svg',
-            title:'MY ACTIVITY',
-            id:'activity'
-
-        },
-        {
-            img:'src/assets/icon/my-interaction.svg',
-            title:'MY INTERACTIONS',
-            id:'interactions'
-        },
-        {
-            img:'src/assets/icon/post-your-property.svg',
-            title:'POST PROPERTY',
-            id:'postproperty'
-        },
-        {
-            img:'src/assets/icon/my-properties.svg',
-            title:'MY LISTINGS',    
-            id:'mylistings'
-        },
-        
-        {
-            img:'src/assets/icon/my-rent-agreement.svg',
-            title:'RENTAL AGREEMENTS',
-            id:'rentalagreements'
-        },
-        {
-            img:'src/assets/icon/my-rent-payments.svg',
-            title:'RENT PAYMENTS',
-            id:'rentpayments'
-        },
-        {
-            img:'src/assets/icon/refer-and-earn.svg',
-            title:'REFER AND EARN',
-            id:'referandearn'
-        },
-        {
-            img:'src/assets/icon/lock-unlock.svg',
+            img: 'src/assets/icon/lock-unlock.svg',
             title: userData ? 'LOGOUT' : 'LOGIN',
-            id:'logout'
+            id: 'logout',
         },
-    ] ;
+    ];
 
     return (
         <>
-            <div style={{display:'flex',flexDirection:'row',gap:'10px',alignItems:'center',margin:'10px'}}>
+            <div className="user-section-header">
                 {userProfile.profileImage ? (
-                    <img 
-                        src={userProfile.profileImage} 
-                        alt='profile' 
-                        style={{width:'50px', height:'50px', borderRadius:'50%'}}
+                    <img
+                        src={userProfile.profileImage}
+                        alt="profile"
+                        className="user-profile-image"
                     />
                 ) : (
-                    <FaUserCircle 
-                        size={50} 
-                        color="#808080"
-                    />
+                    <FaUserCircle size={50} color="#808080" />
                 )}
                 <div>
-                    <h4 style={{textAlign:'center', fontSize:'20px', fontWeight:'bold', color:'#000'}}>
-                        {userData?.name || 'Guest'}
-                    </h4>
-                    <a href="/login"><p style={{textAlign:'center', fontSize:'14px', color:'#808080'}}>
-                      {userData?.email || 'Please login'} 
-                    </p></a>
+                    <h4 className="user-name">{userData?.name || 'Guest'}</h4>
+                    <a href="/login">
+                        <p className="user-email">{userData?.email || 'Please login'}</p>
+                    </a>
                 </div>
             </div>
-            <IconCard 
-                data={iconData} 
-                onClick={onClick} 
-                style={{display:'flex', flexDirection:'column', gap:'10px'}} 
-                imgStyle={{width:'25px', height:'25px'}} 
-                logout={logout} 
+            <IconCard
+                data={iconData}
+                onClick={onClick}
+                logout={logout}
+                containerClass="icon-card-container"
+                imgClass="icon-card-image"
             />
         </>
     );
