@@ -118,8 +118,6 @@ return (
               </div>
             </div>
           </div>
-        </div>
-        <div className="agent-detail-right">
           <div className="agent-about agent-white-box" >
           <div className="agent-about-head" onClick={()=>{SetIsAbout(!isAbout)}}>
           <h1 >About</h1>
@@ -155,6 +153,9 @@ return (
           </div>
            }
           </div>
+        </div>
+        <div className="agent-detail-right">
+         
           <div className="agent-cards">
             {CardData.map((cardItem, index) => {
               return (
