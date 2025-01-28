@@ -58,7 +58,7 @@ width: max-content;
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .icon-card-container {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* justify-content: center; */
     flex-direction: row !important;
   }
