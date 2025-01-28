@@ -23,8 +23,10 @@ const Card = ({ title, description, descriptionPrice, iconCardData, onClick, url
             />
           </div>
           <div className="card-content card-content-half" onClick={onClick}>
-            <h3 className="card-title">{title}</h3>
-            <p className="card-description">{description}</p>
+           <div className='card-title-row'>
+           <h3 className="card-title">{title}</h3>
+           <p className="card-description">{description}</p>
+           </div>
             <p className="card-description-color">{descriptionPrice}</p>
             <div>
               <div>

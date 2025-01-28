@@ -63,6 +63,7 @@ width: max-content;
 
   .icon-card{
     padding: 3px;
+    max-width: 100%;
   }
 
   .icon-card-title,

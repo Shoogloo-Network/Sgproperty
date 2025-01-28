@@ -106,10 +106,12 @@
 
   .card-title {
       font-size: 1em;
+      margin-bottom: 5px;
   }
 
   .card-description {
       font-size: 0.9em;
+      margin-bottom: 5px;
   }
 
   .card-content {
@@ -137,6 +139,13 @@
 
   .card-description-color{
     font-size: 14px;
+  }
+  .card-title-row{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+
   }
 }
 
