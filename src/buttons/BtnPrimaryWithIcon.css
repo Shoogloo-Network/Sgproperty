@@ -29,9 +29,9 @@
 
 
 /* Responsive styles for mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .callback-request {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 4px;
     }
 
