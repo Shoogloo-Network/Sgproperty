@@ -172,3 +172,100 @@ h1{
         font-size: 14px;
     }
 }
+
+
+/* Container Styling */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+  
+  /* Filter Tabs */
+  .filter-tabs {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the tabs wrap on smaller screens */
+    gap: 12px;
+    
+  }
+  
+  .filter-tab {
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .filter-tab:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Active Tab Styling */
+  .filter-tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Dropdown */
+  .filter-dropdown select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    color: #555;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-dropdown select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Responsive Breakpoints */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .filter-section {
+      flex-direction: column; /* Stack tabs and dropdown vertically */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .filter-tabs {
+      justify-content: flex-start; /* Align tabs to the left */
+      margin-bottom: 12px;
+    }
+  
+    .filter-tab {
+      font-size: 12px; /* Smaller font size for smaller screens */
+      padding: 6px 12px;
+    }
+  
+    .filter-dropdown select {
+      width: 100%; /* Dropdown spans the full width on smaller screens */
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .filter-tab {
+      padding: 6px 10px;
+      font-size: 11px; /* Further reduce font size */
+    }
+  
+    .filter-dropdown select {
+      font-size: 12px; /* Adjust font size for mobile */
+    }
+  }
+  

@@ -7,6 +7,10 @@ const AgentDetails = () => {
   const [dataRes, setDataRes] = useState([]);
   const [CardData, setCardData] = useState([]);
 const [isAbout,SetIsAbout] = useState(false);
+const [selectedFilter, setSelectedFilter] = useState("All");
+
+  const filters = ["All", "New Launch", "Ready To Move", "Upcoming", "Affordable", "Virtual Tour"];
+
   useEffect(() => {
     fetchData("agents",setDataRes);
     fetchData("card-data",setCardData);
@@ -25,6 +29,11 @@ const [isAbout,SetIsAbout] = useState(false);
   const onButtonClick = ()=>{
     console.log("Button clicked");
 }
+
+
+  const handleFilterClick = (filter) => {
+    setSelectedFilter(filter);
+  };
 return (
     <>
       <div className="agent-detail-main-div">
@@ -155,7 +164,29 @@ return (
           </div>
         </div>
         <div className="agent-detail-right">
-         
+        <div className="filter-section">
+      {/* Filter Tabs */}
+      <div className="filter-tabs">
+        {filters.map((filter) => (
+          <div
+            key={filter}
+            className={`filter-tab ${selectedFilter === filter ? "active" : ""}`}
+            onClick={() => handleFilterClick(filter)}
+          >
+            {filter}
+          </div>
+        ))}
+      </div>
+
+      {/* Dropdown */}
+      <div className="filter-dropdown">
+        <select>
+          {["Most Luxurious", "Highest Rated", "Best Value", "Popular"].map((option) => (
+            <option key={option}>{option}</option>
+          ))}
+        </select>
+      </div>
+    </div>
           <div className="agent-cards">
             {CardData.map((cardItem, index) => {
               return (
