@@ -37,7 +37,6 @@ const Search = () => {
     };
   return (
     <div>
-
       <div className='searchbarmobile'>
       <RealStateHomeSearchBar iconCard={iconCards} style={style} budgetRange={budgetRange} propertyTypeData={propertyTypeData}/>
       </div>
