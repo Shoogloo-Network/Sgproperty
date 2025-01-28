@@ -47,7 +47,7 @@
   }
   
   .card-title {
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 0 0 10px;
   }
   
@@ -90,7 +90,7 @@
 
 .card-description-color {
   color: #5f449b;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 5px;
 }
