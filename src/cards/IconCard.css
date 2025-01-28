@@ -59,11 +59,12 @@ width: max-content;
   .icon-card-container {
     justify-content: space-between;
     /* justify-content: center; */
+    flex-direction: row !important;
   }
 
   .icon-card{
     padding: 3px;
-    max-width: 100%;
+    max-width: auto;
   }
 
   .icon-card-title,

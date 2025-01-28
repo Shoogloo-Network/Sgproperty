@@ -28,7 +28,7 @@ const AgentsCard = () => {
                 <Link to={`/agents/agent-details`} className='agentsCardMobile'> <div className="agent-profile">
                    <div className='agent-profile-image-div'>
                    <img src={item.profileImage} alt={item.title} height={130} width={130} />
-                   {/* <p>View Profile</p> */}
+                   {/* <p> View Profile </p> */}
                    </div>
                 <div className="agent-contact">
                         {/* <div className="whatsapp">
